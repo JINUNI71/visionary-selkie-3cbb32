@@ -1,9 +1,0 @@
-
-/* ── GenWorks-OAP (products/genworks-oap.html) ───────────────
-   기능 모듈 두 칸 변형, 사례의 '업무 상황 · AI 분석' 레이블, 사례 대상 역할 한 줄. */
-.sw-modules--two{grid-template-columns:repeat(2,minmax(0,1fr))}
-@media (max-width:560px){.sw-modules--two{grid-template-columns:1fr}}
-.sw-case__label{display:block;margin-bottom:4px;color:var(--ink-subtle);text-transform:uppercase}
-.sw-comp__who{margin-top:var(--space-8);color:var(--ink-subtle)}
-.sw-comp__body>.sw-nums{margin-top:var(--space-28)}
-.sw-sub>.sw-assets{margin-top:var(--space-28)}
