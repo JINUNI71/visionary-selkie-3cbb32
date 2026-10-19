@@ -1,0 +1,6 @@
+
+/* ── Cloud-V (products/cloud-v.html) — 8개 관리 영역을 네 칸 격자로 ── */
+.sw-modules--four{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:var(--space-56)}
+@media (max-width:1000px){.sw-modules--four{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.sw-modules--four{grid-template-columns:1fr}}
+.sw-pillars+.sw-table{margin-top:var(--space-40)}

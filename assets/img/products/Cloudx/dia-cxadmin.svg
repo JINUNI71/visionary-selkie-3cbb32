@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="384" viewBox="0 0 900 384" role="img" aria-label="Admin Portal 메뉴 구성과 권한 경계">
+    <defs><style>.l{font:600 10.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;letter-spacing:1.4px;fill:#80868b}.t{font:600 13px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202124}.s{font:400 11.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#5f6368}.k{fill:#fff;stroke:#dadce0;stroke-width:1}</style></defs><rect width="100%" height="100%" fill="#ffffff"/>
+    <text x="0" y="13" class="l">ADMIN PORTAL: 기본 제공 메뉴</text>
+
+    <rect x="0" y="24" width="452" height="236" fill="#b06000" opacity=".05"/>
+    <rect x="0" y="24" width="452" height="236" fill="none" stroke="#b06000" stroke-width="1.3" stroke-dasharray="5 4"/>
+    <text x="16" y="44" class="s" font-size="11.5" fill="#b06000">Tenant Admin: 자기 조직 범위</text>
+
+    <rect x="464" y="24" width="436" height="236" fill="#f8f9fa"/>
+    <rect x="464" y="24" width="436" height="236" fill="none" stroke="#c9ced6" stroke-width="1.2"/>
+    <text x="480" y="44" class="s" font-size="11.5">Super Admin: 전체 범위</text>
+
+    <g class="k"><rect x="16" y="56" width="204" height="58" rx="0"/><rect x="232" y="56" width="204" height="58" rx="0"/><rect x="480" y="56" width="200" height="58" rx="0"/><rect x="692" y="56" width="192" height="58" rx="0"/>
+      <rect x="16" y="122" width="204" height="58" rx="0"/><rect x="232" y="122" width="204" height="58" rx="0"/><rect x="480" y="122" width="200" height="58" rx="0"/><rect x="692" y="122" width="192" height="58" rx="0"/>
+      <rect x="16" y="188" width="204" height="58" rx="0"/><rect x="232" y="188" width="204" height="58" rx="0"/><rect x="480" y="188" width="200" height="58" rx="0"/><rect x="692" y="188" width="192" height="58" rx="0"/></g>
+    <g class="t"><text x="32" y="82">대시보드</text><text x="248" y="82">사용자 정보관리</text><text x="496" y="82">사용자 지원</text><text x="708" y="82">포털 관리</text>
+      <text x="32" y="148">정책 관리</text><text x="248" y="148">서비스 관리</text><text x="496" y="148">가상 PC 관리</text><text x="708" y="148">테넌트 자원관리</text>
+      <text x="32" y="214">템플릿 관리</text><text x="248" y="214">시스템 자원관리</text><text x="496" y="214">모니터링 · 통계</text><text x="708" y="214">관리자 설정</text></g>
+    <g class="s" font-size="10.5" fill="#80868b">
+      <text x="32" y="101">위젯형 · 담당자별 구성</text><text x="248" y="101">계정 · 조직</text><text x="496" y="101">문의 · 원격 지원</text><text x="708" y="101">CI · 배경 교체</text>
+      <text x="32" y="167">보안 · 접근 통제</text><text x="248" y="167">서비스 정의</text><text x="496" y="167">전원 · 할당 · 회수</text><text x="708" y="167">테넌트별 쿼터</text>
+      <text x="32" y="233">골든 이미지</text><text x="248" y="233">노드 · 스토리지</text><text x="496" y="233">사용 현황 · 리포트</text><text x="708" y="233">권한 · 감사</text></g>
+
+    <rect x="0" y="284" width="900" height="44" fill="#fff" stroke="#dadce0" stroke-width="1"/>
+    <text x="18" y="311" class="t">테넌트 관리자에게 부여하는 권한 범위가 운영 책임을 나누는 기준입니다</text>
+    <rect x="0" y="336" width="900" height="48" fill="#b06000" opacity=".06"/>
+    <text x="18" y="366" class="s" font-size="12.5" fill="#b06000">소프트웍스는 이 경계를 기관 조직 구조에 맞춰 설계하고, 필요한 기능은 포털 내에 직접 개발합니다.</text>
+  </svg>

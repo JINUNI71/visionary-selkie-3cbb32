@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="290" viewBox="0 0 900 290" role="img" aria-label="접속 1회가 지나가는 경로">
+    <defs><style>.l{font:600 10.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;letter-spacing:1.4px;fill:#80868b}.t{font:600 13px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202124}.s{font:400 11.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#5f6368}.k{fill:#fff;stroke:#dadce0;stroke-width:1}</style></defs><rect width="100%" height="100%" fill="#ffffff"/>
+    <text x="0" y="14" class="l">접속 1회</text>
+    <g class="k"><rect x="0" y="26" width="120" height="60" rx="0"/></g>
+    <text x="16" y="50" class="t">단말</text><text x="16" y="70" class="s">PC · Thin · 모바일</text>
+    <g class="k"><rect x="150" y="26" width="150" height="60" rx="0"/><rect x="330" y="26" width="150" height="60" rx="0"/><rect x="510" y="26" width="150" height="60" rx="0"/><rect x="690" y="26" width="210" height="60" rx="0"/></g>
+    <g class="t"><text x="166" y="50">인증</text><text x="346" y="50">연결 브로커</text><text x="526" y="50">세션 게이트웨이</text><text x="706" y="50">가상 PC</text></g>
+    <g class="s" font-size="10.5"><text x="166" y="70">ID · 2차 인증</text><text x="346" y="70">사용자–PC 매핑</text><text x="526" y="70">연결 중계</text><text x="706" y="70">전원 · 상태 확인 후 연결</text></g>
+    <g stroke="#9aa0a6" stroke-width="1.2" fill="none"><path d="M120 46h30M300 46h30M480 46h30M660 46h30"/></g>
+    <g stroke="#b06000" stroke-width="2" fill="none"><path d="M690 76H120"/><path d="M140 70l-20 6 20 6"/></g>
+    <text x="330" y="106" class="s" font-size="11.5" fill="#b06000">데이터는 센터에 남고 화면만 전송</text>
+    <rect x="0" y="130" width="440" height="62" class="k"/>
+    <text x="18" y="154" class="t">제어 경로</text>
+    <text x="18" y="176" class="s" font-size="12">인증 · 매핑 조회 · 전원 제어 전송 구간</text>
+    <rect x="460" y="130" width="440" height="62" fill="#b06000" opacity=".06"/>
+    <rect x="460" y="130" width="440" height="62" fill="none" stroke="#b06000" stroke-width="1"/>
+    <text x="478" y="154" class="t" fill="#b06000">화면 경로</text>
+    <text x="478" y="176" class="s" font-size="12">파일 전송 없이 화면 픽셀만 전달되는 구간</text>
+    <rect x="0" y="216" width="900" height="68" fill="#f8f9fa" stroke="#dadce0" stroke-width="1"/>
+    <text x="18" y="240" class="t">소프트웍스 결정사항</text>
+    <text x="18" y="262" class="s" font-size="12.5">기관 기존 인증 체계와의 연계 방식, 외부 접속에 한한 2차 인증 적용 여부 등의 조건.</text>
+    <text x="18" y="280" class="s" font-size="12.5">경로를 설계하고 구간별 통제 지점을 지정합니다.</text>
+  </svg>

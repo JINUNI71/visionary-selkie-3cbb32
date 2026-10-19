@@ -1,0 +1,97 @@
+
+/* ── 교육·트레이닝 (support/training.html) ───────────────
+   과정·진행 방식은 기존 행 목록(sw-rows)과 이름 격자(sw-names)를 그대로 씁니다.
+   신청 양식은 시안에 없어 새로 짰습니다. 재료는 기존 것뿐입니다:
+   그룹은 제품 목록과 같은 격자(왼쪽 280px), 입력칸·선택지는 각진 1px line 상자,
+   선택된 항목과 포커스만 primary. 둥근 모서리는 버튼에만 둡니다. */
+.sw-row__meta{margin-top:var(--space-8);color:var(--ink-subtle)}
+
+.sw-train-products{display:grid;gap:var(--space-40);margin-top:var(--space-56)}
+.sw-train-products__group{margin-bottom:var(--space-16);color:var(--ink-subtle);text-transform:uppercase}
+
+/* 진행 단계 — 위 hairline 하나로 나눈 네 칸 */
+.sw-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-36);margin:var(--space-56) 0 0;padding:0;list-style:none}
+.sw-steps li{display:flex;flex-direction:column;gap:6px;padding-top:var(--space-24);border-top:1px solid var(--line)}
+.sw-steps__num{color:var(--primary)}
+.sw-steps__name{color:var(--ink)}
+.sw-steps__text{color:var(--ink-muted)}
+@media (max-width:900px){.sw-steps{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.sw-steps{grid-template-columns:1fr;gap:var(--space-24)}}
+
+/* 양식 골격 */
+.sw-form{margin-top:var(--space-56);border-top:1px solid var(--line)}
+.sw-fgroup{display:grid;grid-template-columns:var(--product-meta-col) 1fr;column-gap:52px;padding:var(--space-40) 0;border-bottom:1px solid var(--line)}
+.sw-fgroup__head{min-width:0}
+.sw-fgroup__num{display:block;color:var(--primary)}
+.sw-fgroup__title{margin-top:var(--space-8);color:var(--ink)}
+.sw-fgroup__label{margin-top:6px;color:var(--ink-subtle);text-transform:uppercase}
+.sw-fgroup__body{min-width:0;max-width:720px;display:flex;flex-direction:column;gap:var(--space-36)}
+@media (max-width:760px){.sw-fgroup{grid-template-columns:1fr;row-gap:var(--space-24);padding:var(--space-28) 0}}
+
+.sw-field{min-width:0;margin:0;padding:0;border:0}
+.sw-field__label{display:block;padding:0;margin-bottom:var(--space-16);color:var(--ink)}
+.sw-field__hint{margin-left:10px;color:var(--ink-subtle);font-weight:400}
+.sw-field__sub{margin:var(--space-16) 0 var(--space-8);color:var(--ink-subtle);text-transform:uppercase}
+legend+.sw-field__sub{margin-top:0}
+.sw-field__error{margin-top:var(--space-8);color:var(--product-red)}
+.sw-req-mark{color:var(--primary)}
+
+/* 선택지 — 체크박스·라디오를 각진 hairline 상자로 보입니다. */
+.sw-choices{display:flex;flex-wrap:wrap;gap:var(--space-8)}
+.sw-choices--after{margin-top:var(--space-16)}
+.sw-choice{position:relative;display:inline-flex;cursor:pointer}
+.sw-choice input{position:absolute;opacity:0;width:1px;height:1px;margin:0;pointer-events:none}
+.sw-choice span{display:inline-flex;align-items:center;min-height:40px;padding:8px 14px;border:1px solid var(--line);background:var(--bg);color:var(--ink-muted);font:var(--text-nav);white-space:nowrap;transition:background-color .15s ease,border-color .15s ease,color .15s ease}
+.sw-choice:hover span{background:var(--surface-subtle);color:var(--ink)}
+.sw-choice input:checked+span{border-color:var(--primary);color:var(--ink);background:var(--surface-subtle);font-weight:600}
+.sw-choice input:focus-visible+span{outline:2px solid var(--primary);outline-offset:2px}
+.sw-field.is-invalid .sw-choice span{border-color:var(--product-red)}
+
+/* 입력칸 */
+.sw-inputs{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-24) var(--space-20)}
+.sw-input{min-width:0}
+.sw-input--wide{grid-column:1/-1}
+.sw-input .sw-field__label{margin-bottom:var(--space-8)}
+.sw-input__control{display:block;width:100%;min-height:47px;padding:12px 14px;border:1px solid var(--line);border-radius:0;background:var(--bg);color:var(--ink);font:var(--text-body);-webkit-appearance:none;appearance:none;transition:border-color .15s ease}
+.sw-input__control::placeholder{color:var(--ink-subtle)}
+.sw-input__control:hover{border-color:var(--ink-subtle)}
+.sw-input__control:focus{outline:2px solid var(--primary);outline-offset:-1px;border-color:var(--primary)}
+.sw-input__control--area{min-height:132px;resize:vertical;line-height:1.7}
+.sw-input.is-invalid .sw-input__control{border-color:var(--product-red)}
+@media (max-width:560px){.sw-inputs{grid-template-columns:1fr}}
+
+/* 동의 */
+.sw-consent{padding-top:var(--space-24);border-top:1px solid var(--line)}
+.sw-consent__text{max-width:640px;color:var(--ink-subtle)}
+.sw-check{display:inline-flex;align-items:center;gap:10px;margin-top:var(--space-16);color:var(--ink);cursor:pointer}
+.sw-check input{width:18px;height:18px;margin:0;accent-color:var(--primary);flex:none}
+.sw-check input:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+.sw-consent.is-invalid .sw-check{color:var(--product-red)}
+
+.sw-form__submit{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-16)}
+.sw-form__note{color:var(--ink-subtle)}
+.sw-form.is-sending .sw-btn--filled{filter:brightness(.93);cursor:progress}
+
+/* 스팸 방지 칸 — 사람에게는 보이지 않습니다. */
+.sw-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+/* 보낸 뒤 · 보내지 못했을 때 */
+.sw-form-done{margin-top:var(--space-56);padding:var(--space-40) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sw-form-done:focus,.sw-form-fail:focus{outline:none}
+.sw-form-done__label{color:var(--primary);text-transform:uppercase}
+.sw-form-done__title{margin-top:var(--space-16);color:var(--ink)}
+.sw-form-done__text{margin-top:var(--space-16);max-width:640px;color:var(--ink-muted)}
+.sw-form-done__text strong{color:var(--ink);font-weight:600}
+.sw-form-done__summary{display:grid;grid-template-columns:160px 1fr;margin:var(--space-40) 0 0;max-width:720px;border-top:1px solid var(--line)}
+.sw-form-done__summary dt,.sw-form-done__summary dd{margin:0;padding:12px 0;border-bottom:1px solid var(--line);font:var(--text-body-sm)}
+.sw-form-done__summary dt{color:var(--ink-subtle)}
+.sw-form-done__summary dd{color:var(--ink)}
+@media (max-width:640px){
+  .sw-form-done__title{font-size:30px;line-height:38px;letter-spacing:-.6px}
+  .sw-form-done__summary{grid-template-columns:1fr}
+  .sw-form-done__summary dt{padding-bottom:0;border-bottom:0}
+}
+.sw-form-fail{margin-top:var(--space-24);padding:var(--space-24) 0;border-top:1px solid var(--product-red);border-bottom:1px solid var(--line)}
+.sw-form-fail__title{color:var(--ink)}
+.sw-form-fail__text{margin-top:var(--space-8);max-width:640px;color:var(--ink-muted)}
+.sw-form-fail .sw-actions{margin-top:var(--space-20)}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" role="img" aria-label="물리 2PC에서 논리적 망분리 1PC로">
+    <defs><style>.l{font:600 10.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;letter-spacing:1.4px;fill:#80868b}.t{font:600 13.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202124}.s{font:400 11.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#5f6368}.k{fill:#fff;stroke:#dadce0;stroke-width:1}</style></defs><rect width="100%" height="100%" fill="#ffffff"/>
+    <text x="0" y="14" class="l">AS-IS: 물리 2PC</text>
+    <g class="k"><rect x="0" y="26" width="90" height="44" rx="0"/><rect x="104" y="26" width="90" height="44" rx="0"/></g>
+    <g class="s" text-anchor="middle"><text x="45" y="46">업무 PC</text><text x="149" y="46">인터넷 PC</text>
+      <text x="45" y="62">단말 1</text><text x="149" y="62">단말 2</text></g>
+    <g class="k"><rect x="0" y="88" width="194" height="36" rx="0"/></g>
+    <text x="16" y="111" class="s">망연계</text>
+    <g class="s" font-size="11"><text x="0" y="150">· 단말 2대 운영</text><text x="0" y="170">· 개별 PC 배포 · 회수 · 유지보수</text><text x="0" y="190">· 데이터 개인 보관</text></g>
+    <g stroke="#b06000" stroke-width="1.4" fill="none"><path d="M218 110h44"/><path d="M252 104l10 6-10 6"/></g>
+    <text x="290" y="14" class="l">TO-BE: 논리적 망분리 1PC</text>
+    <g class="k"><rect x="290" y="26" width="120" height="58" rx="0"/></g>
+    <rect x="300" y="36" width="48" height="38" fill="#b06000" opacity=".12"/>
+    <rect x="352" y="36" width="48" height="38" fill="#f8f9fa" stroke="#dadce0" stroke-width="1"/>
+    <text x="300" y="98" class="s" font-size="10.5">한 화면에서 업무 · 인터넷 동시</text>
+    <g stroke="#b06000" stroke-width="1.2" opacity=".5" fill="none"><path d="M410 55h40"/></g>
+    <g class="k"><rect x="450" y="36" width="120" height="38" rx="0"/></g>
+    <text x="466" y="60" class="s">VDI 전용 방화벽</text>
+    <rect x="450" y="92" width="450" height="126" fill="#b06000" opacity=".05"/>
+    <rect x="450" y="92" width="450" height="126" fill="none" stroke="#b06000" stroke-width="1.3"/>
+    <text x="468" y="114" class="t" fill="#b06000">VDI Zone</text>
+    <g class="k"><rect x="468" y="126" width="130" height="76" rx="0"/><rect x="612" y="126" width="130" height="76" rx="0"/><rect x="756" y="126" width="126" height="76" rx="0"/></g>
+    <g class="s" text-anchor="middle" font-size="11">
+      <text x="533" y="152">관리 서버</text><text x="533" y="170">이중화</text>
+      <text x="677" y="152">운영 서버</text><text x="677" y="170">N대</text>
+      <text x="819" y="152">SAN</text><text x="819" y="170">스토리지</text></g>
+    <g stroke="#b06000" stroke-width="1.2" opacity=".5" fill="none"><path d="M570 55h330v37"/></g>
+    <text x="600" y="50" class="s" font-size="10.5">인터넷 구간: 방화벽 · 웹필터 · 백본</text>
+    <rect x="0" y="244" width="900" height="76" class="k"/>
+    <text x="18" y="268" class="t">업무망 연동은 2중으로 통제합니다</text>
+    <g class="s" font-size="12.5"><text x="18" y="290">VDI Zone → 망연계 솔루션 → 망간 연동 방화벽 → 업무망 백본 → 내부 업무시스템</text>
+      <text x="18" y="310">서비스망 · 관리망 · 스토리지망은 물리적으로 나누고, 전 구간을 이중화합니다.</text></g>
+  </svg>

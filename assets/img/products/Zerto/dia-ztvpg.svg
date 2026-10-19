@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="310" viewBox="0 0 900 310" role="img" aria-label="보호 그룹 구성">
+    <defs><style>.l{font:600 10.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;letter-spacing:1.3px;fill:#80868b}.t{font:600 13px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202124}.s{font:400 11px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#5f6368}.k{fill:#fff;stroke:#dadce0;stroke-width:1}</style></defs><rect width="100%" height="100%" fill="#ffffff"/>
+    <text x="0" y="14" class="l">물리적으로는 분산 배치</text>
+    <g class="k"><rect x="0" y="26" width="290" height="70" rx="0"/><rect x="305" y="26" width="290" height="70" rx="0"/><rect x="610" y="26" width="290" height="70" rx="0"/></g>
+    <g class="s"><text x="18" y="48">호스트 A</text><text x="323" y="48">호스트 B</text><text x="628" y="48">호스트 C</text></g>
+    <g fill="#f8f9fa" stroke="#dadce0" stroke-width="1"><rect x="18" y="58" width="78" height="28" rx="0"/><rect x="104" y="58" width="78" height="28" rx="0"/><rect x="190" y="58" width="78" height="28" rx="0"/><rect x="323" y="58" width="78" height="28" rx="0"/><rect x="409" y="58" width="78" height="28" rx="0"/><rect x="495" y="58" width="78" height="28" rx="0"/><rect x="628" y="58" width="78" height="28" rx="0"/><rect x="714" y="58" width="78" height="28" rx="0"/><rect x="800" y="58" width="78" height="28" rx="0"/></g>
+    <g class="s" font-size="10" text-anchor="middle"><text x="57" y="76">Web</text><text x="143" y="76">DB</text><text x="229" y="76">배치</text>
+      <text x="362" y="76">App</text><text x="448" y="76">Web</text><text x="534" y="76">파일</text>
+      <text x="667" y="76">DB</text><text x="753" y="76">App</text><text x="839" y="76">분석</text></g>
+    <text x="0" y="132" class="l" fill="#d93025">업무 흐름 기준 그룹화</text>
+    <rect x="0" y="144" width="290" height="80" fill="#d93025" opacity=".07"/>
+    <rect x="0" y="144" width="290" height="80" fill="none" stroke="#d93025" stroke-width="1.3"/>
+    <text x="18" y="170" class="t" fill="#d93025">보호 그룹 1: 대민 서비스</text>
+    <text x="18" y="192" class="s">Web · App · DB</text>
+    <text x="18" y="212" class="s" fill="#d93025">목표 복구 시점 · 초 단위</text>
+    <rect x="305" y="144" width="290" height="80" class="k"/>
+    <text x="323" y="170" class="t">보호 그룹 2: 내부 업무</text>
+    <text x="323" y="192" class="s">App · 파일</text>
+    <text x="323" y="212" class="s">목표 복구 시점 · 분 단위</text>
+    <rect x="610" y="144" width="290" height="80" class="k"/>
+    <text x="628" y="170" class="t">보호 그룹 3: 분석</text>
+    <text x="628" y="192" class="s">DB · 분석</text>
+    <text x="628" y="212" class="s">목표 복구 시점 · 시간 단위</text>
+    <rect x="0" y="244" width="900" height="62" fill="#f8f9fa" stroke="#dadce0" stroke-width="1"/>
+    <text x="18" y="270" class="t">데이터스토어와 호스트가 달라도 그룹 안은 같은 시점으로 복구됩니다</text>
+    <text x="18" y="292" class="s" font-size="12.5">도입이 실패하는 지점은 설치가 아니라 이 경계의 설정 기준입니다.</text>
+  </svg>
