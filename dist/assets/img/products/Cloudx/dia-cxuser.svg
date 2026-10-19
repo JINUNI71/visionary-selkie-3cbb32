@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-label="사용자 동선과 관리자 통제 항목">
+    <defs><style>.l{font:600 10.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;letter-spacing:1.4px;fill:#80868b}.t{font:600 13px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202124}.s{font:400 11.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#5f6368}.k{fill:#fff;stroke:#dadce0;stroke-width:1}</style></defs><rect width="100%" height="100%" fill="#ffffff"/>
+    <text x="0" y="14" class="l">사용자 수행 범위</text>
+    <g class="k"><rect x="0" y="26" width="166" height="56" rx="0"/><rect x="184" y="26" width="166" height="56" rx="0"/><rect x="368" y="26" width="164" height="56" rx="0"/><rect x="550" y="26" width="164" height="56" rx="0"/><rect x="732" y="26" width="168" height="56" rx="0"/></g>
+    <g class="t" text-anchor="middle"><text x="83" y="50">포털 로그인</text><text x="267" y="50">전원 켜기</text><text x="450" y="50">연결</text><text x="632" y="50">자원 확인</text><text x="816" y="50">연결 종료</text></g>
+    <g class="s" text-anchor="middle" font-size="10.5"><text x="83" y="68">브라우저만 사용</text><text x="267" y="68">직접 기동</text><text x="450" y="68">화면만 전송</text><text x="632" y="68">CPU · MEM · 디스크</text><text x="816" y="68">세션 정리</text></g>
+    <g stroke="#b06000" stroke-width="1.2" opacity=".45" fill="none"><path d="M166 54h18M350 54h18M532 54h18M714 54h18"/></g>
+    <g stroke="#dadce0" stroke-width="1" stroke-dasharray="3 3"><path d="M83 82v34M267 82v34M450 82v34M632 82v34M816 82v34"/></g>
+    <text x="0" y="134" class="l">관리자 통제 항목</text>
+    <g fill="#f8f9fa" stroke="#dadce0" stroke-width="1"><rect x="0" y="146" width="166" height="50" rx="0"/><rect x="184" y="146" width="166" height="50" rx="0"/><rect x="368" y="146" width="164" height="50" rx="0"/><rect x="550" y="146" width="164" height="50" rx="0"/><rect x="732" y="146" width="168" height="50" rx="0"/></g>
+    <g class="s" text-anchor="middle" font-size="11"><text x="83" y="168">인증 정책</text><text x="267" y="168">전원 스케줄</text><text x="450" y="168">접속 허용 조건</text><text x="632" y="168">자원 할당량</text><text x="816" y="168">세션 타임아웃</text></g>
+    <g class="s" text-anchor="middle" font-size="10" fill="#80868b"><text x="83" y="186">2차 인증 여부</text><text x="267" y="186">야간 자동 종료</text><text x="450" y="186">위치 · 단말</text><text x="632" y="186">그룹별 차등</text><text x="816" y="186">유휴 시간</text></g>
+    <rect x="0" y="222" width="900" height="72" class="k"/>
+    <text x="18" y="246" class="t">사용자가 스스로 처리하는 구간을 넓힐수록 헬프데스크 부하가 줄어듭니다</text>
+    <text x="18" y="268" class="s" font-size="12.5">클라이언트와 매뉴얼도 포털에서 직접 내려받으므로 설치 파일을 사용자별로 배포할 필요가 없습니다.</text>
+    <text x="18" y="288" class="s" font-size="12.5">권한 부여 범위는 기관 운영 방식에 맞춰 결정합니다.</text>
+  </svg>

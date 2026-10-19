@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-label="쓰기 가로채기 경로">
+    <defs><style>.l{font:600 10.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;letter-spacing:1.3px;fill:#80868b}.t{font:600 13px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202124}.s{font:400 11.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#5f6368}.k{fill:#fff;stroke:#dadce0;stroke-width:1}</style></defs><rect width="100%" height="100%" fill="#ffffff"/>
+    <text x="0" y="14" class="l">운영 사이트: 쓰기 한 건</text>
+    <g class="k"><rect x="0" y="26" width="170" height="58" rx="0"/></g>
+    <text x="18" y="50" class="t">게스트 VM</text><text x="18" y="70" class="s">에이전트 없음</text>
+    <rect x="210" y="20" width="200" height="70" fill="#d93025" opacity=".07"/>
+    <rect x="210" y="20" width="200" height="70" fill="none" stroke="#d93025" stroke-width="1.3"/>
+    <text x="228" y="46" class="t" fill="#d93025">복제 엔진</text>
+    <text x="228" y="66" class="s">하이퍼바이저 계층에서</text>
+    <text x="228" y="82" class="s">쓰기 가로채기</text>
+    <g class="k"><rect x="460" y="26" width="180" height="58" rx="0"/><rect x="690" y="26" width="210" height="58" rx="0"/></g>
+    <text x="478" y="50" class="t">운영 스토리지</text><text x="478" y="70" class="s">원래 경로 그대로</text>
+    <text x="708" y="50" class="t">DR 사이트 저널</text><text x="708" y="70" class="s">순서 그대로 기록</text>
+    <g stroke="#9aa0a6" stroke-width="1.3" fill="none"><path d="M170 55h40M410 55h50"/><path d="M448 49l10 6-10 6"/></g>
+    <g stroke="#d93025" stroke-width="1.8" fill="none"><path d="M310 90v24h380v-30"/><path d="M684 90l6 10 6-10"/></g>
+    <text x="330" y="130" class="s" fill="#d93025">변경 블록만 압축 · 암호화해 전송</text>
+    <rect x="0" y="152" width="440" height="60" class="k"/>
+    <text x="18" y="178" class="t">스냅샷 생성이 없습니다</text>
+    <text x="18" y="200" class="s" font-size="12.5">운영 성능에 영향을 주지 않고 상시 동작합니다.</text>
+    <rect x="460" y="152" width="440" height="60" class="k"/>
+    <text x="478" y="178" class="t">게스트 안에 설치가 없습니다</text>
+    <text x="478" y="200" class="s" font-size="12.5">OS나 애플리케이션 종류와 무관하게 같은 방식입니다.</text>
+    <rect x="0" y="234" width="900" height="60" fill="#d93025" opacity=".06"/>
+    <text x="18" y="260" class="s" font-size="12.5" fill="#d93025">가로채는 위치가 다르다는 점이 다른 복제 제품과의 차이입니다.</text>
+    <text x="18" y="282" class="s" font-size="12.5">게스트 에이전트 없이 애플리케이션 정합성이 맞는 이유도 여기에 있습니다.</text>
+  </svg>
