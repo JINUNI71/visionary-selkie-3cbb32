@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-label="저널 회전 구조">
+    <defs><style>.l{font:600 10.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;letter-spacing:1.3px;fill:#80868b}.t{font:600 13px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202124}.s{font:400 11.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#5f6368}.k{fill:#fff;stroke:#dadce0;stroke-width:1}</style></defs><rect width="100%" height="100%" fill="#ffffff"/>
+    <text x="0" y="14" class="l">보존 기간만큼만 유지되는 저널</text>
+    <rect x="0" y="26" width="900" height="76" class="k"/>
+    <rect x="20" y="44" width="56" height="40" fill="#d93025" opacity="0.18"/><rect x="90" y="44" width="56" height="40" fill="#d93025" opacity="0.235"/><rect x="160" y="44" width="56" height="40" fill="#d93025" opacity="0.29"/><rect x="230" y="44" width="56" height="40" fill="#d93025" opacity="0.345"/><rect x="300" y="44" width="56" height="40" fill="#d93025" opacity="0.4"/><rect x="370" y="44" width="56" height="40" fill="#d93025" opacity="0.455"/><rect x="440" y="44" width="56" height="40" fill="#d93025" opacity="0.51"/><rect x="510" y="44" width="56" height="40" fill="#d93025" opacity="0.565"/><rect x="580" y="44" width="56" height="40" fill="#d93025" opacity="0.62"/><rect x="650" y="44" width="56" height="40" fill="#d93025" opacity="0.675"/><rect x="720" y="44" width="56" height="40" fill="#d93025" opacity="0.73"/><rect x="790" y="44" width="56" height="40" fill="#d93025" opacity="0.7849999999999999"/>
+    <text x="20" y="98" class="s" font-size="10.5">오래된 시점</text>
+    <text x="800" y="98" class="s" font-size="10.5" fill="#d93025">최신 시점</text>
+    <g stroke="#d93025" stroke-width="1.6" fill="none"><path d="M880 64h20"/><path d="M866 58l10 6-10 6"/></g>
+    <g stroke="#9aa0a6" stroke-width="1.4" fill="none"><path d="M20 64H0"/><path d="M14 58l-10 6 10 6"/></g>
+    <text x="0" y="128" class="s" font-size="11">순차 삭제</text>
+    <text x="790" y="128" class="s" font-size="11">새 체크포인트</text>
+    <rect x="0" y="148" width="290" height="62" class="k"/>
+    <text x="18" y="174" class="t" fill="#d93025">5~15초</text>
+    <text x="18" y="196" class="s" font-size="12">체크포인트 생성 주기</text>
+    <rect x="305" y="148" width="290" height="62" class="k"/>
+    <text x="323" y="174" class="t">보존 기간</text>
+    <text x="323" y="196" class="s" font-size="12">되돌릴 수 있는 범위와 같습니다</text>
+    <rect x="610" y="148" width="290" height="62" class="k"/>
+    <text x="628" y="174" class="t">변경률 × 보존 기간</text>
+    <text x="628" y="196" class="s" font-size="12">필요한 저널 용량</text>
+    <rect x="0" y="232" width="900" height="62" fill="#d93025" opacity=".06"/>
+    <text x="18" y="258" class="s" font-size="12.5" fill="#d93025">저널 용량은 견적 단계에서 추정하지 않고, 변경률을 실측해 역산합니다.</text>
+    <text x="18" y="280" class="s" font-size="12.5">보존 기간을 변경하면 그 시점에 다시 계산하고, 업무 등급별로 다르게 산정해 용량과 비용을 맞춥니다.</text>
+  </svg>

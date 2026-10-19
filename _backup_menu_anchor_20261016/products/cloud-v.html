@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CloudV · Virtualization Management Portal — SOFTWORKS</title>
+<meta name="description" content="레거시부터 퍼블릭까지 모든 클라우드를 한 플랫폼에서 관리합니다. CloudV는 셀프 서비스 프로비저닝과 자동화, Kubernetes 구축, 멀티 클라우드 비용 관리를 제공하는 클라우드 관리 플랫폼(CMP)입니다.">
+<link rel="icon" href="../assets/img/softworks-logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300..900&display=swap">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="sw-skip" href="#main">본문으로 건너뛰기</a>
+
+<!-- SiteHeader -->
+<header class="sw-header" id="header">
+  <div class="sw-container sw-header__bar">
+    <a class="sw-header__logo" href="../index.html" aria-label="SOFTWORKS 홈">
+      <img class="sw-logo" src="../assets/img/softworks-logo.svg" alt="SOFTWORKS" width="116" height="20">
+    </a>
+    <nav class="sw-header__nav" aria-label="주요 메뉴">
+      <a class="sw-navlink" href="../company/business.html" data-label="사업영역">사업영역</a>
+      <button class="sw-navlink is-active" type="button" data-menu="products" aria-expanded="false" aria-controls="menu-products" data-label="제품">제품</button>
+      <button class="sw-navlink" type="button" data-menu="company" aria-expanded="false" aria-controls="menu-company" data-label="회사소개">회사소개</button>
+      <button class="sw-navlink" type="button" data-menu="support" aria-expanded="false" aria-controls="menu-support" data-label="고객지원">고객지원</button>
+    </nav>
+    <div class="sw-header__actions">
+      <p class="sw-lang" aria-label="언어 선택">
+        <a href="genworks-oap.html" aria-current="true">KR</a>
+        <span class="sw-lang__sep" aria-hidden="true">|</span>
+        <a href="genworks-oap.html" hreflang="en">EN</a>
+      </p>
+      <a class="sw-btn sw-btn--filled" href="../company/contact.html">도입 문의 →</a>
+      <button class="sw-navtoggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="메뉴 열기"><span class="sw-navtoggle__icon" aria-hidden="true"></span></button>
+    </div>
+  </div>
+    <div class="sw-menu" id="menu-products" role="group" aria-label="제품 하위 메뉴">
+      <button class="sw-menu__close" type="button" aria-label="하위 메뉴 닫기"><span class="sw-menu__close-icon" aria-hidden="true"></span></button>
+      <div class="sw-container sw-menu__cols">
+        <div class="sw-menu__col">
+          <span class="sw-menu__group overline">01 AI</span>
+          <div class="sw-menu__subcols sw-menu__subcols--one">
+            <div class="sw-menu__subcol">
+              <span class="sw-menu__subgroup overline-sm">Private AI Cloud</span>
+              <a class="sw-menu__link" href="broadcom-vmware.html">
+                <span class="sw-menu__label proof">Broadcom Private AI</span>
+                <span class="sw-menu__sub caption">Private Cloud Platform</span>
+              </a>
+              <span class="sw-menu__subgroup overline-sm">Security</span>
+              <a class="sw-menu__link" href="genworks-oap.html">
+                <span class="sw-menu__label proof">OAP Security</span>
+                <span class="sw-menu__sub caption">Ontology Agent Platform</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="sw-menu__col sw-menu__col--xwide">
+          <span class="sw-menu__group overline">02 Infrastructure</span>
+          <div class="sw-menu__subcols sw-menu__subcols--three">
+            <div class="sw-menu__subcol">
+              <span class="sw-menu__subgroup overline-sm">GPU Management</span>
+              <a class="sw-menu__link" href="genworks-rp.html">
+                <span class="sw-menu__label proof">GenWorks</span>
+                <span class="sw-menu__sub caption">GPU Cluster Management Platform</span>
+              </a>
+            </div>
+            <div class="sw-menu__subcol">
+              <span class="sw-menu__subgroup overline-sm">Virtual Desktop &amp; Apps</span>
+              <a class="sw-menu__link" href="omnissa-horizon.html">
+                <span class="sw-menu__label proof">Omnissa Horizon</span>
+                <span class="sw-menu__sub caption">Digital Workspace</span>
+              </a>
+              <a class="sw-menu__link" href="cloudx.html">
+                <span class="sw-menu__label proof">CloudX</span>
+                <span class="sw-menu__sub caption">VDI Platform</span>
+              </a>
+              <span class="sw-menu__subgroup overline-sm">Virtualization Management</span>
+              <a class="sw-menu__link" href="cloud-v.html">
+                <span class="sw-menu__label proof">CloudV</span>
+                <span class="sw-menu__sub caption">Virtualization Management Portal</span>
+              </a>
+            </div>
+            <div class="sw-menu__subcol">
+              <span class="sw-menu__subgroup overline-sm">Data Protection &amp; Recovery</span>
+              <a class="sw-menu__link" href="veeam.html">
+                <span class="sw-menu__label proof">Veeam</span>
+                <span class="sw-menu__sub caption">Data Protection</span>
+              </a>
+              <a class="sw-menu__link" href="zerto.html">
+                <span class="sw-menu__label proof">Zerto</span>
+                <span class="sw-menu__sub caption">Disaster Recovery</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sw-menu" id="menu-company" role="group" aria-label="회사소개 하위 메뉴">
+      <button class="sw-menu__close" type="button" aria-label="하위 메뉴 닫기"><span class="sw-menu__close-icon" aria-hidden="true"></span></button>
+      <div class="sw-container sw-menu__cols">
+        <div class="sw-menu__col">
+          <a class="sw-menu__link" href="../company/index.html#overview">
+            <span class="sw-menu__label proof">회사개요</span>
+            <span class="sw-menu__sub caption">Overview &amp; History</span>
+          </a>
+          <a class="sw-menu__link" href="../company/careers.html">
+            <span class="sw-menu__label proof">인재영입</span>
+            <span class="sw-menu__sub caption">Careers</span>
+          </a>
+          <a class="sw-menu__link" href="../company/news/index.html">
+            <span class="sw-menu__label proof">뉴스&amp;인사이트</span>
+            <span class="sw-menu__sub caption">News &amp; Insight</span>
+          </a>
+          <a class="sw-menu__link" href="../company/contact.html">
+            <span class="sw-menu__label proof">문의하기</span>
+            <span class="sw-menu__sub caption">Contact</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="sw-menu" id="menu-support" role="group" aria-label="고객지원 하위 메뉴">
+      <button class="sw-menu__close" type="button" aria-label="하위 메뉴 닫기"><span class="sw-menu__close-icon" aria-hidden="true"></span></button>
+      <div class="sw-container sw-menu__cols">
+        <div class="sw-menu__col">
+          <a class="sw-menu__link" href="../support.html#technical-support">
+            <span class="sw-menu__label proof">기술지원</span>
+            <span class="sw-menu__sub caption">Technical Support</span>
+          </a>
+          <a class="sw-menu__link" href="../support/training.html">
+            <span class="sw-menu__label proof">교육·트레이닝</span>
+            <span class="sw-menu__sub caption">Training</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  <div class="sw-header__mobile" id="mobile-nav">
+    <div class="sw-container">
+      <div class="sw-msec">
+        <a class="sw-mtop sw-mtop--link" href="../company/business.html">사업영역</a>
+      </div>
+      <div class="sw-msec">
+        <button class="sw-mtop" type="button" aria-expanded="false" aria-controls="m-products">제품<span class="sw-mtop__mark" aria-hidden="true">+</span></button>
+        <div class="sw-mpanel" id="m-products">
+          <span class="sw-mgroup overline">01 AI</span>
+          <span class="sw-msubgroup overline-sm">Private AI Cloud</span>
+          <a class="sw-mlink" href="broadcom-vmware.html">
+            <span class="sw-menu__label proof">Broadcom Private AI</span>
+            <span class="sw-menu__sub caption">Private Cloud Platform</span>
+          </a>
+          <span class="sw-msubgroup overline-sm">Security</span>
+          <a class="sw-mlink" href="genworks-oap.html">
+            <span class="sw-menu__label proof">OAP Security</span>
+            <span class="sw-menu__sub caption">Ontology Agent Platform</span>
+          </a>
+          <span class="sw-mgroup overline">02 Infrastructure</span>
+          <span class="sw-msubgroup overline-sm">GPU Management</span>
+          <a class="sw-mlink" href="genworks-rp.html">
+            <span class="sw-menu__label proof">GenWorks</span>
+            <span class="sw-menu__sub caption">GPU Cluster Management Platform</span>
+          </a>
+          <span class="sw-msubgroup overline-sm">Virtual Desktop &amp; Apps</span>
+          <a class="sw-mlink" href="omnissa-horizon.html">
+            <span class="sw-menu__label proof">Omnissa Horizon</span>
+            <span class="sw-menu__sub caption">Digital Workspace</span>
+          </a>
+          <a class="sw-mlink" href="cloudx.html">
+            <span class="sw-menu__label proof">CloudX</span>
+            <span class="sw-menu__sub caption">VDI Platform</span>
+          </a>
+          <span class="sw-msubgroup overline-sm">Virtualization Management</span>
+          <a class="sw-mlink" href="cloud-v.html">
+            <span class="sw-menu__label proof">CloudV</span>
+            <span class="sw-menu__sub caption">Virtualization Management Portal</span>
+          </a>
+          <span class="sw-msubgroup overline-sm">Data Protection &amp; Recovery</span>
+          <a class="sw-mlink" href="veeam.html">
+            <span class="sw-menu__label proof">Veeam</span>
+            <span class="sw-menu__sub caption">Data Protection</span>
+          </a>
+          <a class="sw-mlink" href="zerto.html">
+            <span class="sw-menu__label proof">Zerto</span>
+            <span class="sw-menu__sub caption">Disaster Recovery</span>
+          </a>
+        </div>
+      </div>
+      <div class="sw-msec">
+        <button class="sw-mtop" type="button" aria-expanded="false" aria-controls="m-company">회사소개<span class="sw-mtop__mark" aria-hidden="true">+</span></button>
+        <div class="sw-mpanel" id="m-company">
+          <a class="sw-mlink" href="../company/index.html#overview">
+            <span class="sw-menu__label proof">회사개요</span>
+            <span class="sw-menu__sub caption">Overview &amp; History</span>
+          </a>
+          <a class="sw-mlink" href="../company/careers.html">
+            <span class="sw-menu__label proof">인재영입</span>
+            <span class="sw-menu__sub caption">Careers</span>
+          </a>
+          <a class="sw-mlink" href="../company/news/index.html">
+            <span class="sw-menu__label proof">뉴스&amp;인사이트</span>
+            <span class="sw-menu__sub caption">News &amp; Insight</span>
+          </a>
+          <a class="sw-mlink" href="../company/contact.html">
+            <span class="sw-menu__label proof">문의하기</span>
+            <span class="sw-menu__sub caption">Contact</span>
+          </a>
+        </div>
+      </div>
+      <div class="sw-msec">
+        <button class="sw-mtop" type="button" aria-expanded="false" aria-controls="m-support">고객지원<span class="sw-mtop__mark" aria-hidden="true">+</span></button>
+        <div class="sw-mpanel" id="m-support">
+          <a class="sw-mlink" href="../support.html#technical-support">
+            <span class="sw-menu__label proof">기술지원</span>
+            <span class="sw-menu__sub caption">Technical Support</span>
+          </a>
+          <a class="sw-mlink" href="../support/training.html">
+            <span class="sw-menu__label proof">교육·트레이닝</span>
+            <span class="sw-menu__sub caption">Training</span>
+          </a>
+        </div>
+      </div>
+      <a class="sw-btn sw-btn--filled sw-mcta" href="../company/contact.html">도입 문의 →</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- 01 HERO -->
+  <section class="sw-hero sw-hero--detail" data-hero="orbit">
+    <div class="sw-hero__inner">
+      <nav class="sw-crumbs" aria-label="현재 위치">
+        <ol class="sw-crumbs__list">
+          <li class="sw-crumbs__item"><a href="../index.html">홈</a></li>
+          <li class="sw-crumbs__item"><a href="../index.html#products">제품</a></li>
+          <li class="sw-crumbs__item"><span aria-current="page">CloudV</span></li>
+        </ol>
+      </nav>
+      <span class="sw-eyebrow sw-eyebrow--dark">CloudV · Virtualization Management Portal</span>
+      <h1 class="sw-hero__title">레거시부터 퍼블릭까지,<br class="sw-br-wide"> 모든 클라우드를 한 플랫폼에서 관리합니다</h1>
+      <p class="sw-hero__lead">CloudV는 민첩성과 효율성, 셀프 서비스 프로비저닝 엔진을 갖춘 클라우드 관리 플랫폼(CMP)입니다. 온프레미스 프라이빗 클라우드를 빠르게 배포하고, 퍼블릭 클라우드 관리를 한곳으로 모으고, Kubernetes 클러스터 구축과 자동화 작업까지 한 플랫폼에서 수행합니다.</p>
+    </div>
+  </section>
+
+  <!-- 지표 스트립 -->
+  <div class="sw-proof">
+    <div class="sw-container sw-proof__row">
+      <span class="sw-proof__label">KEY SUMMARY</span>
+      <span class="sw-proof__items">All that &amp; All in One CMP · Powered by Morpheus · Hybrid·Multi Cloud와 DevOps 기술 100여 개 사전 연동 · 보안기능확인서 획득</span>
+    </div>
+  </div>
+
+  <!-- 02 FIELD ISSUES → CloudV -->
+  <section class="sw-section" aria-labelledby="issues-title">
+    <div class="sw-container">
+      <div class="sw-section-intro">
+        <span class="sw-eyebrow sw-eyebrow--light">Field Issues</span>
+        <h2 class="sw-h2" id="issues-title">클라우드가 늘수록 반복되는 6가지 문제</h2>
+        <p class="sw-section-intro__text">가상화와 프라이빗·퍼블릭 클라우드가 섞일수록 관리 도구와 운영 방식도 갈라집니다.</p>
+      </div>
+      <table class="sw-table">
+        <thead>
+          <tr>
+            <th class="col-half overline">현장에서 생기는 문제</th>
+            <th class="overline">CloudV의 답</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="body-row" data-label="현장에서 생기는 문제">클라우드마다 관리 도구가 따로 있다</td>
+            <td class="is-lead body-row" data-label="CloudV의 답">레거시·프라이빗·퍼블릭·하이브리드·멀티 클라우드를 하나의 플랫폼에서 관리하고, 운영 환경을 표준화합니다.</td>
+          </tr>
+          <tr>
+            <td class="body-row" data-label="현장에서 생기는 문제">관리 도구가 특정 가상화 제품에 묶여 있다</td>
+            <td class="is-lead body-row" data-label="CloudV의 답">VMware · Nutanix · Microsoft 등 여러 하이퍼바이저와 프라이빗 클라우드를 함께 지원합니다.</td>
+          </tr>
+          <tr>
+            <td class="body-row" data-label="현장에서 생기는 문제">퍼블릭 클라우드는 관리 툴과 빌링 툴이 따로 논다</td>
+            <td class="is-lead body-row" data-label="CloudV의 답">글로벌·국내 퍼블릭 클라우드를 함께 관리하고, 상세 보고·비교·권장 사항을 담은 Chargeback으로 비용을 한곳에서 봅니다.</td>
+          </tr>
+          <tr>
+            <td class="body-row" data-label="현장에서 생기는 문제">컨테이너 환경은 별도로 개발해야 한다</td>
+            <td class="is-lead body-row" data-label="CloudV의 답">Docker · Swarm · Kubernetes를 기본 지원해 Kubernetes 클러스터를 쉽게 구축합니다.</td>
+          </tr>
+          <tr>
+            <td class="body-row" data-label="현장에서 생기는 문제">자원을 하나 받으려면 요청과 승인을 사람이 처리한다</td>
+            <td class="is-lead body-row" data-label="CloudV의 답">셀프 서비스로 사용자가 직접 자원을 요청하고, 모든 클라우드에서 자동화 워크플로우를 실행합니다.</td>
+          </tr>
+          <tr>
+            <td class="body-row" data-label="현장에서 생기는 문제">기능이 필요할 때마다 추가 개발이나 별도 제품 구매가 필요하다</td>
+            <td class="is-lead body-row" data-label="CloudV의 답">Jenkins · GitHub 등 대부분의 도구와 사전 연동되어 있고, 정기적인 Major·Minor 업그레이드로 기능이 계속 더해집니다.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 03 WHY CLOUD-V -->
+  <section class="sw-section" aria-labelledby="why-title">
+    <div class="sw-container">
+      <div class="sw-section-intro">
+        <span class="sw-eyebrow sw-eyebrow--light">Why CloudV</span>
+        <h2 class="sw-h2" id="why-title">클라우드 관리 영역 전체를 하나의 플랫폼으로</h2>
+        <p class="sw-section-intro__text">가트너가 제시한 클라우드 관리 툴킷은 관리 영역을 여덟 가지 필수 기능으로 나눕니다. 이 영역을 모두 아우르는 CMP가 있어야 조직은 프라이빗과 퍼블릭을 넘나드는 멀티 클라우드 서비스와 자원을 제대로 관리할 수 있습니다.</p>
+      </div>
+      <div class="sw-rows">
+        <div class="sw-row">
+          <div><div class="sw-row__label overline">01</div><h3 class="sw-row__name product-name">8개 관리 영역을 모두 제공합니다</h3></div>
+          <div class="sw-row__text body-row"><p>서비스 요청부터 패키징·딜리버리까지 가트너 관리 툴킷의 8개 영역을 모두 제공하는 CMP입니다.</p></div>
+        </div>
+        <div class="sw-row">
+          <div><div class="sw-row__label overline">02</div><h3 class="sw-row__name product-name">셀프 서비스로 속도를 높입니다</h3></div>
+          <div class="sw-row__text body-row"><p>셀프 서비스 기능으로 비즈니스 민첩성을 높이고 가치를 만드는 시간을 줄입니다.</p></div>
+        </div>
+        <div class="sw-row">
+          <div><div class="sw-row__label overline">03</div><h3 class="sw-row__name product-name">운영 환경을 표준화합니다</h3></div>
+          <div class="sw-row__text body-row"><p>온프레미스 프라이빗 클라우드에 퍼블릭 클라우드 하이퍼스케일러 수준의 기능을 제공하고, 운영 환경을 표준화합니다.</p></div>
+        </div>
+        <div class="sw-row">
+          <div><div class="sw-row__label overline">04</div><h3 class="sw-row__name product-name">거버넌스를 하나로 묶습니다</h3></div>
+          <div class="sw-row__text body-row"><p>거버넌스 모델을 통합해 운영 복잡성을 줄입니다.</p></div>
+        </div>
+        <div class="sw-row">
+          <div><div class="sw-row__label overline">05</div><h3 class="sw-row__name product-name">모든 클라우드에서 자동화합니다</h3></div>
+          <div class="sw-row__text body-row"><p>어느 클라우드에서든 같은 자동화 워크플로우를 실행합니다.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 KEY CAPABILITIES — 8개 관리 영역 -->
+  <section class="sw-section" id="features" aria-labelledby="features-title">
+    <div class="sw-container">
+      <div class="sw-section-intro">
+        <span class="sw-eyebrow sw-eyebrow--light">Key Capabilities</span>
+        <h2 class="sw-h2" id="features-title">클라우드 관리의 8개 영역</h2>
+        <p class="sw-section-intro__text">거버넌스·라이프사이클 관리·중개·자동화에 걸친 여덟 가지 필수 기능 영역을 한 플랫폼에서 다룹니다.</p>
+      </div>
+      <ul class="sw-modules sw-modules--four">
+        <li><span class="sw-module__name proof">Service Request</span><span class="sw-module__sub caption">서비스 요청</span><span class="sw-module__text">사용자가 셀프 서비스로 필요한 자원과 서비스를 직접 요청합니다.</span></li>
+        <li><span class="sw-module__name proof">Provisioning &amp; Orchestration</span><span class="sw-module__sub caption">프로비저닝 · 오케스트레이션</span><span class="sw-module__text">프라이빗·퍼블릭 클라우드와 컨테이너 환경을 배포하고 자동화 워크플로우를 실행합니다.</span></li>
+        <li><span class="sw-module__name proof">Cost Management &amp; Resource Optimisation</span><span class="sw-module__sub caption">비용 관리 · 자원 최적화</span><span class="sw-module__text">상세 보고와 비교, 권장 사항을 담은 Chargeback으로 비용을 관리합니다.</span></li>
+        <li><span class="sw-module__name proof">Cloud Migration, Backup and DR</span><span class="sw-module__sub caption">마이그레이션 · 백업 · 재해복구</span><span class="sw-module__text">Veeam · Commvault · Zerto 등 데이터 보호 제품과 연동합니다.</span></li>
+        <li><span class="sw-module__name proof">Identity, Security &amp; Compliance</span><span class="sw-module__sub caption">인증 · 보안 · 컴플라이언스</span><span class="sw-module__text">Active Directory · Okta · SAML과 연동하고, 거버넌스 모델을 통합합니다.</span></li>
+        <li><span class="sw-module__name proof">Inventory &amp; Classification</span><span class="sw-module__sub caption">인벤토리 · 분류</span><span class="sw-module__text">실시간 환경 인벤토리를 유지하고, 변경된 시스템을 찾아 갱신합니다.</span></li>
+        <li><span class="sw-module__name proof">Monitoring &amp; Analytics</span><span class="sw-module__sub caption">모니터링 · 분석</span><span class="sw-module__text">상세한 작업 보고와 가동시간 관리를 제공하고, 모니터링·로깅 도구와 연동합니다.</span></li>
+        <li><span class="sw-module__name proof">Packaging &amp; Delivery</span><span class="sw-module__sub caption">패키징 · 딜리버리</span><span class="sw-module__text">Jenkins · GitHub · Packer 등 CI/CD 도구와 연동해 애플리케이션 배포까지 이어갑니다.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 05 ARCHITECTURE — 지원 환경과 연동 -->
+  <section class="sw-section" aria-labelledby="arch-title">
+    <div class="sw-container">
+      <div class="sw-section-intro">
+        <span class="sw-eyebrow sw-eyebrow--light">Architecture</span>
+        <h2 class="sw-h2" id="arch-title">기존 솔루션과 바로 연동합니다</h2>
+        <p class="sw-section-intro__text">Hybrid·Multi Cloud와 DevOps 관련 기술 100여 개를 사전에 연동해 두었습니다. 이미 쓰고 있는 도구를 그대로 두고 그 위에서 관리합니다.</p>
+      </div>
+      <ul class="sw-pillars">
+        <li><span class="sw-pillar__name proof">Traditional</span><span class="sw-pillar__text">기존 레거시 가상화 환경</span></li>
+        <li><span class="sw-pillar__name proof">Private Cloud</span><span class="sw-pillar__text">온프레미스 프라이빗 클라우드</span></li>
+        <li><span class="sw-pillar__name proof">Global · Local Public Cloud</span><span class="sw-pillar__text">글로벌 퍼블릭과 국내 퍼블릭 클라우드</span></li>
+        <li><span class="sw-pillar__name proof">Hybrid · Multi Cloud</span><span class="sw-pillar__text">여러 클라우드를 함께 쓰는 환경</span></li>
+      </ul>
+      <table class="sw-table">
+        <thead><tr><th class="col-step overline">연동 영역</th><th class="overline">연동 대상 (예시)</th></tr></thead>
+        <tbody>
+          <tr><td class="is-lead body-row" data-label="연동 영역">Hypervisors</td><td class="body-row" data-label="연동 대상 (예시)">VMware · Nutanix · Microsoft 외</td></tr>
+          <tr><td class="is-lead body-row" data-label="연동 영역">Clouds</td><td class="body-row" data-label="연동 대상 (예시)">AWS · Azure · GCP · Alibaba 외</td></tr>
+          <tr><td class="is-lead body-row" data-label="연동 영역">Containers</td><td class="body-row" data-label="연동 대상 (예시)">Docker · Swarm · Kubernetes</td></tr>
+          <tr><td class="is-lead body-row" data-label="연동 영역">Logging</td><td class="body-row" data-label="연동 대상 (예시)">Splunk · LogRhythm · syslog-ng 외</td></tr>
+          <tr><td class="is-lead body-row" data-label="연동 영역">Monitoring</td><td class="body-row" data-label="연동 대상 (예시)">New Relic · AppDynamics 외</td></tr>
+          <tr><td class="is-lead body-row" data-label="연동 영역">Identity</td><td class="body-row" data-label="연동 대상 (예시)">Active Directory · Okta · SAML 외</td></tr>
+          <tr><td class="is-lead body-row" data-label="연동 영역">Network</td><td class="body-row" data-label="연동 대상 (예시)">NSX · ACI · Infoblox · Bluecat 외</td></tr>
+          <tr><td class="is-lead body-row" data-label="연동 영역">Load Balancers</td><td class="body-row" data-label="연동 대상 (예시)">F5 · A10 · Citrix · ALB 외</td></tr>
+          <tr><td class="is-lead body-row" data-label="연동 영역">Backup</td><td class="body-row" data-label="연동 대상 (예시)">Veeam · Commvault · Zerto 외</td></tr>
+          <tr><td class="is-lead body-row" data-label="연동 영역">CI/CD</td><td class="body-row" data-label="연동 대상 (예시)">Jenkins · GitHub · Git · Packer 외</td></tr>
+          <tr><td class="is-lead body-row" data-label="연동 영역">ITSM</td><td class="body-row" data-label="연동 대상 (예시)">ServiceNow · Cherwell · BMC</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 06 COMPARISON -->
+  <section class="sw-section" aria-labelledby="compare-title">
+    <div class="sw-container">
+      <div class="sw-section-intro">
+        <span class="sw-eyebrow sw-eyebrow--light">Comparison</span>
+        <h2 class="sw-h2" id="compare-title">솔루션형 CMP와 개발형 CMP의 차이</h2>
+        <p class="sw-section-intro__text">CloudV는 검증된 CMP 엔진 위에 구성한 솔루션형 CMP입니다. 요구사항마다 개발로 채우는 개발형 CMP와 비교했습니다.</p>
+      </div>
+      <table class="sw-table">
+        <thead><tr><th class="col-step overline">항목</th><th class="overline">솔루션형 CMP · CloudV</th><th class="overline">개발형 CMP</th></tr></thead>
+        <tbody>
+          <tr><td class="is-lead body-row" data-label="항목">라이선스</td><td class="is-lead body-row" data-label="솔루션형 CMP · CloudV">인스턴스 수에 따라 과금</td><td class="body-row" data-label="개발형 CMP">제조사별로 상이</td></tr>
+          <tr><td class="is-lead body-row" data-label="항목">가상화 · 프라이빗 클라우드</td><td class="is-lead body-row" data-label="솔루션형 CMP · CloudV">모두 지원</td><td class="body-row" data-label="개발형 CMP">단일 가상화 제품 지원 (VMware 또는 OpenStack)</td></tr>
+          <tr><td class="is-lead body-row" data-label="항목">퍼블릭 클라우드</td><td class="is-lead body-row" data-label="솔루션형 CMP · CloudV">글로벌 · 국내 퍼블릭 클라우드 지원</td><td class="body-row" data-label="개발형 CMP">제한적 지원, 관리 툴과 빌링 툴로 이원화된 운영</td></tr>
+          <tr><td class="is-lead body-row" data-label="항목">컨테이너</td><td class="is-lead body-row" data-label="솔루션형 CMP · CloudV">Docker · Swarm · Kubernetes 기본 지원</td><td class="body-row" data-label="개발형 CMP">미지원, 별도 개발 필요</td></tr>
+          <tr><td class="is-lead body-row" data-label="항목">Chargeback</td><td class="is-lead body-row" data-label="솔루션형 CMP · CloudV">상세 보고 · 비교 · 권장 사항, 사용자 정의 데이터 추출을 위한 전체 문서화 API</td><td class="body-row" data-label="개발형 CMP">일부 지원 (MSP 제공 CMP는 별도 툴 구매 필요)</td></tr>
+          <tr><td class="is-lead body-row" data-label="항목">Governance</td><td class="is-lead body-row" data-label="솔루션형 CMP · CloudV">실시간 환경 인벤토리 · 변경 시스템 검색 갱신 · 상세 작업 보고 · 멀티 테넌시 · 가동시간 관리</td><td class="body-row" data-label="개발형 CMP">일부 지원</td></tr>
+          <tr><td class="is-lead body-row" data-label="항목">DevOps</td><td class="is-lead body-row" data-label="솔루션형 CMP · CloudV">Jenkins · GitHub 연동, 대부분의 애플리케이션 지원</td><td class="body-row" data-label="개발형 CMP">3rd party 제품 구매 필요</td></tr>
+          <tr><td class="is-lead body-row" data-label="항목">업그레이드</td><td class="is-lead body-row" data-label="솔루션형 CMP · CloudV">정기적인 Major · Minor 업그레이드 패치</td><td class="body-row" data-label="개발형 CMP">요청에 따른 추가 개발 필요</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 07 OUTCOMES -->
+  <section class="sw-section" aria-labelledby="outcome-title">
+    <div class="sw-container">
+      <div class="sw-section-intro">
+        <span class="sw-eyebrow sw-eyebrow--light">Outcomes</span>
+        <h2 class="sw-h2" id="outcome-title">도입 시 기대 효과</h2>
+      </div>
+      <ul class="sw-fields">
+        <li><span class="sw-fields__cat overline">01</span><span class="sw-fields__name product-name">통합 멀티 클라우드 관리</span><span class="sw-fields__text body-row">레거시 · 프라이빗 · 퍼블릭 · 멀티 · 하이브리드 클라우드 환경을 간편하고 안정적으로 함께 관리합니다.</span></li>
+        <li><span class="sw-fields__cat overline">02</span><span class="sw-fields__name product-name">IT 인프라 표준화</span><span class="sw-fields__text body-row">기업 IT 인프라 환경을 표준화하고 운영 효율을 극대화합니다.</span></li>
+        <li><span class="sw-fields__cat overline">03</span><span class="sw-fields__name product-name">관리 비용 절감</span><span class="sw-fields__text body-row">흩어진 관리·빌링 도구와 추가 개발을 줄여 클라우드 관리 비용을 낮춥니다.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 08 SPECIFICATIONS -->
+  <section class="sw-section" aria-labelledby="spec-title">
+    <div class="sw-container">
+      <div class="sw-section-intro">
+        <span class="sw-eyebrow sw-eyebrow--light">Specifications</span>
+        <h2 class="sw-h2" id="spec-title">지원 환경</h2>
+        <p class="sw-section-intro__text">제품 브로슈어 기준입니다. 연동 대상은 예시이며 버전과 구성에 따라 달라질 수 있습니다.</p>
+      </div>
+      <table class="sw-table">
+        <thead><tr><th class="col-step overline">항목</th><th class="overline">내용</th></tr></thead>
+        <tbody>
+          <tr><td class="is-lead body-row" data-label="항목">제품 유형</td><td class="body-row" data-label="내용">클라우드 관리 플랫폼(CMP) · Morpheus 기반 솔루션형 CMP</td></tr>
+          <tr><td class="is-lead body-row" data-label="항목">관리 대상</td><td class="body-row" data-label="내용">레거시 가상화 · 프라이빗 · 글로벌/국내 퍼블릭 · 하이브리드 · 멀티 클라우드</td></tr>
+          <tr><td class="is-lead body-row" data-label="항목">하이퍼바이저</td><td class="body-row" data-label="내용">VMware · Nutanix · Microsoft 외</td></tr>
+          <tr><td class="is-lead body-row" data-label="항목">컨테이너</td><td class="body-row" data-label="내용">Docker · Swarm · Kubernetes</td></tr>
+          <tr><td class="is-lead body-row" data-label="항목">사용자 인증</td><td class="body-row" data-label="내용">Active Directory · Okta · SAML 외</td></tr>
+          <tr><td class="is-lead body-row" data-label="항목">API</td><td class="body-row" data-label="내용">사용자 정의 데이터 추출을 위한 전체 문서화 API</td></tr>
+          <tr><td class="is-lead body-row" data-label="항목">라이선스</td><td class="body-row" data-label="내용">인스턴스 수 기준 과금</td></tr>
+          <tr><td class="is-lead body-row" data-label="항목">업그레이드</td><td class="body-row" data-label="내용">정기 Major · Minor 업그레이드 패치</td></tr>
+          <tr><td class="is-lead body-row" data-label="항목">보안 인증</td><td class="body-row" data-label="내용">보안기능확인서</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 09 ADOPTION & SUPPORT -->
+  <section class="sw-section" aria-labelledby="adopt-title">
+    <div class="sw-container">
+      <div class="sw-section-intro">
+        <span class="sw-eyebrow sw-eyebrow--light">Adoption &amp; Support</span>
+        <h2 class="sw-h2" id="adopt-title">진단에서 운영까지, 도입 절차</h2>
+        <p class="sw-section-intro__text">현재 운영 중인 가상화·클라우드 환경을 먼저 파악하고, 대표 환경으로 검증한 뒤 확대합니다.</p>
+      </div>
+      <table class="sw-table">
+        <thead><tr><th class="col-step overline">Step</th><th class="overline">수행 내용</th><th class="overline">산출물</th></tr></thead>
+        <tbody>
+          <tr><td class="is-lead body-row" data-label="Step">01. 현황 진단</td><td class="body-row" data-label="수행 내용">운영 중인 하이퍼바이저·클라우드·관리 도구 현황과 연동 대상 파악</td><td class="body-row" data-label="산출물">클라우드 운영 진단 보고서</td></tr>
+          <tr><td class="is-lead body-row" data-label="Step">02. PoC</td><td class="body-row" data-label="수행 내용">대표 환경 연동, 셀프 서비스 프로비저닝과 자동화 워크플로우 검증</td><td class="body-row" data-label="산출물">PoC 결과서</td></tr>
+          <tr><td class="is-lead body-row" data-label="Step">03. 구축</td><td class="body-row" data-label="수행 내용">설치, 클라우드·인증·모니터링·ITSM 연동, 카탈로그·정책 구성</td><td class="body-row" data-label="산출물">구축 결과서, 연동 설계서</td></tr>
+          <tr><td class="is-lead body-row" data-label="Step">04. 교육·이행</td><td class="body-row" data-label="수행 내용">관리자·사용자 교육, 운영 인수인계</td><td class="body-row" data-label="산출물">운영 매뉴얼, 사용자 가이드</td></tr>
+          <tr><td class="is-lead body-row" data-label="Step">05. 기술지원</td><td class="body-row" data-label="수행 내용">정기 업그레이드 적용, 장애 대응, 정기 점검</td><td class="body-row" data-label="산출물">기술지원 SLA</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 10 RELATED -->
+  <section class="sw-products" aria-labelledby="related-title">
+    <div class="sw-container">
+      <div class="sw-section-intro">
+        <span class="sw-eyebrow sw-eyebrow--light">Related Products</span>
+        <h2 class="sw-h2" id="related-title">함께 쓰는 제품</h2>
+      </div>
+      <div class="sw-products__list">
+        <a class="sw-product" href="broadcom-vmware.html">
+          <div class="sw-product__meta">
+            <div class="sw-product__name">Broadcom Private AI</div>
+            <div class="sw-product__cat">Private Cloud Platform</div>
+          </div>
+          <p class="sw-product__text">VCF 기반 프라이빗 클라우드를 구축하고, CloudV로 퍼블릭 클라우드까지 함께 관리합니다.</p>
+        </a>
+        <a class="sw-product" href="genworks-rp.html">
+          <div class="sw-product__meta">
+            <div class="sw-product__name">GenWorks</div>
+            <div class="sw-product__cat">GPU Cluster Management Platform</div>
+          </div>
+          <p class="sw-product__text">GPU 클러스터를 구축·운영하고 조직 간에 자원을 배분합니다.</p>
+        </a>
+        <a class="sw-product" href="veeam.html">
+          <div class="sw-product__meta">
+            <div class="sw-product__name">Veeam</div>
+            <div class="sw-product__cat">Data Protection</div>
+          </div>
+          <p class="sw-product__text">CloudV와 연동되는 백업 계층입니다. 클라우드 전반의 데이터 보호 정책을 함께 설계합니다.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CtaSection -->
+  <section class="sw-cta" aria-labelledby="cta-title">
+    <div class="sw-container sw-cta__stack">
+      <h2 class="sw-cta__title" id="cta-title">흩어진 클라우드, 한 화면에서 관리하십시오</h2>
+      <p class="sw-cta__text">지금 운영 중인 가상화·클라우드 환경 진단부터 함께 봅니다. PoC도 신청하실 수 있습니다.</p>
+      <div><a class="sw-btn sw-btn--filled" href="../company/contact.html">도입 문의 →</a></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- SiteFooter -->
+<footer class="sw-footer">
+  <div class="sw-container sw-footer__stack">
+    <nav class="sw-footer__nav" aria-label="바로가기">
+      <a href="../company/index.html">회사개요</a>
+      <a href="../company/careers.html">인재영입</a>
+      <a href="../support.html">기술지원</a>
+      <a href="../support/training.html">교육·트레이닝</a>
+      <a href="../company/index.html#location">오시는길</a>
+    </nav>
+    <address class="sw-footer__info">
+      <span>사업자등록번호: 214-88-7785</span>
+      <span>대표: 구본철</span>
+      <span>주소: 서울특별시 서초구 명달로 65 (서초동, 원진빌딩) 4F</span>
+      <span>대표전화: <a href="tel:+82264018937">+82-2-6401-8937~8</a></span>
+    </address>
+    <ul class="sw-footer__certs" aria-label="인증 및 수상">
+      <li><img src="../assets/img/certs/footer-skt2025.svg" alt="2025 SK Telecom 최우수 협력사" width="60" height="36" loading="lazy"></li>
+      <li><img src="../assets/img/certs/footer-mainbiz.svg" alt="MAIN Biz 경영혁신형 중소기업 인증" width="61" height="36" loading="lazy"></li>
+      <li><img src="../assets/img/certs/footer-innobiz.svg" alt="INNOBIZ 기술혁신형 중소기업 인증" width="98" height="36" loading="lazy"></li>
+      <li><img src="../assets/img/certs/footer-iso.svg" alt="ISO 인증" width="100" height="36" loading="lazy"></li>
+    </ul>
+    <p class="sw-footer__copy">© 2026 SOFTWORKS CO., LTD. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

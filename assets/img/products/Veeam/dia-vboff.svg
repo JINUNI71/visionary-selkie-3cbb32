@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-label="원격지 소산 세 갈래">
+    <defs><style>.l{font:600 10.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;letter-spacing:1.3px;fill:#80868b}.t{font:600 13px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202124}.s{font:400 11.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#5f6368}.k{fill:#fff;stroke:#dadce0;stroke-width:1}</style></defs><rect width="100%" height="100%" fill="#ffffff"/>
+    <text x="0" y="14" class="l">1차 저장소</text>
+    <rect x="0" y="26" width="190" height="150" fill="#1e8e3e" opacity=".07"/>
+    <rect x="0" y="26" width="190" height="150" fill="none" stroke="#1e8e3e" stroke-width="1.2"/>
+    <text x="18" y="94" class="t" fill="#1e8e3e">운영 사이트</text><text x="18" y="116" class="s">백업 저장소</text>
+    
+      <rect x="290" y="26" width="610" height="44" class="k"/>
+      <text x="308" y="50" class="t" font-size="12.5">원격지 복사</text>
+      <text x="450" y="50" class="s">다른 사이트에 사본 보관</text>
+      <text x="680" y="50" class="s" fill="#1e8e3e">회선 가속으로 보낼 양을 줄임</text>
+      <path d="M190 48h100" stroke="#1e8e3e" stroke-width="1.2" opacity=".5" fill="none"/>
+      <rect x="290" y="78" width="610" height="44" class="k"/>
+      <text x="308" y="102" class="t" font-size="12.5">오브젝트 스토리지</text>
+      <text x="450" y="102" class="s">불변 잠금 적용</text>
+      <text x="680" y="102" class="s" fill="#1e8e3e">삭제·암호화 방어</text>
+      <path d="M190 100h100" stroke="#1e8e3e" stroke-width="1.2" opacity=".5" fill="none"/>
+      <rect x="290" y="130" width="610" height="44" class="k"/>
+      <text x="308" y="154" class="t" font-size="12.5">테이프</text>
+      <text x="450" y="154" class="s">오프라인 보관</text>
+      <text x="680" y="154" class="s" fill="#1e8e3e">물리적 분리</text>
+      <path d="M190 152h100" stroke="#1e8e3e" stroke-width="1.2" opacity=".5" fill="none"/>
+    <rect x="0" y="204" width="900" height="88" class="k"/>
+    <text x="18" y="230" class="t">회선 증설이 불가하면 전송량을 조정합니다</text>
+    <text x="18" y="252" class="s" font-size="12.5">변경분만 전송하는 구성과 압축 · 중복제거를 조합해 전송 창 안에 수용되도록 맞춥니다.</text>
+    <text x="18" y="272" class="s" font-size="12.5">3-2-1-1-0 원칙(사본 수, 매체 종류, 오프사이트, 불변, 검증 오류 0건)을 어느 계층에서 충족하는지 문서에 명시합니다.</text>
+  </svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="340" viewBox="0 0 900 340" role="img" aria-label="백업 구성 개요">
+    <defs><style>.l{font:600 10.5px "DM Sans",'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;letter-spacing:1.4px;fill:#80868b}.t{font:600 14px "DM Sans",'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202124}.s{font:400 12px "DM Sans",'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#5f6368}.k{fill:#fff;stroke:#dadce0;stroke-width:1}</style></defs><rect width="100%" height="100%" fill="#ffffff"/>
+    <text x="0" y="14" class="l">SOURCE</text><text x="352" y="14" class="l">PROXY</text><text x="614" y="14" class="l">REPOSITORY</text>
+    <g class="k"><rect x="0" y="26" width="240" height="42" rx="0"/><rect x="0" y="80" width="240" height="42" rx="0"/><rect x="0" y="134" width="240" height="42" rx="0"/></g>
+    <g class="t"><text x="20" y="53">가상 (VM)</text><text x="20" y="107">물리 서버</text><text x="20" y="161">클라우드 · SaaS</text></g>
+    <g stroke="#1e8e3e" stroke-width="1" opacity=".45" fill="none"><path d="M240 47h60l26 54h26M240 101h112M240 155h60l26-54"/></g>
+    <rect x="352" y="78" width="180" height="46" fill="#1e8e3e" opacity=".07"/>
+    <rect x="352" y="78" width="180" height="46" fill="none" stroke="#1e8e3e" stroke-width="1"/>
+    <text x="372" y="98" class="t" fill="#1e8e3e">Backup Proxy</text>
+    <text x="372" y="116" class="s">중복제거 · 압축 · WAN 가속</text>
+    <path d="M532 101h82" stroke="#1e8e3e" stroke-width="1" opacity=".45"/>
+    <g class="k"><rect x="614" y="52" width="286" height="44" rx="0"/><rect x="614" y="106" width="286" height="44" rx="0"/></g>
+    <text x="634" y="72" class="t">Primary Repository</text><text x="634" y="89" class="s">단기 보관 · 빠른 복구</text>
+    <text x="634" y="126" class="t" fill="#1e8e3e">Immutable Repository</text><text x="634" y="143" class="s">불변 · 오프사이트 사본</text>
+    <rect x="0" y="200" width="900" height="56" fill="#1e8e3e" opacity=".06"/>
+    <rect x="0" y="200" width="900" height="56" fill="none" stroke="#1e8e3e" stroke-width="1" stroke-dasharray="4 4"/>
+    <text x="20" y="224" class="l" fill="#1e8e3e">SUREBACKUP: 자동 복구 검증 루프</text>
+    <text x="20" y="244" class="s" font-size="13">격리 환경 부팅 → 정합성 확인 → 복구 소요 시간 기록</text>
+    <rect x="0" y="274" width="900" height="44" fill="#0e2244"/>
+    <text x="20" y="301" fill="#b8c8e8" font="400 13px "DM Sans",'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif">산출물: 복구 시험 성적서 (실측 복구 시간)</text>
+  </svg>

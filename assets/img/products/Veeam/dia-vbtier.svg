@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="340" viewBox="0 0 900 340" role="img" aria-label="3계층 백업 저장소">
+    <defs><style>.l{font:600 10.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;letter-spacing:1.3px;fill:#80868b}.t{font:600 13.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202124}.s{font:400 11.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#5f6368}.k{fill:#fff;stroke:#dadce0;stroke-width:1}</style></defs><rect width="100%" height="100%" fill="#ffffff"/>
+    <text x="0" y="14" class="l">하나의 논리 저장소, 성격이 다른 세 층</text>
+    <g class="k"><rect x="0" y="26" width="276" height="200" rx="0"/><rect x="312" y="26" width="276" height="200" rx="0"/><rect x="624" y="26" width="276" height="200" rx="0"/></g>
+    <text x="18" y="52" class="t" fill="#1e8e3e">성능 계층</text><text x="330" y="52" class="t">용량 계층</text><text x="642" y="52" class="t">아카이브 계층</text>
+    <g class="s"><text x="18" y="76">최근 구간</text><text x="330" y="76">중간 구간</text><text x="642" y="76">장기 보관</text></g>
+    <g fill="#f8f9fa" stroke="#dadce0" stroke-width="1"><rect x="18" y="92" width="116" height="34" rx="0"/><rect x="142" y="92" width="116" height="34" rx="0"/><rect x="18" y="134" width="240" height="34" rx="0"/><rect x="330" y="92" width="240" height="34" rx="0"/><rect x="642" y="92" width="240" height="34" rx="0"/></g>
+    <g class="s" font-size="11"><text x="32" y="114">직결 디스크</text><text x="156" y="114">NAS</text><text x="32" y="156">중복제거 장비</text>
+      <text x="344" y="114">오브젝트 스토리지</text><text x="656" y="114">장기 보관 클래스</text></g>
+    <rect x="330" y="140" width="240" height="30" fill="none" stroke="#1e8e3e" stroke-width="1"/>
+    <text x="344" y="160" class="s" font-size="11" fill="#1e8e3e">불변 잠금 적용 구간</text>
+    <text x="642" y="156" class="s" font-size="11">반출 시 별도 과금</text>
+    <g class="t" font-size="12"><text x="18" y="198">복구 목표 · 즉시 기동</text><text x="330" y="198">복구 목표 · 수십 분</text><text x="642" y="198">복구 목표 · 수 시간</text></g>
+    <g stroke="#1e8e3e" stroke-width="1.5" fill="none"><path d="M276 120h36M588 120h36"/><path d="M302 114l10 6-10 6M614 114l10 6-10 6"/></g>
+    <rect x="0" y="252" width="900" height="80" class="k"/>
+    <text x="18" y="278" class="t">경계를 보존 주기가 아니라 복구 목표로 나눕니다</text>
+    <text x="18" y="300" class="s" font-size="12.5">즉시 기동이 필요한 업무의 복원 지점만 성능 계층에 남기고, 이후 구간은 하위 계층으로 옮겨 불변을 적용합니다.</text>
+    <text x="18" y="320" class="s" font-size="12.5">오브젝트 계층은 읽기와 트랜잭션에도 과금되므로 복구 시험 빈도까지 넣어 용량을 산정합니다.</text>
+  </svg>

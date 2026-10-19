@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="432" viewBox="0 0 900 432" role="img" aria-label="Cloud X 플랫폼 계층 구조">
+    <defs><style>.l{font:600 10.5px "DM Sans",'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;letter-spacing:1.4px;fill:#80868b}.t{font:600 13.5px "DM Sans",'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202124}.s{font:400 11.5px "DM Sans",'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#5f6368}.k{fill:#fff;stroke:#dadce0;stroke-width:1}</style></defs><rect width="100%" height="100%" fill="#ffffff"/>
+    <text x="0" y="14" class="l">사용자 접점 계층</text>
+    <rect x="0" y="26" width="680" height="58" fill="#b06000" opacity=".08"/>
+    <rect x="0" y="26" width="680" height="58" fill="none" stroke="#b06000" stroke-width="1.2"/>
+    <text x="18" y="50" class="t" fill="#b06000">제어 평면: Admin Portal · User Portal</text>
+    <text x="18" y="72" class="s">관리자 포털 · 사용자 포털 · 인증 · 과금 · 자원 신청을 각각의 마이크로서비스가 담당</text>
+
+    <text x="0" y="112" class="l">자원 생성 · 배치 계층</text>
+    <rect x="0" y="124" width="680" height="88" class="k"/>
+    <text x="18" y="148" class="t">오케스트레이션: Kubernetes 기반 OpenStack 코어</text>
+    <text x="18" y="170" class="s">Nova(연산) · Neutron(네트워크) · Cinder(블록) · Glance(이미지) · Keystone(인증)</text>
+    <text x="18" y="190" class="s">컨테이너로 구동되므로 구성요소별 개별 기동 · 중지가 가능합니다</text>
+
+    <text x="0" y="240" class="l">실제 구동 계층</text>
+    <rect x="0" y="252" width="680" height="88" class="k"/>
+    <text x="18" y="276" class="t">실행 평면: 가상 PC 노드</text>
+    <g fill="#b06000" opacity=".22"><rect x="18" y="290" width="44" height="30" rx="0"/><rect x="68" y="290" width="44" height="30" rx="0"/><rect x="118" y="290" width="44" height="30" rx="0"/><rect x="168" y="290" width="44" height="30" rx="0"/><rect x="218" y="290" width="44" height="30" rx="0"/><rect x="268" y="290" width="44" height="30" rx="0"/></g>
+    <g fill="#fff" stroke="#dadce0" stroke-width="1"><rect x="318" y="290" width="44" height="30" rx="0"/><rect x="368" y="290" width="44" height="30" rx="0"/></g>
+    <text x="428" y="310" class="s">노드 추가 방식의 수평 증설</text>
+    <text x="428" y="328" class="s">노드 1대 단위로 용량 계획을 세웁니다</text>
+
+    <rect x="700" y="26" width="200" height="314" fill="#f8f9fa" stroke="#dadce0" stroke-width="1"/>
+    <text x="718" y="50" class="t">관리 평면</text>
+    <g class="s"><text x="718" y="76">메트릭 수집</text><text x="718" y="98">로그 수집</text><text x="718" y="120">알람 · 임계값</text><text x="718" y="142">백업 · 이미지 관리</text></g>
+    <line x1="718" y1="162" x2="882" y2="162" stroke="#dadce0" stroke-width="1"/>
+    <text x="718" y="186" class="s" font-size="10.5" fill="#b06000">세 평면 전체에 걸쳐</text>
+    <text x="718" y="204" class="s" font-size="10.5" fill="#b06000">독립 계층으로 분리되어 있습니다</text>
+    <text x="718" y="238" class="s">운영 대상은 가상 PC가 아닌</text>
+    <text x="718" y="256" class="s">클라우드 인프라 전체입니다</text>
+
+    <rect x="0" y="366" width="900" height="56" fill="#0e2244"/>
+    <text x="20" y="392" fill="#fff" font="600 13px "DM Sans",'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif">소프트웍스 담당 구간</text>
+    <text x="20" y="412" fill="#b8c8e8" font="400 12px "DM Sans",'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif">오케스트레이션 · 실행 평면 · 관리 평면: 포털 하위 계층 전체가 구축 · 운영 범위입니다</text>
+  </svg>
