@@ -1789,7 +1789,7 @@ button.sw-navlink{border:0;background:none;font-family:var(--font-sans);cursor:p
 .sw-benefit__title{margin:0 0 var(--space-14);color:var(--ink)}
 .sw-benefit__list{margin:0;padding:0;list-style:none;color:var(--ink-muted)}
 .sw-benefit__list li{position:relative;padding:3px 0 3px 14px;word-break:keep-all}
-.sw-benefit__list li::before{content:"";position:absolute;left:2px;top:50%;width:4px;height:4px;margin-top:-2px;border-radius:50%;background:var(--ink-subtle)}
+.sw-benefit__list li::before{content:"";position:absolute;left:2px;top:16px;width:4px;height:4px;margin-top:-2px;border-radius:50%;background:var(--ink-subtle)}
 @media (max-width:1023px){.sw-benefits{grid-template-columns:1fr;gap:var(--space-36)}}
 @media (max-width:760px){.sw-benefit{grid-template-columns:72px minmax(0,1fr);column-gap:var(--space-20)}.sw-benefit__icon{width:72px;height:72px}.sw-benefit__icon svg{width:44px;height:44px}.sw-benefit__body{padding-top:var(--space-4)}}
 
