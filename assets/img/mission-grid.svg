@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<!-- SOFTWORKS 미션 밴드 배경. 색은 디자인 시스템 토큰 값입니다:
+     선 = on-dark(#ffffff) 저투명도, 노드·연결 = stat-accent(#7ce9f5). 장식이므로 뜻을 담지 않습니다. -->
+<g stroke="#ffffff" stroke-opacity="0.09" stroke-width="1">
+<line x1="0" y1="0" x2="0" y2="420"/>
+<line x1="60" y1="0" x2="60" y2="420"/>
+<line x1="120" y1="0" x2="120" y2="420"/>
+<line x1="180" y1="0" x2="180" y2="420"/>
+<line x1="240" y1="0" x2="240" y2="420"/>
+<line x1="300" y1="0" x2="300" y2="420"/>
+<line x1="360" y1="0" x2="360" y2="420"/>
+<line x1="420" y1="0" x2="420" y2="420"/>
+<line x1="480" y1="0" x2="480" y2="420"/>
+<line x1="540" y1="0" x2="540" y2="420"/>
+<line x1="600" y1="0" x2="600" y2="420"/>
+<line x1="660" y1="0" x2="660" y2="420"/>
+<line x1="720" y1="0" x2="720" y2="420"/>
+<line x1="780" y1="0" x2="780" y2="420"/>
+<line x1="840" y1="0" x2="840" y2="420"/>
+<line x1="900" y1="0" x2="900" y2="420"/>
+<line x1="960" y1="0" x2="960" y2="420"/>
+<line x1="1020" y1="0" x2="1020" y2="420"/>
+<line x1="1080" y1="0" x2="1080" y2="420"/>
+<line x1="1140" y1="0" x2="1140" y2="420"/>
+<line x1="1200" y1="0" x2="1200" y2="420"/>
+<line x1="1260" y1="0" x2="1260" y2="420"/>
+<line x1="1320" y1="0" x2="1320" y2="420"/>
+<line x1="1380" y1="0" x2="1380" y2="420"/>
+<line x1="1440" y1="0" x2="1440" y2="420"/>
+<line x1="0" y1="0" x2="1440" y2="0"/>
+<line x1="0" y1="60" x2="1440" y2="60"/>
+<line x1="0" y1="120" x2="1440" y2="120"/>
+<line x1="0" y1="180" x2="1440" y2="180"/>
+<line x1="0" y1="240" x2="1440" y2="240"/>
+<line x1="0" y1="300" x2="1440" y2="300"/>
+<line x1="0" y1="360" x2="1440" y2="360"/>
+<line x1="0" y1="420" x2="1440" y2="420"/>
+</g>
+<g fill="none" stroke="#7ce9f5" stroke-opacity="0.3" stroke-width="1.25" stroke-linecap="square" stroke-linejoin="round">
+<polyline points="360,180 300,240 480,240 600,120"/>
+<polyline points="420,420 480,420 660,420 540,420"/>
+<polyline points="300,0 480,0"/>
+<polyline points="1200,420 1260,420 1260,360 1080,420"/>
+<polyline points="900,0 900,120 900,60 900,180"/>
+<polyline points="1140,420 1260,420 1440,420"/>
+<polyline points="1200,420 1320,360 1320,420"/>
+<polyline points="720,420 660,420 780,300 840,300 660,300"/>
+<polyline points="300,120 180,60 120,60"/>
+<polyline points="1380,240 1200,120 1260,120 1080,0"/>
+<polyline points="420,60 420,120 480,60"/>
+<polyline points="660,60 660,180 600,60"/>
+<polyline points="180,0 360,0"/>
+<polyline points="360,60 420,60 480,60 420,120"/>
+<polyline points="1080,60 1140,120 1140,240 1140,180"/>
+<polyline points="60,360 240,420"/>
+<polyline points="360,180 240,300 60,300"/>
+<polyline points="120,240 300,120 120,180"/>
+<polyline points="420,60 420,0 360,120 360,240"/>
+<polyline points="60,120 60,180 240,180"/>
+<polyline points="1140,360 1140,300 960,300 840,360"/>
+</g>
+<g fill="#7ce9f5">
+<circle cx="60" cy="120" r="2" fill-opacity="0.62"/>
+<circle cx="60" cy="300" r="2" fill-opacity="0.62"/>
+<circle cx="60" cy="360" r="2" fill-opacity="0.62"/>
+<circle cx="120" cy="60" r="3" fill-opacity="0.62"/>
+<circle cx="120" cy="180" r="2" fill-opacity="0.62"/>
+<circle cx="120" cy="240" r="3" fill-opacity="0.62"/>
+<circle cx="180" cy="0" r="2" fill-opacity="0.62"/>
+<circle cx="240" cy="180" r="2" fill-opacity="0.62"/>
+<circle cx="240" cy="420" r="2" fill-opacity="0.62"/>
+<circle cx="300" cy="0" r="2" fill-opacity="0.62"/>
+<circle cx="300" cy="120" r="2" fill-opacity="0.62"/>
+<circle cx="360" cy="0" r="2" fill-opacity="0.62"/>
+<circle cx="360" cy="60" r="2" fill-opacity="0.62"/>
+<circle cx="360" cy="60" r="6.4" fill-opacity="0.16"/>
+<circle cx="360" cy="180" r="2" fill-opacity="0.62"/>
+<circle cx="360" cy="180" r="6.4" fill-opacity="0.16"/>
+<circle cx="360" cy="240" r="2" fill-opacity="0.62"/>
+<circle cx="420" cy="60" r="2" fill-opacity="0.62"/>
+<circle cx="420" cy="120" r="3" fill-opacity="0.62"/>
+<circle cx="420" cy="420" r="2" fill-opacity="0.62"/>
+<circle cx="480" cy="0" r="2.5" fill-opacity="0.62"/>
+<circle cx="480" cy="60" r="2" fill-opacity="0.62"/>
+<circle cx="540" cy="420" r="2.5" fill-opacity="0.62"/>
+<circle cx="600" cy="60" r="2" fill-opacity="0.62"/>
+<circle cx="600" cy="120" r="2.5" fill-opacity="0.62"/>
+<circle cx="660" cy="60" r="3" fill-opacity="0.62"/>
+<circle cx="660" cy="60" r="9.600000000000001" fill-opacity="0.16"/>
+<circle cx="660" cy="300" r="2" fill-opacity="0.62"/>
+<circle cx="720" cy="420" r="3" fill-opacity="0.62"/>
+<circle cx="720" cy="420" r="9.600000000000001" fill-opacity="0.16"/>
+<circle cx="840" cy="360" r="2.5" fill-opacity="0.62"/>
+<circle cx="840" cy="360" r="8.0" fill-opacity="0.16"/>
+<circle cx="900" cy="0" r="3" fill-opacity="0.62"/>
+<circle cx="900" cy="180" r="3" fill-opacity="0.62"/>
+<circle cx="1080" cy="0" r="2" fill-opacity="0.62"/>
+<circle cx="1080" cy="60" r="2.5" fill-opacity="0.62"/>
+<circle cx="1080" cy="420" r="2" fill-opacity="0.62"/>
+<circle cx="1140" cy="180" r="2.5" fill-opacity="0.62"/>
+<circle cx="1140" cy="360" r="3" fill-opacity="0.62"/>
+<circle cx="1140" cy="420" r="2" fill-opacity="0.62"/>
+<circle cx="1140" cy="420" r="6.4" fill-opacity="0.16"/>
+<circle cx="1200" cy="420" r="3" fill-opacity="0.62"/>
+<circle cx="1320" cy="420" r="2" fill-opacity="0.62"/>
+<circle cx="1320" cy="420" r="6.4" fill-opacity="0.16"/>
+<circle cx="1380" cy="240" r="3" fill-opacity="0.62"/>
+<circle cx="1380" cy="240" r="9.600000000000001" fill-opacity="0.16"/>
+<circle cx="1440" cy="420" r="3" fill-opacity="0.62"/>
+<circle cx="1440" cy="420" r="9.600000000000001" fill-opacity="0.16"/>
+</g>
+</svg>

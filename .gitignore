@@ -1,0 +1,11 @@
+# 빌드 결과물 — GitHub Actions 가 build.sh 로 다시 만듭니다
+dist/
+softworks-homepage.zip
+softworks-homepage/
+
+# 작업용 백업·임시 파일
+_backup_*/
+.fuse_hidden*
+.DS_Store
+__pycache__/
+*.pyc

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
+<rect x="380" y="60" width="220" height="150" stroke="#ffffff" stroke-opacity=".16" fill="none" stroke-width="1" vector-effect="non-scaling-stroke"/>
+<line x1="380" y1="80" x2="600" y2="80" stroke="#ffffff" stroke-opacity=".09" fill="none" stroke-width="1" vector-effect="non-scaling-stroke"/>
+<circle cx="392" cy="70" r="2.2" fill="#ffffff" fill-opacity=".18"/>
+<circle cx="403" cy="70" r="2.2" fill="#ffffff" fill-opacity=".18"/>
+<circle cx="414" cy="70" r="2.2" fill="#ffffff" fill-opacity=".18"/>
+<rect x="620" y="60" width="160" height="150" stroke="#ffffff" stroke-opacity=".16" fill="none" stroke-width="1" vector-effect="non-scaling-stroke"/>
+<line x1="620" y1="80" x2="780" y2="80" stroke="#ffffff" stroke-opacity=".09" fill="none" stroke-width="1" vector-effect="non-scaling-stroke"/>
+<circle cx="632" cy="70" r="2.2" fill="#ffffff" fill-opacity=".18"/>
+<circle cx="643" cy="70" r="2.2" fill="#ffffff" fill-opacity=".18"/>
+<circle cx="654" cy="70" r="2.2" fill="#ffffff" fill-opacity=".18"/>
+<rect x="380" y="230" width="160" height="190" stroke="#ffffff" stroke-opacity=".16" fill="none" stroke-width="1" vector-effect="non-scaling-stroke"/>
+<line x1="380" y1="250" x2="540" y2="250" stroke="#ffffff" stroke-opacity=".09" fill="none" stroke-width="1" vector-effect="non-scaling-stroke"/>
+<circle cx="392" cy="240" r="2.2" fill="#ffffff" fill-opacity=".18"/>
+<circle cx="403" cy="240" r="2.2" fill="#ffffff" fill-opacity=".18"/>
+<circle cx="414" cy="240" r="2.2" fill="#ffffff" fill-opacity=".18"/>
+<rect x="560" y="230" width="220" height="190" stroke="#b8c8e8" stroke-opacity=".42" fill="none" stroke-width="1" vector-effect="non-scaling-stroke"/>
+<line x1="560" y1="250" x2="780" y2="250" stroke="#ffffff" stroke-opacity=".09" fill="none" stroke-width="1" vector-effect="non-scaling-stroke"/>
+<circle cx="572" cy="240" r="2.2" fill="#ffffff" fill-opacity=".18"/>
+<circle cx="583" cy="240" r="2.2" fill="#ffffff" fill-opacity=".18"/>
+<circle cx="594" cy="240" r="2.2" fill="#ffffff" fill-opacity=".18"/>
+</svg>
