@@ -444,9 +444,9 @@ CTA = """
   <!-- CtaSection -->
   <section class="sw-cta" aria-labelledby="cta-title">
     <div class="sw-container sw-cta__stack">
-      <h2 class="sw-cta__title" id="cta-title">인프라부터 에이전트까지, 지금 시작하세요</h2>
-      <p class="sw-cta__text">사업 규모와 보안 요구사항에 맞춰 적합한 계층부터 설계를 시작합니다.</p>
-      <div><a class="sw-btn sw-btn--filled" href="company/contact.html">도입 문의 →</a></div>
+      <h2 class="sw-cta__title" id="cta-title">기업의 AI 전환, 어디서부터 시작할지 고민이신가요?</h2>
+      <p class="sw-cta__text">인프라 설계부터 솔루션 도입, AI 플랫폼 구축·운영까지, 기업의 환경과 요구사항에 맞는 방안을 함께 찾아갑니다.</p>
+      <div><a class="sw-btn sw-btn--filled" href="company/contact.html">도입·컨설팅 문의 →</a></div>
     </div>
   </section>
 """

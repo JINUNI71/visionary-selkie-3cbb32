@@ -70,7 +70,7 @@ def network(seed=7, n=34, x0=330):
     return b
 
 
-# 3. OAP Security — 중심 위험에서 퍼지는 관계 그래프
+# 3. AgentOn Security — 중심 위험에서 퍼지는 관계 그래프
 def ontology():
     cx, cy = 560, 240
     b = [circ(cx, cy, 95, FAINT), circ(cx, cy, 190, FAINT)]

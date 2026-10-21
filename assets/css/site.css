@@ -1836,12 +1836,14 @@ button.sw-navlink{border:0;background:none;font-family:var(--font-sans);cursor:p
 .sw-areabox:nth-child(6){--area-bar:var(--stat-grad-1);--area-on-bar:var(--on-dark)}
 .sw-areabox__label{color:var(--area-bar)}
 .sw-areabox__name{margin:var(--space-16) 0 0;color:var(--ink)}
-.sw-areabox__key{margin:var(--space-8) 0 0;color:var(--ink)}
-.sw-areabox__items{margin:var(--space-14) 0 0;color:var(--ink-muted)}
-.sw-areabox__label,.sw-areabox__name,.sw-areabox__key,.sw-areabox__items{transition:color .15s ease}
+.sw-areabox__key{margin:var(--space-8) 0 0;color:var(--ink);font-weight:600}
+.sw-areabox__note{margin:var(--space-8) 0 0;color:var(--ink-muted)}
+.sw-areabox__items{margin:var(--space-16) 0 0;color:var(--ink-subtle)}
+.sw-areabox__label,.sw-areabox__name,.sw-areabox__key,.sw-areabox__note,.sw-areabox__items{transition:color .15s ease}
 .sw-areabox:hover{background:var(--area-bar)}
 .sw-areabox:hover .sw-areabox__label,.sw-areabox:hover .sw-areabox__name,
-.sw-areabox:hover .sw-areabox__key,.sw-areabox:hover .sw-areabox__items{color:var(--area-on-bar)}
+.sw-areabox:hover .sw-areabox__key,.sw-areabox:hover .sw-areabox__note,
+.sw-areabox:hover .sw-areabox__items{color:var(--area-on-bar)}
 @media (max-width:1100px){.sw-areas{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:760px){
   .sw-areas{grid-template-columns:1fr}
@@ -1852,3 +1854,32 @@ button.sw-navlink{border:0;background:none;font-family:var(--font-sans);cursor:p
 .sw-menu{background:var(--surface-subtle)}
 /* 회색 펼침 영역 위의 X 닫기 롤오버 바탕은 흰색으로 구분합니다. */
 .sw-menu__close:hover{background:var(--bg)}
+/* Our Strengths — 항목 4개를 2열×2줄로 (사업영역 페이지) */
+.sw-partner .sw-fields--two{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:var(--space-56)}
+@media (max-width:760px){.sw-partner .sw-fields--two{grid-template-columns:1fr}}
+
+/* 본문 섹션 여백 3차 — 구분선 위아래 여백을 15% 늘렸습니다. 2.4vw(1280px 에서 31px) → 2.76vw(35px) · 좁은 화면 38px → 44px.
+   마무리 CTA 는 따로 맞춘 위 5vw · 아래 6.5vw 를 그대로 둡니다. */
+.sw-section,.sw-products,.sw-page{padding:44px 0}
+@media (min-width:640px){.sw-section,.sw-products,.sw-page{padding:2.76vw 0}}
+
+/* 본문 섹션 여백 4차 — 10% 더 늘렸습니다. 2.76vw(1280px 에서 35px) → 3.04vw(39px) · 좁은 화면 44px → 48px. 마무리 CTA 는 그대로. */
+.sw-section,.sw-products,.sw-page{padding:48px 0}
+@media (min-width:640px){.sw-section,.sw-products,.sw-page{padding:3.04vw 0}}
+
+/* ── 제품 메뉴 6개 카테고리 (2026-10-21) ─────────────────────
+   데스크톱: 한 칸 전체 폭을 4열로 나눠 카테고리를 배치
+   (AI Service·AI Infra | Cloud | Desktop Virtualization·Backup & Recovery | Security).
+   상세 페이지가 아직 없는 제품은 링크 없는 항목(.sw-menu__item · .sw-mitem · .sw-product--soon)으로 둡니다. */
+.sw-menu__col--full{flex:1 1 100%;max-width:none;padding:0}
+.sw-menu__subcols--four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.sw-menu__item{display:block;padding:10px 0;cursor:default}
+.sw-mitem{display:block;padding:9px 0;cursor:default}
+.sw-mpanel>.sw-msubgroup:first-child{margin-top:12px}
+.sw-product--soon{cursor:default}
+.sw-product--soon:hover{background:none}
+.sw-product--soon:hover .sw-product__name{color:var(--ink)}
+.sw-product--soon:hover .sw-product__cat{color:var(--ink-subtle)}
+.sw-product--soon:hover .sw-product__text{color:var(--ink-muted)}
+/* 상단 메뉴 제품 카테고리 레이블(AI Service Platform 등) — 주 컬러 (데스크톱 · 모바일 메뉴) */
+#menu-products .sw-menu__subgroup,#m-products .sw-msubgroup{color:var(--primary)}

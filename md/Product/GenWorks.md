@@ -212,7 +212,7 @@ AI 개발 환경 · AI 모델 학습 · AI 모델 서빙 · AI 워크로드 최�
 
 | 제품 | 분류 | 설명 | 링크 |
 |---|---|---|---|
-| **OAP Security** | Ontology Agent Platform | 보안 데이터를 온톨로지로 연결해 조치 우선순위를 제시하는 AI 에이전트입니다. 온프레미스 LLM을 GenWorks가 구성한 GPU 자원 위에서 운영합니다. | `genworks-oap.html` |
+| **AgentOn Security** | Ontology Agent Platform | 보안 데이터를 온톨로지로 연결해 조치 우선순위를 제시하는 AI 에이전트입니다. 온프레미스 LLM을 GenWorks가 구성한 GPU 자원 위에서 운영합니다. | `genworks-oap.html` |
 | **AI Infrastructure** | GPU · Kubernetes · Slurm | GPU 인프라 설계·구축·운영 사업. 제품 도입과 함께 인프라까지 맡습니다. | `../company/business.html#ai-infrastructure` |
 
 ## 12 CTA

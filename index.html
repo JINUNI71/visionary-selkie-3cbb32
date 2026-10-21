@@ -41,59 +41,73 @@
     <div class="sw-menu" id="menu-products" role="group" aria-label="제품 하위 메뉴">
       <button class="sw-menu__close" type="button" aria-label="하위 메뉴 닫기"><span class="sw-menu__close-icon" aria-hidden="true"></span></button>
       <div class="sw-container sw-menu__cols">
-        <div class="sw-menu__col">
-          <span class="sw-menu__group overline">01 AI</span>
-          <div class="sw-menu__subcols sw-menu__subcols--one">
+        <div class="sw-menu__col sw-menu__col--full">
+          <div class="sw-menu__subcols sw-menu__subcols--four">
             <div class="sw-menu__subcol">
-              <span class="sw-menu__subgroup overline-sm">Private AI Cloud</span>
-              <a class="sw-menu__link" href="products/broadcom-vmware.html">
-                <span class="sw-menu__label proof">Broadcom Private AI</span>
-                <span class="sw-menu__sub caption">Private Cloud Platform</span>
-              </a>
-              <span class="sw-menu__subgroup overline-sm">Security</span>
-              <a class="sw-menu__link" href="products/genworks-oap.html">
-                <span class="sw-menu__label proof">OAP Security</span>
-                <span class="sw-menu__sub caption">Ontology Agent Platform</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="sw-menu__col sw-menu__col--xwide">
-          <span class="sw-menu__group overline">02 Infrastructure</span>
-          <div class="sw-menu__subcols sw-menu__subcols--three">
-            <div class="sw-menu__subcol">
-              <span class="sw-menu__subgroup overline-sm">GPU Management</span>
+              <span class="sw-menu__subgroup overline-sm">AI Infra Platform</span>
               <a class="sw-menu__link" href="products/genworks-rp.html">
                 <span class="sw-menu__label proof">GenWorks</span>
-                <span class="sw-menu__sub caption">GPU Cluster Management Platform</span>
+                <span class="sw-menu__sub caption">GPU Cluster Management &amp; AIOps Platform</span>
+              </a>
+              <a class="sw-menu__link" href="products/broadcom-vmware.html">
+                <span class="sw-menu__label proof">Broadcom Private AI</span>
+                <span class="sw-menu__sub caption">Private AI Infrastructure Platform</span>
+              </a>
+              <span class="sw-menu__subgroup overline-sm">AI Service Platform</span>
+              <div class="sw-menu__item">
+                <span class="sw-menu__label proof">AgentOn</span>
+                <span class="sw-menu__sub caption">Ontology Agent Platform</span>
+              </div>
+            </div>
+            <div class="sw-menu__subcol">
+              <span class="sw-menu__subgroup overline-sm">Cloud Platform</span>
+              <div class="sw-menu__item">
+                <span class="sw-menu__label proof">VMware vSphere Foundation (VVF)</span>
+                <span class="sw-menu__sub caption">Enterprise Virtualization &amp; Infrastructure Platform</span>
+              </div>
+              <div class="sw-menu__item">
+                <span class="sw-menu__label proof">VMware Cloud Foundation (VCF)</span>
+                <span class="sw-menu__sub caption">Full-stack Private Cloud Infrastructure &amp; Management Platform</span>
+              </div>
+              <div class="sw-menu__item">
+                <span class="sw-menu__label proof">VMware vSphere Kubernetes Service (VKS)</span>
+                <span class="sw-menu__sub caption">VMware Kubernetes Deployment &amp; Management Platform</span>
+              </div>
+              <a class="sw-menu__link" href="products/cloud-v.html">
+                <span class="sw-menu__label proof">CloudV</span>
+                <span class="sw-menu__sub caption">Integrated Virtualization Management &amp; Self-Service Portal</span>
               </a>
             </div>
             <div class="sw-menu__subcol">
-              <span class="sw-menu__subgroup overline-sm">Virtual Desktop &amp; Apps</span>
+              <span class="sw-menu__subgroup overline-sm">Desktop Virtualization</span>
               <a class="sw-menu__link" href="products/omnissa-horizon.html">
                 <span class="sw-menu__label proof">Omnissa Horizon</span>
-                <span class="sw-menu__sub caption">Digital Workspace</span>
+                <span class="sw-menu__sub caption">Virtual Desktop &amp; Application Delivery Platform</span>
               </a>
               <a class="sw-menu__link" href="products/cloudx.html">
                 <span class="sw-menu__label proof">CloudX</span>
-                <span class="sw-menu__sub caption">VDI Platform</span>
+                <span class="sw-menu__sub caption">Enterprise Desktop Virtualization Platform</span>
               </a>
-              <span class="sw-menu__subgroup overline-sm">Virtualization Management</span>
-              <a class="sw-menu__link" href="products/cloud-v.html">
-                <span class="sw-menu__label proof">CloudV</span>
-                <span class="sw-menu__sub caption">Virtualization Management Portal</span>
-              </a>
-            </div>
-            <div class="sw-menu__subcol">
-              <span class="sw-menu__subgroup overline-sm">Data Protection &amp; Recovery</span>
+              <span class="sw-menu__subgroup overline-sm">Backup &amp; Recovery</span>
               <a class="sw-menu__link" href="products/veeam.html">
                 <span class="sw-menu__label proof">Veeam</span>
-                <span class="sw-menu__sub caption">Data Protection</span>
+                <span class="sw-menu__sub caption">Enterprise Backup, Recovery &amp; Data Protection Platform</span>
               </a>
               <a class="sw-menu__link" href="products/zerto.html">
                 <span class="sw-menu__label proof">Zerto</span>
-                <span class="sw-menu__sub caption">Disaster Recovery</span>
+                <span class="sw-menu__sub caption">Continuous Data Protection &amp; Disaster Recovery Platform</span>
               </a>
+            </div>
+            <div class="sw-menu__subcol">
+              <span class="sw-menu__subgroup overline-sm">Security Platform</span>
+              <a class="sw-menu__link" href="products/genworks-oap.html">
+                <span class="sw-menu__label proof">AgentOn Security</span>
+                <span class="sw-menu__sub caption">AI Security Domain Service</span>
+              </a>
+              <div class="sw-menu__item">
+                <span class="sw-menu__label proof">SecuWorks</span>
+                <span class="sw-menu__sub caption">Security Process Management Platform</span>
+              </div>
             </div>
           </div>
         </div>
@@ -145,46 +159,64 @@
       <div class="sw-msec">
         <button class="sw-mtop" type="button" aria-expanded="false" aria-controls="m-products">Products<span class="sw-mtop__mark" aria-hidden="true">+</span></button>
         <div class="sw-mpanel" id="m-products">
-          <span class="sw-mgroup overline">01 AI</span>
-          <span class="sw-msubgroup overline-sm">Private AI Cloud</span>
-          <a class="sw-mlink" href="products/broadcom-vmware.html">
-            <span class="sw-menu__label proof">Broadcom Private AI</span>
-            <span class="sw-menu__sub caption">Private Cloud Platform</span>
-          </a>
-          <span class="sw-msubgroup overline-sm">Security</span>
-          <a class="sw-mlink" href="products/genworks-oap.html">
-            <span class="sw-menu__label proof">OAP Security</span>
-            <span class="sw-menu__sub caption">Ontology Agent Platform</span>
-          </a>
-          <span class="sw-mgroup overline">02 Infrastructure</span>
-          <span class="sw-msubgroup overline-sm">GPU Management</span>
+          <span class="sw-msubgroup overline-sm">AI Infra Platform</span>
           <a class="sw-mlink" href="products/genworks-rp.html">
             <span class="sw-menu__label proof">GenWorks</span>
-            <span class="sw-menu__sub caption">GPU Cluster Management Platform</span>
+            <span class="sw-menu__sub caption">GPU Cluster Management &amp; AIOps Platform</span>
           </a>
-          <span class="sw-msubgroup overline-sm">Virtual Desktop &amp; Apps</span>
+          <a class="sw-mlink" href="products/broadcom-vmware.html">
+            <span class="sw-menu__label proof">Broadcom Private AI</span>
+            <span class="sw-menu__sub caption">Private AI Infrastructure Platform</span>
+          </a>
+          <span class="sw-msubgroup overline-sm">AI Service Platform</span>
+          <div class="sw-mitem">
+            <span class="sw-menu__label proof">AgentOn</span>
+            <span class="sw-menu__sub caption">Ontology Agent Platform</span>
+          </div>
+          <span class="sw-msubgroup overline-sm">Cloud Platform</span>
+          <div class="sw-mitem">
+            <span class="sw-menu__label proof">VMware vSphere Foundation (VVF)</span>
+            <span class="sw-menu__sub caption">Enterprise Virtualization &amp; Infrastructure Platform</span>
+          </div>
+          <div class="sw-mitem">
+            <span class="sw-menu__label proof">VMware Cloud Foundation (VCF)</span>
+            <span class="sw-menu__sub caption">Full-stack Private Cloud Infrastructure &amp; Management Platform</span>
+          </div>
+          <div class="sw-mitem">
+            <span class="sw-menu__label proof">VMware vSphere Kubernetes Service (VKS)</span>
+            <span class="sw-menu__sub caption">VMware Kubernetes Deployment &amp; Management Platform</span>
+          </div>
+          <a class="sw-mlink" href="products/cloud-v.html">
+            <span class="sw-menu__label proof">CloudV</span>
+            <span class="sw-menu__sub caption">Integrated Virtualization Management &amp; Self-Service Portal</span>
+          </a>
+          <span class="sw-msubgroup overline-sm">Desktop Virtualization</span>
           <a class="sw-mlink" href="products/omnissa-horizon.html">
             <span class="sw-menu__label proof">Omnissa Horizon</span>
-            <span class="sw-menu__sub caption">Digital Workspace</span>
+            <span class="sw-menu__sub caption">Virtual Desktop &amp; Application Delivery Platform</span>
           </a>
           <a class="sw-mlink" href="products/cloudx.html">
             <span class="sw-menu__label proof">CloudX</span>
-            <span class="sw-menu__sub caption">VDI Platform</span>
+            <span class="sw-menu__sub caption">Enterprise Desktop Virtualization Platform</span>
           </a>
-          <span class="sw-msubgroup overline-sm">Virtualization Management</span>
-          <a class="sw-mlink" href="products/cloud-v.html">
-            <span class="sw-menu__label proof">CloudV</span>
-            <span class="sw-menu__sub caption">Virtualization Management Portal</span>
-          </a>
-          <span class="sw-msubgroup overline-sm">Data Protection &amp; Recovery</span>
+          <span class="sw-msubgroup overline-sm">Backup &amp; Recovery</span>
           <a class="sw-mlink" href="products/veeam.html">
             <span class="sw-menu__label proof">Veeam</span>
-            <span class="sw-menu__sub caption">Data Protection</span>
+            <span class="sw-menu__sub caption">Enterprise Backup, Recovery &amp; Data Protection Platform</span>
           </a>
           <a class="sw-mlink" href="products/zerto.html">
             <span class="sw-menu__label proof">Zerto</span>
-            <span class="sw-menu__sub caption">Disaster Recovery</span>
+            <span class="sw-menu__sub caption">Continuous Data Protection &amp; Disaster Recovery Platform</span>
           </a>
+          <span class="sw-msubgroup overline-sm">Security Platform</span>
+          <a class="sw-mlink" href="products/genworks-oap.html">
+            <span class="sw-menu__label proof">AgentOn Security</span>
+            <span class="sw-menu__sub caption">AI Security Domain Service</span>
+          </a>
+          <div class="sw-mitem">
+            <span class="sw-menu__label proof">SecuWorks</span>
+            <span class="sw-menu__sub caption">Security Process Management Platform</span>
+          </div>
         </div>
       </div>
       <div class="sw-msec">
@@ -275,7 +307,8 @@
   </section>
 
   <!-- 업무 영역 — 여섯 분야와 세부 항목은 사업영역(company/business.html) 의 "소프트웍스의 사업분야"에서
-       그대로 옮겼습니다. 랜딩은 요약이라 분야마다 강점 한 줄과 항목 한 줄만 두고, 항목 전체는 사업영역 쪽에 둡니다.
+       그대로 옮겼습니다. 분야마다 강점 키메시지 한 줄, 근거 두 문장, 항목 한 줄을 둡니다.
+       근거는 사업영역의 'Our Strengths'(사업실적 자료 2026.05 2쪽)에서 가져왔습니다.
        칸 구성(위쪽 띠·번호·이름·한 줄·설명·롤오버 반전)은 바로 위 4계층과 같게 맞추고,
        띠 색은 같은 수치 밴드 그라디언트(stat-grad-4 → stat-grad-1)에서 뽑았습니다. -->
   <section class="sw-section" aria-labelledby="areas-title">
@@ -289,37 +322,43 @@
         <div class="sw-areabox">
           <div class="sw-areabox__label heading-lg">01</div>
           <div class="sw-areabox__name product-name">AI</div>
-          <p class="sw-areabox__key body-row">업무를 아는 Agent를 만듭니다</p>
+          <p class="sw-areabox__key body-row">쓰는 사람의 업무를 아는 Agent를 만듭니다</p>
+          <p class="sw-areabox__note caption">표준 도메인 Agent를 기업 업무에 맞춰 구현합니다. 데이터·인프라 진단부터 구축·운영·개선까지 한 팀이 이어서 맡습니다.</p>
           <p class="sw-areabox__items caption">AI 기반 시스템 구축·운영 · 데이터·인프라 연계 AI 진단</p>
         </div>
         <div class="sw-areabox">
           <div class="sw-areabox__label heading-lg">02</div>
           <div class="sw-areabox__name product-name">Infrastructure</div>
           <p class="sw-areabox__key body-row">15년 운영해 본 손으로 설계합니다</p>
+          <p class="sw-areabox__note caption">SK텔레콤 IDC 3개 국사와 T월드·T우주를 10년 운영했습니다. 6년 연속 최우수 파트너로, 운영해 본 범위 안에서 설계합니다.</p>
           <p class="sw-areabox__items caption">서버 가상화 · GPU 인프라 · IDC 운영</p>
         </div>
         <div class="sw-areabox">
           <div class="sw-areabox__label heading-lg">03</div>
           <div class="sw-areabox__name product-name">Platform</div>
           <p class="sw-areabox__key body-row">플랫폼을 사다 쓰지 않고 직접 만듭니다</p>
+          <p class="sw-areabox__note caption">AI 인프라 플랫폼과 AI Agent 플랫폼을 자체 개발했습니다. GPU·Kubernetes·Slurm 테스트베드에서 검증한 뒤 현장에 올립니다.</p>
           <p class="sw-areabox__items caption">온톨로지 보안 · Kubernetes 서비스 · AI Cloud · AI DevOps</p>
         </div>
         <div class="sw-areabox">
           <div class="sw-areabox__label heading-lg">04</div>
           <div class="sw-areabox__name product-name">Consulting</div>
           <p class="sw-areabox__key body-row">구축까지 맡는 사람이 설계합니다</p>
+          <p class="sw-areabox__note caption">제안을 쓴 팀이 구축과 운영까지 이어 맡습니다. 금융·공공 현장에서 쌓은 아키텍처 경험 안에서 판단합니다.</p>
           <p class="sw-areabox__items caption">GPU 인프라 · AI 도입 · 클라우드 전략 · IT 아키텍처</p>
         </div>
         <div class="sw-areabox">
           <div class="sw-areabox__label heading-lg">05</div>
           <div class="sw-areabox__name product-name">SI</div>
           <p class="sw-areabox__key body-row">보안·서비스·업무 시스템을 한 팀이 엮습니다</p>
+          <p class="sw-areabox__note caption">SK그룹·현대자동차그룹 보안 시스템을 10년간 구축·고도화했습니다. 모바일 앱부터 보안 관리 시스템까지 한 계약으로 묶습니다.</p>
           <p class="sw-areabox__items caption">보안 시스템 · 서비스 개발 · AI 서비스 · 업무 시스템 구축</p>
         </div>
         <div class="sw-areabox">
           <div class="sw-areabox__label heading-lg">06</div>
           <div class="sw-areabox__name product-name">SM</div>
           <p class="sw-areabox__key body-row">구축한 팀이 그대로 운영합니다</p>
+          <p class="sw-areabox__note caption">대규모 서비스 DevOps와 IDC 운영을 함께 맡습니다. IT품질센터 기준으로 솔루션 유지보수 품질까지 관리합니다.</p>
           <p class="sw-areabox__items caption">서비스 운영 · 보안 운영 · 인프라 · 솔루션 유지보수</p>
         </div>
       </div>
@@ -422,90 +461,112 @@
     </div>
   </section>
 
-  <!-- ProductList — 01 AI -->
+  <!-- ProductList — 제품 카테고리 6개 -->
   <section class="sw-products" id="products" aria-labelledby="products-title">
     <div class="sw-container">
       <div class="sw-section-intro">
-        <span class="sw-eyebrow sw-eyebrow--light">AI</span>
-        <h2 class="sw-h2" id="products-title">기업 안에서 운영하는 AI 플랫폼</h2>
-        <p class="sw-section-intro__text">프라이빗 AI 환경과 온톨로지 기반 AI 에이전트. 데이터를 밖으로 내보내지 않고, 기업의 인프라 위에서 AI를 운영합니다.</p>
+        <span class="sw-eyebrow sw-eyebrow--light">Products</span>
+        <h2 class="sw-h2" id="products-title">AI부터 클라우드·보안까지, 기업 IT를 받치는 플랫폼</h2>
+        <p class="sw-section-intro__text">AI 인프라와 AI 서비스, 클라우드와 데스크톱 가상화, 백업·복구와 보안. 소프트웍스가 만든 제품과 글로벌 벤더의 솔루션을 직접 구축하고 운영합니다.</p>
       </div>
       <div class="sw-products__list">
-        <div class="sw-subcat overline-sm">Private AI Cloud</div>
-        <a class="sw-product" href="products/broadcom-vmware.html">
-          <div class="sw-product__meta">
-            <div class="sw-product__name">Broadcom Private AI</div>
-            <div class="sw-product__cat">Private Cloud Platform</div>
-          </div>
-          <p class="sw-product__text">VMware 기반 프라이빗 클라우드를 설계·구축합니다. 기존 가상화 환경을 이어 쓰면서 운영 체계를 표준화합니다.</p>
-        </a>
-        <div class="sw-subcat overline-sm">Security</div>
-        <a class="sw-product" href="products/genworks-oap.html">
-          <div class="sw-product__meta">
-            <div class="sw-product__name">OAP Security</div>
-            <div class="sw-product__cat">Ontology Agent Platform</div>
-          </div>
-          <p class="sw-product__text">온톨로지 기반 보안 추론 에이전트. 위협과 자산의 관계를 구조화해 판단합니다.</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ProductList — 02 Infrastructure -->
-  <section class="sw-products" aria-labelledby="portfolio-title">
-    <div class="sw-container">
-      <div class="sw-section-intro">
-        <span class="sw-eyebrow sw-eyebrow--light">Infrastructure</span>
-        <h2 class="sw-h2" id="portfolio-title">AI와 업무를 받치는 인프라 플랫폼</h2>
-        <p class="sw-section-intro__text">GPU 자원 플랫폼과 가상화, 디지털 워크스페이스, 데이터 보호와 재해복구. 소프트웍스가 만든 제품과 글로벌 벤더의 솔루션을 직접 구축하고 운영합니다.</p>
-      </div>
-      <div class="sw-products__list">
-        <div class="sw-subcat overline-sm">GPU Management</div>
+        <div class="sw-subcat overline-sm">AI Infra Platform</div>
         <a class="sw-product" href="products/genworks-rp.html">
           <div class="sw-product__meta">
             <div class="sw-product__name">GenWorks</div>
-            <div class="sw-product__cat">GPU Cluster Management Platform</div>
+            <div class="sw-product__cat">GPU Cluster Management &amp; AIOps Platform</div>
           </div>
           <p class="sw-product__text">GPU 클러스터 구축·가상화·공유·관리. 대규모 GPU 자원을 워크로드에 맞게 나누고 운영합니다.</p>
         </a>
-        <div class="sw-subcat overline-sm">Virtual Desktop &amp; Apps</div>
+        <a class="sw-product" href="products/broadcom-vmware.html">
+          <div class="sw-product__meta">
+            <div class="sw-product__name">Broadcom Private AI</div>
+            <div class="sw-product__cat">Private AI Infrastructure Platform</div>
+          </div>
+          <p class="sw-product__text">VMware 기반 프라이빗 클라우드를 설계·구축합니다. 기존 가상화 환경을 이어 쓰면서 운영 체계를 표준화합니다.</p>
+        </a>
+        <div class="sw-subcat overline-sm">AI Service Platform</div>
+        <div class="sw-product sw-product--soon">
+          <div class="sw-product__meta">
+            <div class="sw-product__name">AgentOn</div>
+            <div class="sw-product__cat">Ontology Agent Platform</div>
+          </div>
+          <p class="sw-product__text">온톨로지 기반 AI 에이전트 플랫폼. 기업 데이터와 업무의 관계를 구조화하고, 에이전트가 맥락에 맞게 분석·판단합니다.</p>
+        </div>
+        <div class="sw-subcat overline-sm">Cloud Platform</div>
+        <div class="sw-product sw-product--soon">
+          <div class="sw-product__meta">
+            <div class="sw-product__name">VMware vSphere Foundation (VVF)</div>
+            <div class="sw-product__cat">Enterprise Virtualization &amp; Infrastructure Platform</div>
+          </div>
+          <p class="sw-product__text">vSphere 기반 엔터프라이즈 가상화 인프라를 구축합니다. 컴퓨팅·스토리지 가상화와 운영 관리를 하나의 기반으로 묶습니다.</p>
+        </div>
+        <div class="sw-product sw-product--soon">
+          <div class="sw-product__meta">
+            <div class="sw-product__name">VMware Cloud Foundation (VCF)</div>
+            <div class="sw-product__cat">Full-stack Private Cloud Infrastructure &amp; Management Platform</div>
+          </div>
+          <p class="sw-product__text">컴퓨팅·스토리지·네트워크·관리를 통합한 풀스택 프라이빗 클라우드를 설계·구축하고 운영합니다.</p>
+        </div>
+        <div class="sw-product sw-product--soon">
+          <div class="sw-product__meta">
+            <div class="sw-product__name">VMware vSphere Kubernetes Service (VKS)</div>
+            <div class="sw-product__cat">VMware Kubernetes Deployment &amp; Management Platform</div>
+          </div>
+          <p class="sw-product__text">vSphere 위에 Kubernetes 클러스터를 배포·관리합니다. 가상머신과 컨테이너 워크로드를 같은 인프라에서 운영합니다.</p>
+        </div>
+        <a class="sw-product" href="products/cloud-v.html">
+          <div class="sw-product__meta">
+            <div class="sw-product__name">CloudV</div>
+            <div class="sw-product__cat">Integrated Virtualization Management &amp; Self-Service Portal</div>
+          </div>
+          <p class="sw-product__text">가상화 인프라 구축·관리. 자원을 유연하게 배분하는 운영 기반을 제공합니다.</p>
+        </a>
+        <div class="sw-subcat overline-sm">Desktop Virtualization</div>
         <a class="sw-product" href="products/omnissa-horizon.html">
           <div class="sw-product__meta">
             <div class="sw-product__name">Omnissa Horizon</div>
-            <div class="sw-product__cat">Digital Workspace</div>
+            <div class="sw-product__cat">Virtual Desktop &amp; Application Delivery Platform</div>
           </div>
           <p class="sw-product__text">Horizon으로 디지털 워크스페이스를 구성합니다. 어디서 접속하든 같은 업무 환경을 제공합니다.</p>
         </a>
         <a class="sw-product" href="products/cloudx.html">
           <div class="sw-product__meta">
             <div class="sw-product__name">CloudX</div>
-            <div class="sw-product__cat">VDI Platform</div>
+            <div class="sw-product__cat">Enterprise Desktop Virtualization Platform</div>
           </div>
           <p class="sw-product__text">VDI 플랫폼을 구축·운영합니다. 데스크톱 자원을 중앙에서 배분하고 관리합니다.</p>
         </a>
-        <div class="sw-subcat overline-sm">Virtualization Management</div>
-        <a class="sw-product" href="products/cloud-v.html">
-          <div class="sw-product__meta">
-            <div class="sw-product__name">CloudV</div>
-            <div class="sw-product__cat">Virtualization Management Portal</div>
-          </div>
-          <p class="sw-product__text">가상화 인프라 구축·관리. 자원을 유연하게 배분하는 운영 기반을 제공합니다.</p>
-        </a>
-        <div class="sw-subcat overline-sm">Data Protection &amp; Recovery</div>
+        <div class="sw-subcat overline-sm">Backup &amp; Recovery</div>
         <a class="sw-product" href="products/veeam.html">
           <div class="sw-product__meta">
             <div class="sw-product__name">Veeam</div>
-            <div class="sw-product__cat">Data Protection</div>
+            <div class="sw-product__cat">Enterprise Backup, Recovery &amp; Data Protection Platform</div>
           </div>
           <p class="sw-product__text">가상화·클라우드 환경의 백업을 설계합니다. 복구 목표에 맞춰 보관 주기와 범위를 정합니다.</p>
         </a>
         <a class="sw-product" href="products/zerto.html">
           <div class="sw-product__meta">
             <div class="sw-product__name">Zerto</div>
-            <div class="sw-product__cat">Disaster Recovery</div>
+            <div class="sw-product__cat">Continuous Data Protection &amp; Disaster Recovery Platform</div>
           </div>
           <p class="sw-product__text">지속 복제 기반의 재해복구를 구성합니다. 장애 시 전환과 복귀 절차를 함께 준비합니다.</p>
         </a>
+        <div class="sw-subcat overline-sm">Security Platform</div>
+        <a class="sw-product" href="products/genworks-oap.html">
+          <div class="sw-product__meta">
+            <div class="sw-product__name">AgentOn Security</div>
+            <div class="sw-product__cat">AI Security Domain Service</div>
+          </div>
+          <p class="sw-product__text">온톨로지 기반 보안 추론 에이전트. 위협과 자산의 관계를 구조화해 판단합니다.</p>
+        </a>
+        <div class="sw-product sw-product--soon">
+          <div class="sw-product__meta">
+            <div class="sw-product__name">SecuWorks</div>
+            <div class="sw-product__cat">Security Process Management Platform</div>
+          </div>
+          <p class="sw-product__text">보안 점검과 취약점 조치, 예외·유예 승인까지 보안 업무 프로세스를 하나의 체계에서 관리합니다.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -513,9 +574,9 @@
   <!-- CtaSection -->
   <section class="sw-cta" aria-labelledby="cta-title">
     <div class="sw-container sw-cta__stack">
-      <h2 class="sw-cta__title" id="cta-title">인프라부터 에이전트까지, 지금 시작하세요</h2>
-      <p class="sw-cta__text">사업 규모와 보안 요구사항에 맞춰 적합한 계층부터 설계를 시작합니다.</p>
-      <div><a class="sw-btn sw-btn--filled" href="company/contact.html">도입 문의 →</a></div>
+      <h2 class="sw-cta__title" id="cta-title">기업의 AI 전환, 어디서부터 시작할지 고민이신가요?</h2>
+      <p class="sw-cta__text">인프라 설계부터 솔루션 도입, AI 플랫폼 구축·운영까지, 기업의 환경과 요구사항에 맞는 방안을 함께 찾아갑니다.</p>
+      <div><a class="sw-btn sw-btn--filled" href="company/contact.html">도입·컨설팅 문의 →</a></div>
     </div>
   </section>
 

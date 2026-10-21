@@ -1,9 +1,9 @@
-# 제품 상세 — OAP Security
+# 제품 상세 — AgentOn Security
 
 > 현행 페이지 기준 문서 · 페이지 `products/genworks-oap.html` · 2026-10-15 동기화
 > 이 페이지는 생성 스크립트 없이 HTML로 직접 관리합니다. 페이지 문구를 고치면 이 문서도 함께 고칩니다.
 
-`ONTOLOGY AGENT PLATFORM` · OAP Security
+`ONTOLOGY AGENT PLATFORM` · AgentOn Security
 
 ## 01 HERO
 
@@ -29,7 +29,7 @@
 | **05** 보안 관리 사각지대 | **내가 관리해야 할 자산과 보안 점검 대상, 정확히 파악하고 있을까요?** 자산과 담당자 정보가 일치하지 않거나 최신 상태로 관리되지 않으면 점검 대상이나 조치해야 할 취약점을 놓칠 수 있습니다. | **자산 정보의 불일치로 중요한 보안 위험을 놓치고 있지는 않을까요?** 자산·정보시스템·담당자 간 정보 불일치와 누락으로 보안 점검 대상이 잘못 식별되거나 위험 관리의 사각지대가 발생할 수 있습니다. |
 | **06** 보안 업무 문의 및 응대 | **보안 업무 문의, 언제까지 담당자의 답변을 기다려야 할까요?** 보안 점검 기준과 조치 방법, 예외·유예 신청 절차 등을 확인하려면 담당자에게 문의해야 하지만, 답변이 지연되면 업무 진행에도 차질이 발생할 수 있습니다. | **반복되는 보안 업무 문의, 일일이 답변해야 할까요?** 제한된 보안 운영 인력으로 다양한 문의에 대응해야 하므로 반복적인 안내 업무에 시간이 소요되고, 중요한 보안 관리 업무에 집중하기 어렵습니다. |
 
-## 03 Why OAP Security
+## 03 Why AgentOn Security
 
 **보안 업무는 더 빠르게, 위험 판단은 더 정확하게**
 
@@ -68,7 +68,7 @@
 
 **기존 보안 데이터를 연결하여, AI의 분석과 판단을 더합니다**
 
-*도식 — 원본 소개 페이지 CONCEPTUAL ARCHITECTURE의 SVG를 페이지에 그대로 옮김 (색·도형·화살표 유지, 플랫폼 표기만 OAP Security로 변경)*
+*도식 — 원본 소개 페이지 CONCEPTUAL ARCHITECTURE의 SVG를 페이지에 그대로 옮김 (색·도형·화살표 유지, 플랫폼 표기만 AgentOn Security로 변경)*
 
 | 영역 | 구성 |
 |---|---|
@@ -76,10 +76,10 @@
 | **LEGACY SYSTEMS** | IT 자산 관리 · 서비스 보안 관리 · 취약점 진단 · 인프라 보안 관리 · 인사·조직 관리 · 보안정책 컴플라이언스 |
 | **EXTERNAL SECURITY DATA** | NVD (CVE) · CISA KEV · EPSS |
 | **INTEGRATION** | MCP Server · Tools — 보안 데이터 연계(API · DB · File) / 분석·추론 결과 제공(우선순위 · 판단 근거 · 조치 제안) |
-| **ONTOLOGY AGENT PLATFORM** · OAP Security | AI AGENT(위험 분석 · 우선순위 · 판단 근거) · ONTOLOGY(관계 · 맥락 모델) · DATA FABRIC(연결 · 동기화 · 매핑 · 자동화) |
+| **ONTOLOGY AGENT PLATFORM** · AgentOn Security | AI AGENT(위험 분석 · 우선순위 · 판단 근거) · ONTOLOGY(관계 · 맥락 모델) · DATA FABRIC(연결 · 동기화 · 매핑 · 자동화) |
 | **LLM** (Inference API) | Reference LLM · Customer LLM |
 
-흐름: 기존 시스템 → 기존 데이터 · 기능 활용 → 보안 업무 프로세스 / OAP Security → 분석 · 추론 결과 활용 → 보안 업무 프로세스
+흐름: 기존 시스템 → 기존 데이터 · 기능 활용 → 보안 업무 프로세스 / AgentOn Security → 분석 · 추론 결과 활용 → 보안 업무 프로세스
 
 > 원천 시스템의 데이터 구조에 종속되지 않고, 수집 데이터를 Ontology 객체와 관계로 매핑합니다.
 
@@ -108,8 +108,8 @@ OAP Console과 Inference API를 통해 AI 기반 보안 분석 서비스를 제�
 
 | # | 기능 | 설명 |
 |---|---|---|
-| 01 | **System Inference API** — 외부 시스템 연계용 AI 추론 API | 레거시 및 외부 시스템에서 OAP Security의 AI 분석·추론 기능을 호출할 수 있는 시스템 연계 API |
-| 02 | **User Inference API** — 허가된 사용자를 위한 AI 추론 API | 접근 권한이 부여된 사용자가 로컬 PC의 개발·분석 환경에서 OAP Security의 AI 분석·추론 기능을 직접 호출할 수 있는 사용자용 API |
+| 01 | **System Inference API** — 외부 시스템 연계용 AI 추론 API | 레거시 및 외부 시스템에서 AgentOn Security의 AI 분석·추론 기능을 호출할 수 있는 시스템 연계 API |
+| 02 | **User Inference API** — 허가된 사용자를 위한 AI 추론 API | 접근 권한이 부여된 사용자가 로컬 PC의 개발·분석 환경에서 AgentOn Security의 AI 분석·추론 기능을 직접 호출할 수 있는 사용자용 API |
 
 #### HUMAN REVIEW | AI 판단 검토
 
@@ -176,13 +176,13 @@ Standard GPU부터 고성능 Data Center GPU까지, 업무 규모에 맞게 구�
 
 지금 쓰고 있는 보안관리시스템 그대로, 데이터를 연결하면 무엇이 달라지는지 보여드립니다.
 
-`데모 신청 →` `PoC 문의 →` — 둘 다 도입문의 메일(sales@softworks.co.kr)로 연결, 제목 "[OAP Security] 데모 신청" / "[OAP Security] PoC 문의"
+`데모 신청 →` `PoC 문의 →` — 둘 다 도입문의 메일(sales@softworks.co.kr)로 연결, 제목 "[AgentOn Security] 데모 신청" / "[AgentOn Security] PoC 문의"
 
 ---
 
 ## 출처 · 확인 메모
 
-> 원본: OAP Security Security 소개 페이지(Main.dc.html). 콘텐츠 구성만 참조했고, 화면 디자인과 도식은 옮기지 않았습니다.
+> 원본: AgentOn Security Security 소개 페이지(Main.dc.html). 콘텐츠 구성만 참조했고, 화면 디자인과 도식은 옮기지 않았습니다.
 > 원본에 없는 블록(Field Issues의 '답' 열 일부 · FAQ · Related · CTA)은 원본 내용만으로 작성했습니다.
 
 - 사례의 CVE 번호(CVE-2026-21510, CVE-2026-59310)와 제품명(vCenter)은 원본에서 예시로 쓰였으나, 실제 취약점으로 오인될 수 있어 페이지에서는 빼고 "실제 악용 확인 긴급 취약점", "가상화 관리 제품"으로 썼습니다.
