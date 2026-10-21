@@ -11,7 +11,8 @@
 #      md/Product/ 의 CARD 01~05 문서로 솔루션 상세 페이지(products/*.html)를 만듭니다
 #   1. dist/ 를 비우고 HTML과 assets 만 새로 복사합니다 (md/ 등 내부 문서는 제외)
 #   2. 검토용이면 각 페이지에 noindex 를 넣고 robots.txt 로 수집을 막습니다
-#   3. 링크가 실제 파일을 가리키는지 확인합니다
+#   3. CSS·JS 주소 뒤에 내용 기반 꼬리표(?v=…)를 붙여, 고친 파일을 브라우저가 바로 새로 받게 합니다
+#      링크가 실제 파일을 가리키는지 확인합니다
 #   4. softworks-homepage.zip 으로 묶습니다
 #
 set -euo pipefail
@@ -78,6 +79,35 @@ for p in sorted(glob.glob(os.path.join(out, "**", "*.html"), recursive=True)):
     io.open(p, "w", encoding="utf-8").write(s.replace(anchor, anchor + tag, 1))
 PY
 fi
+
+echo "▸ CSS·JS 에 버전 꼬리표를 붙입니다 (브라우저 캐시 대비)"
+python3 - "$OUT" <<'PY'
+import hashlib, io, os, re, sys, glob
+out = sys.argv[1]
+cache = {}
+def tag(path):
+    if path not in cache:
+        cache[path] = hashlib.md5(open(path, "rb").read()).hexdigest()[:8]
+    return cache[path]
+pat = re.compile(r'((?:href|src)=")([^"?#]+\.(?:css|js))(")')
+count = [0]
+for p in sorted(glob.glob(os.path.join(out, "**", "*.html"), recursive=True)):
+    s = io.open(p, encoding="utf-8").read()
+    def rep(m):
+        url = m.group(2)
+        if url.startswith(("http:", "https:", "//")):
+            return m.group(0)
+        base = out if url.startswith("/") else os.path.dirname(p)
+        f = os.path.join(base, url.lstrip("/"))
+        if not os.path.isfile(f):
+            return m.group(0)
+        count[0] += 1
+        return m.group(1) + url + "?v=" + tag(f) + m.group(3)
+    t = pat.sub(rep, s)
+    if t != s:
+        io.open(p, "w", encoding="utf-8").write(t)
+print("  %d 곳에 꼬리표를 붙였습니다" % count[0])
+PY
 
 echo "▸ 링크를 확인합니다"
 python3 - "$OUT" <<'PY'
