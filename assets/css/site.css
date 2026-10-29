@@ -1911,3 +1911,10 @@ button.sw-navlink{border:0;background:none;font-family:var(--font-sans);cursor:p
    폭 제한 671px 에 27px 모자라 두 줄로 끊겼습니다. 720px 로 올려 한 줄에 둡니다.
    좁은 화면에서는 컨테이너 폭에 맞춰 자연스럽게 줄바꿈합니다. */
 .sw-hero--flush .sw-hero__title{max-width:720px}
+
+/* 4계층 카드 이름 — 04 가 "AI Infrastructure Automation" 으로 길어졌습니다.
+   16px 로는 1440px 에서도 215px 로 칸 안쪽(214px)을 1px 넘겨, 네 칸 모두 15px 로 내렸습니다(04 는 202px).
+   1280px 미만에서는 칸 안쪽이 177px 이하라 어떤 크기로도 한 줄에 못 들어가므로,
+   줄바꿈을 허용해 글자가 칸 밖으로 넘치지 않게 합니다. */
+.sw-card__name{font-size:15px;white-space:normal}
+@media (min-width:1280px){.sw-card__name{white-space:nowrap}}

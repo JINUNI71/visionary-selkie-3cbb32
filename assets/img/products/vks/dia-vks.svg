@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="912" height="412" viewBox="-6 -6 912 412" role="img" aria-label="Supervisor 위에 올라가는 Kubernetes 클러스터와 네임스페이스 경계">
+    <defs><style>
+      .l{font:600 10.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;letter-spacing:1.4px;fill:#80868b}
+      .t{font:600 13px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202124}
+      .s{font:400 11.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#5f6368}
+      .m{font:600 11px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#0f7b6c}
+      .k{fill:#fff;stroke:#dadce0;stroke-width:1}
+    </style></defs><rect x="-6" y="-6" width="912" height="412" fill="#ffffff"/>
+    <text x="0" y="14" class="l">vSPHERE 클러스터</text>
+    <rect x="0" y="22" width="900" height="306" fill="#f8f9fa" stroke="#dadce0" stroke-width="1"/>
+    <rect x="18" y="40" width="864" height="48" fill="#0f7b6c" opacity=".06"/>
+    <rect x="18" y="40" width="864" height="48" fill="none" stroke="#0f7b6c" stroke-width="1"/>
+    <text x="34" y="62" class="t" fill="#0f7b6c">Supervisor</text>
+    <text x="34" y="80" class="s">vSphere 자원을 네임스페이스 단위로 나누고, 그 안에 클러스터와 가상 머신을 배포합니다</text>
+    <g stroke="#0f7b6c" stroke-width="1" opacity=".4"><path d="M156 88v20M450 88v20M744 88v20"/></g>
+    <g fill="none" stroke="#dadce0" stroke-width="1" stroke-dasharray="4 4">
+      <rect x="18" y="108" width="276" height="198" rx="0"/><rect x="312" y="108" width="276" height="198" rx="0"/><rect x="606" y="108" width="276" height="198" rx="0"/></g>
+    <g class="m"><text x="34" y="130">Namespace — 개발팀</text><text x="328" y="130">Namespace — 운영 업무</text><text x="622" y="130">Namespace — 검증</text></g>
+    <g class="k"><rect x="34" y="142" width="244" height="48" rx="0"/><rect x="328" y="142" width="244" height="48" rx="0"/><rect x="622" y="142" width="244" height="48" rx="0"/><rect x="34" y="202" width="244" height="48" rx="0"/><rect x="328" y="202" width="244" height="48" rx="0"/><rect x="622" y="202" width="244" height="48" rx="0"/></g>
+    <g class="t"><text x="50" y="164">Kubernetes 클러스터</text><text x="344" y="164">Kubernetes 클러스터</text><text x="638" y="164">Kubernetes 클러스터</text></g>
+    <g class="s"><text x="50" y="181">지정한 릴리스 버전으로 노드 구성</text><text x="344" y="181">업무 서비스 · 고정 버전</text><text x="638" y="181">단기 생성 후 회수</text></g>
+    <g class="t"><text x="50" y="224">가상 머신 (VM Service)</text><text x="344" y="224">가상 머신 (VM Service)</text><text x="638" y="224">가상 머신 (VM Service)</text></g>
+    <g class="s"><text x="50" y="241">컨테이너로 옮기지 않는 워크로드</text><text x="344" y="241">기존 업무 서버</text><text x="638" y="241">시험용 인스턴스</text></g>
+    <g class="s"><text x="34" y="276">CPU · 메모리 · 스토리지 상한</text><text x="328" y="276">CPU · 메모리 · 스토리지 상한</text><text x="622" y="276">CPU · 메모리 · 스토리지 상한</text></g>
+    <g class="s"><text x="34" y="294">팀 단위 접근 권한</text><text x="328" y="294">운영 조직 접근 권한</text><text x="622" y="294">한시 접근 권한</text></g>
+    <text x="0" y="352" class="l">구축 전에 확정하는 항목</text>
+    <g class="k"><rect x="0" y="362" width="214" height="32" rx="0"/><rect x="229" y="362" width="214" height="32" rx="0"/><rect x="458" y="362" width="214" height="32" rx="0"/><rect x="686" y="362" width="214" height="32" rx="0"/></g>
+    <g class="s" text-anchor="middle"><text x="107" y="382">Supervisor 적용 클러스터</text><text x="336" y="382">네임스페이스 분할 기준</text><text x="565" y="382">버전 정책 · 업그레이드</text><text x="793" y="382">자원 상한 재조정</text></g>
+  </svg>

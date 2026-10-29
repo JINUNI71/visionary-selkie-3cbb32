@@ -49,7 +49,7 @@ VCF 도입 성공의 핵심은 가상화 계층은 물론, 그 위에서 동작�
 | **Design** | VMware Cloud Foundation 아키텍처 설계 · 관리·워크로드 도메인 분리 · vSAN 스토리지 정책 · NSX 네트워크·망분리 설계 · 백업/DR 연계 설계 |
 | **Build** | VCF Installer 기반 배포 · VCF Operations 표준 구성 · 보안 기준 적용 (CIS·기관 지침) · 성능 검증 |
 | **Migrate** | 기존 vSphere / 타 하이퍼바이저 전환 · 변환(Converge) · 편입(Import) 경로 판단 · V2V 마이그레이션 · 단계별 전환 계획 및 롤백 기준 |
-| **Handover** | 운영 인수인계 · 관리자 교육 · 정기 점검 체계 수립 · 기술 지원 체계 연결 |
+| **Operate** | 운영 인수인계 · 관리자 교육 · 정기 점검 체계 수립 · 기술 지원 체계 연결 |
 
 ## 04 Knowledge Base
 

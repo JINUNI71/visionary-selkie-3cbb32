@@ -112,6 +112,9 @@ RELATED_TEXT = {
     ("Veeam", "VMware Cloud Foundation"): "백업 트래픽을 반영한 프라이빗 클라우드 인프라를 함께 설계합니다.",
 }
 
+# Scope of Work 단계 이름 바꿔 쓰기 — md 가 다시 생성되어 옛 이름이 와도 화면에는 이 이름으로 냅니다 (2026.10.29).
+STEP_ALIAS = {"Handover": "Operate"}
+
 # Scope of Work 단계 이름 아래 붙는 한글 레이블
 STEP_KO = {"Assess": "진단", "Design": "설계", "Build": "구축", "Migrate": "전환", "Operate": "운영",
            "Handover": "이행", "Verify": "검증", "Drill": "훈련"}
@@ -505,6 +508,7 @@ def r_scope(doc, cfg, sec):
     out = []
     for r in rows:
         step = re.sub(r"\*\*", "", r[0])
+        step = STEP_ALIAS.get(step, step)
         out.append("""        <div class="sw-row">
           <div>
             <h3 class="sw-row__name product-name">%s</h3>

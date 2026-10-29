@@ -8,12 +8,13 @@
 *2026.10.19 개정 — 고객사 6곳 교체(8곳 추가·6곳 삭제), 기술 파트너사 5곳 삭제*
 *2026.10.19 개정 — 4계층 아래에 업무 영역(사업영역 여섯 분야) 추가, 이후 섹션 번호 한 칸씩 밀림*
 *2026.10.29 개정 — 히어로 제목·리드 교체, 업무 영역을 새 여섯 분야로 전면 교체*
+*2026.10.29 개정 — 눈썹을 Total AI Solution Provider 로, 4계층 04 를 AI Infrastructure Automation 으로 변경*
 
 ---
 
 ## 01 HERO
 
-## AI Total Solution Provider
+## Total AI Solution Provider
 
 ### 인프라의 깊이가 AI의 격을 만듭니다
 
@@ -50,7 +51,7 @@ IDC 운영 · 가상화 · 재해복구 · 엔터프라이즈 보안의 탄탄�
 
 - 기업 내 다양한 시스템과 데이터를 연결·통합하고, 온톨로지 기반으로 데이터의 의미와 관계를 체계화하여 AI Agent가 활용할 수 있는 데이터 기반을 제공합니다.
 
-**04 AI Infra Automation** — Provisioning · Virtualization · Orchestration
+**04 AI Infrastructure Automation** — Provisioning · Virtualization · Orchestration
 
 - GPU 및 AI 인프라 자원의 통합 관리와 구축·운영 자동화를 통해 효율적이고 안정적인 AI 서비스 환경을 제공합니다.
 
