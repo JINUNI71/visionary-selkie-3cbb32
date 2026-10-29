@@ -1906,3 +1906,8 @@ button.sw-navlink{border:0;background:none;font-family:var(--font-sans);cursor:p
 @media (max-width:760px){.sw-bizcard__tags li{padding-left:10px}}
 /* 마지막 항목 아래 간격을 카드마다 같게 — 목록을 늘이지 않고, 남는 높이는 카드 맨 아래로 */
 .sw-bizcard .sw-area{flex:none}
+
+/* 랜딩 히어로 제목 — 현재 카피("인프라의 깊이가 AI의 격을 만듭니다")가 한 줄에 698px 라
+   폭 제한 671px 에 27px 모자라 두 줄로 끊겼습니다. 720px 로 올려 한 줄에 둡니다.
+   좁은 화면에서는 컨테이너 폭에 맞춰 자연스럽게 줄바꿈합니다. */
+.sw-hero--flush .sw-hero__title{max-width:720px}
