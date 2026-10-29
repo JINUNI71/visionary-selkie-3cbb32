@@ -1,7 +1,8 @@
-# CARD 02 — Omnissa Horizon
+# CARD 06 — Omnissa Horizon
 
-> 이 문서가 페이지의 원본입니다 · 페이지 `products/omnissa-horizon.html` · 2026-10-15 정리
-> 문구를 고친 뒤 `./build.sh`(또는 `python3 tools/build_solutions.py`)를 실행하면 페이지에 반영됩니다. 페이지 HTML은 직접 고치지 않습니다.
+> 자동 생성 문서 · 원본 데이터 `assets/solutions-data.js` · 생성일 2026-10-29
+> 이 파일을 직접 수정하지 마세요. 문구는 데이터 파일에서 고치고 `node assets/gen-docs.js` 를 다시 실행합니다.
+> 공통 페이지 구조 · 하단 공통 블록(미션 밴드 · CTA) · 전체 미결 항목은 `00-공통-구조와-작업메모.md` 를 참고하세요.
 
 `DIGITAL WORKSPACE` · 디지털 워크스페이스
 
@@ -12,10 +13,11 @@
 >
 > 소프트웍스는 금융 업무망, 공공 망분리, 엔지니어링 워크스테이션 환경에서 VDI를 구축해 왔습니다. 사용자의 실제 업무 환경을 기준으로 설계하며, 신규 구축과 기존 VDI의 재구축(Re-architecture)을 모두 수행합니다.
 
+`도입 문의 →` `수행 역량 보기`
 
 ## 02 Why Softworks
 
-**소프트웍스가 Omnissa Horizon를 다루는 방식**
+**소프트웍스가 Omnissa Horizon을 다루는 방식**
 
 ### Why 01 — 신규 구축은 기본이고, 난이도 높은 재구축까지 수행합니다
 
@@ -185,6 +187,6 @@ VDI는 전환 직후에 사용자 문의가 집중됩니다. 구축을 수행한
 
 ## 11 Related Solutions
 
-CloudX(국산 VDI 플랫폼) · Broadcom VMware(프라이빗 클라우드 플랫폼) · Veeam(데이터 보호)
+CloudX(국산 VDI 플랫폼) · VMware Cloud Foundation(풀스택 프라이빗 클라우드 플랫폼) · Veeam(데이터 보호)
 
 ---

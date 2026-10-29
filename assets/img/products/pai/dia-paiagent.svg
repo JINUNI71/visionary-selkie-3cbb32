@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="912" height="362" viewBox="-6 -6 912 362" role="img" aria-label="에이전트가 처리하는 구간과 사람이 판단하는 구간의 경계">
+    <defs><style>
+      .l{font:600 10.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;letter-spacing:1.4px;fill:#80868b}
+      .t{font:600 12.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202124}
+      .s{font:400 11px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#5f6368}
+      .m{font:600 11px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#6a3dea}
+      .k{fill:#fff;stroke:#dadce0;stroke-width:1}
+      .w{font:600 13px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#fff}
+    </style></defs><rect x="-6" y="-6" width="912" height="362" fill="#ffffff"/>
+    <text x="0" y="14" class="l">업무 절차 한 건</text>
+    <rect x="0" y="24" width="520" height="92" fill="#6a3dea" opacity=".06"/>
+    <rect x="0" y="24" width="520" height="92" fill="none" stroke="#6a3dea" stroke-width="1"/>
+    <text x="16" y="44" class="m">에이전트가 처리하는 구간</text>
+    <g class="k"><rect x="16" y="54" width="152" height="48" rx="0"/><rect x="184" y="54" width="152" height="48" rx="0"/><rect x="352" y="54" width="152" height="48" rx="0"/></g>
+    <g class="t" text-anchor="middle"><text x="92" y="76">접수</text><text x="260" y="76">자료 조회</text><text x="428" y="76">정리 · 초안</text></g>
+    <g class="s" text-anchor="middle"><text x="92" y="93">요청을 받습니다</text><text x="260" y="93">지식 베이스에서 찾습니다</text><text x="428" y="93">결과를 정리합니다</text></g>
+    <path d="M540 24v92" stroke="#6a3dea" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="540" y="16" class="m" text-anchor="middle">경계</text>
+    <text x="562" y="44" class="l">사람이 판단하는 구간</text>
+    <g class="k"><rect x="562" y="54" width="152" height="48" rx="0"/><rect x="730" y="54" width="152" height="48" rx="0"/></g>
+    <g class="t" text-anchor="middle"><text x="638" y="76">검토 · 승인</text><text x="806" y="76">처리 · 기록</text></g>
+    <g class="s" text-anchor="middle"><text x="638" y="93">담당자가 확인합니다</text><text x="806" y="93">결과를 남깁니다</text></g>
+    <text x="0" y="148" class="l">경계가 정해지면 에이전트의 권한 범위도 함께 정해집니다</text>
+    <g class="k"><rect x="0" y="158" width="286" height="52" rx="0"/><rect x="306" y="158" width="288" height="52" rx="0"/><rect x="614" y="158" width="286" height="52" rx="0"/></g>
+    <g class="t"><text x="18" y="180">읽기</text><text x="324" y="180">쓰기</text><text x="632" y="180">승인 요청</text></g>
+    <g class="s"><text x="18" y="199">허용된 문서만 조회</text><text x="324" y="199">초안과 임시 기록까지</text><text x="632" y="199">확정은 사람에게 넘깁니다</text></g>
+    <rect x="0" y="238" width="900" height="80" fill="#0e2244"/>
+    <text x="18" y="266" class="w">이 경계를 어디에 두느냐가 전부입니다</text>
+    <text x="18" y="288" class="s" fill="rgba(255,255,255,.72)">업무 절차를 먼저 분석해 사람이 판단해야 하는 지점을 가려내고, 그 앞까지만 에이전트에게 맡깁니다.</text>
+    <text x="18" y="306" class="s" fill="rgba(255,255,255,.72)">경계를 넘겨 잡으면 되돌릴 수 없는 처리가 자동으로 일어납니다.</text>
+  </svg>

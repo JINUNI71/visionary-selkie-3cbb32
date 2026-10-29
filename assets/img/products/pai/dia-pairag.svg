@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="912" height="372" viewBox="-6 -6 912 372" role="img" aria-label="사내 문서를 색인하고 질의 시점에 찾아 쓰는 경로">
+    <defs><style>
+      .l{font:600 10.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;letter-spacing:1.4px;fill:#80868b}
+      .t{font:600 12.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202124}
+      .s{font:400 11px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#5f6368}
+      .m{font:600 11px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#6a3dea}
+      .k{fill:#fff;stroke:#dadce0;stroke-width:1}
+      .w{font:600 13px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#fff}
+    </style></defs><rect x="-6" y="-6" width="912" height="372" fill="#ffffff"/>
+    <text x="0" y="14" class="l" fill="#6a3dea">색인 — 미리 해 두는 일</text>
+    <g class="k"><rect x="0" y="24" width="160" height="62" rx="0"/><rect x="188" y="24" width="152" height="62" rx="0"/><rect x="368" y="24" width="152" height="62" rx="0"/><rect x="548" y="24" width="152" height="62" rx="0"/><rect x="728" y="24" width="172" height="62" rx="0"/></g>
+    <g class="t" text-anchor="middle"><text x="80" y="48">사내 문서</text><text x="264" y="48">수집</text><text x="444" y="48">분할</text><text x="624" y="48">임베딩</text><text x="814" y="48">벡터 데이터베이스</text></g>
+    <g class="s" text-anchor="middle">
+      <text x="80" y="70">공유 드라이브 · 결재 문서</text><text x="264" y="70">대상 범위와 갱신 주기</text>
+      <text x="444" y="70">검색 단위로 잘라냅니다</text><text x="624" y="70">의미를 수치로 바꿉니다</text><text x="814" y="70">검색 가능한 형태로 보관</text></g>
+    <g stroke="#6a3dea" stroke-width="1.5" fill="none">
+      <path d="M160 55h20M174 49l8 6-8 6"/><path d="M340 55h20M354 49l8 6-8 6"/>
+      <path d="M520 55h20M534 49l8 6-8 6"/><path d="M700 55h20M714 49l8 6-8 6"/></g>
+    <text x="0" y="124" class="l" fill="#6a3dea">질의 — 요청이 올 때마다</text>
+    <g class="k"><rect x="0" y="134" width="206" height="62" rx="0"/><rect x="234" y="134" width="206" height="62" rx="0"/><rect x="468" y="134" width="206" height="62" rx="0"/><rect x="702" y="134" width="198" height="62" rx="0"/></g>
+    <g class="t" text-anchor="middle"><text x="103" y="158">사용자 질문</text><text x="337" y="158">관련 문서 검색</text><text x="571" y="158">모델에 함께 전달</text><text x="801" y="158">답변</text></g>
+    <g class="s" text-anchor="middle">
+      <text x="103" y="180">업무 화면에서 입력</text><text x="337" y="180">벡터 데이터베이스에서 찾습니다</text>
+      <text x="571" y="180">질문과 찾은 내용을 같이</text><text x="801" y="180">근거 문서와 함께 제시</text></g>
+    <g stroke="#6a3dea" stroke-width="1.5" fill="none">
+      <path d="M206 165h20M220 159l8 6-8 6"/><path d="M440 165h20M454 159l8 6-8 6"/><path d="M674 165h20M688 159l8 6-8 6"/></g>
+    <g stroke="#6a3dea" stroke-width="1" stroke-dasharray="4 4" fill="none"><path d="M814 86v26h-477v22"/></g>
+    <rect x="0" y="232" width="900" height="80" fill="#0e2244"/>
+    <text x="18" y="260" class="w">권한 경계는 색인 단계에서 갈라 둡니다</text>
+    <text x="18" y="282" class="s" fill="rgba(255,255,255,.72)">어떤 문서를 색인 대상으로 삼을지, 얼마나 자주 다시 색인할지를 업무 부서와 함께 정합니다.</text>
+    <text x="18" y="300" class="s" fill="rgba(255,255,255,.72)">권한이 다른 문서가 한 색인에 섞이면, 권한 없는 사용자에게 내용이 그대로 노출됩니다.</text>
+    <text x="0" y="344" class="l">색인은 미리, 검색은 질문이 올 때. 두 단계를 나누어 설계합니다</text>
+  </svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="912" height="342" viewBox="-6 -6 912 342" role="img" aria-label="용도별 GPU 분할 단위 비교">
+    <defs><style>
+      .l{font:600 10.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;letter-spacing:1.4px;fill:#80868b}
+      .t{font:600 13px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202124}
+      .s{font:400 11.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#5f6368}
+      .m{font:600 11px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#6a3dea}
+      .k{fill:#fff;stroke:#dadce0;stroke-width:1}
+      .g{fill:#6a3dea;opacity:.14;stroke:#6a3dea;stroke-width:1}
+    </style></defs><rect x="-6" y="-6" width="912" height="342" fill="#ffffff"/>
+    <text x="0" y="14" class="l">물리 GPU 1장을 용도에 따라 다르게 나눕니다</text>
+    <g fill="none" stroke="#dadce0" stroke-width="1" stroke-dasharray="4 4"><rect x="0" y="26" width="286" height="196" rx="0"/><rect x="306" y="26" width="288" height="196" rx="0"/><rect x="614" y="26" width="286" height="196" rx="0"/></g>
+    <g class="m"><text x="18" y="48">학습</text><text x="324" y="48">추론 서비스</text><text x="632" y="48">개발 · 검증</text></g>
+    <g class="g"><rect x="18" y="60" width="250" height="64" rx="0"/></g>
+    <g class="g"><rect x="324" y="60" width="122" height="64" rx="0"/><rect x="458" y="60" width="122" height="64" rx="0"/></g>
+    <g class="g"><rect x="632" y="60" width="58" height="30" rx="0"/><rect x="698" y="60" width="58" height="30" rx="0"/><rect x="764" y="60" width="58" height="30" rx="0"/><rect x="830" y="60" width="38" height="30" rx="0"/><rect x="632" y="94" width="58" height="30" rx="0"/><rect x="698" y="94" width="58" height="30" rx="0"/><rect x="764" y="94" width="58" height="30" rx="0"/><rect x="830" y="94" width="38" height="30" rx="0"/></g>
+    <g class="t" text-anchor="middle"><text x="143" y="98">GPU 전체</text><text x="385" y="98">모델 1개</text><text x="519" y="98">모델 1개</text></g>
+    <text x="750" y="140" class="t" text-anchor="middle">소단위 다수</text>
+    <g class="s">
+      <text x="18" y="152">분할하지 않습니다. 여러 장을 묶어</text><text x="18" y="170">하나의 작업에 할당합니다.</text>
+      <text x="324" y="152">모델이 한 장에 올라가는 크기를</text><text x="324" y="170">기준으로 분할 단위를 정합니다.</text>
+      <text x="632" y="166">인원 수만큼 작게 나눕니다.</text>
+      <text x="18" y="200" class="m">장시간 점유 · 예약 방식</text>
+      <text x="324" y="200" class="m">상시 기동 · 응답 지연 기준</text>
+      <text x="632" y="200" class="m">단기 점유 · 회수 주기 적용</text></g>
+    <rect x="0" y="246" width="900" height="68" fill="#0e2244"/>
+    <text x="18" y="270" fill="#fff" class="t">세 가지를 하나의 정책으로 다루면 생기는 일</text>
+    <text x="18" y="292" class="s" fill="rgba(255,255,255,.72)">분할 단위가 크면 개발자 수만큼 자원이 모자라고, 작으면 모델이 한 장에 올라가지 않습니다. 용도를 구분하지 않으면 자원이 남으면서도 부족한 상태가 됩니다.</text>
+  </svg>

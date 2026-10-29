@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="912" height="352" viewBox="-6 -6 912 352" role="img" aria-label="가상 머신을 만든 뒤에 일어나는 일과 그 처리 권한">
+    <defs><style>
+      .l{font:600 10.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;letter-spacing:1.4px;fill:#80868b}
+      .t{font:600 12.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202124}
+      .s{font:400 11px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#5f6368}
+      .m{font:600 11px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#0b7285}
+      .k{fill:#fff;stroke:#dadce0;stroke-width:1}
+      .w{font:600 13px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#fff}
+    </style></defs><rect x="-6" y="-6" width="912" height="352" fill="#ffffff"/>
+    <text x="0" y="14" class="l">만든 뒤에 일어나는 일</text>
+    <g class="k"><rect x="0" y="24" width="160" height="56" rx="0"/><rect x="185" y="24" width="160" height="56" rx="0"/><rect x="370" y="24" width="160" height="56" rx="0"/><rect x="555" y="24" width="160" height="56" rx="0"/><rect x="740" y="24" width="160" height="56" rx="0"/></g>
+    <g class="t" text-anchor="middle"><text x="80" y="48">사양 변경</text><text x="265" y="48">스냅샷</text><text x="450" y="48">롤백</text><text x="635" y="48">호스트 이동</text><text x="820" y="48">반납 · 회수</text></g>
+    <g class="s" text-anchor="middle">
+      <text x="80" y="68">CPU · 메모리 · 디스크</text><text x="265" y="68">시점 저장</text>
+      <text x="450" y="68">저장 시점으로 되돌림</text><text x="635" y="68">다른 노드로 옮김</text><text x="820" y="68">더 쓰지 않는 자원</text></g>
+    <g stroke="#0b7285" stroke-width="1" opacity=".35" stroke-dasharray="3 3"><path d="M80 80v26M265 80v26M450 80v26M635 80v26M820 80v26"/></g>
+    <rect x="0" y="106" width="900" height="54" fill="#0b7285" opacity=".06"/>
+    <rect x="0" y="106" width="900" height="54" fill="none" stroke="#0b7285" stroke-width="1"/>
+    <text x="16" y="128" class="m">사용자가 직접 하는 구간</text>
+    <text x="16" y="148" class="s">스냅샷 생성과 롤백, 전원 제어, 콘솔 접속처럼 되돌릴 수 있는 작업</text>
+    <g fill="none" stroke="#dadce0" stroke-width="1" stroke-dasharray="4 4"><rect x="0" y="172" width="900" height="54" rx="0"/></g>
+    <text x="16" y="194" class="t">승인을 거치는 구간</text>
+    <text x="16" y="214" class="s">사양 변경과 반납처럼 자원 총량이 바뀌거나 되돌리기 어려운 작업</text>
+    <rect x="0" y="252" width="900" height="76" fill="#0e2244"/>
+    <text x="18" y="276" class="w">소프트웍스가 정하는 것</text>
+    <text x="18" y="298" class="s" fill="rgba(255,255,255,.72)">두 구간의 경계와 회수 기준. 운영 중 요청의 대부분은 새로 만드는 일이 아니라 이미 만든 것을 바꾸는 일이고,</text>
+    <text x="18" y="316" class="s" fill="rgba(255,255,255,.72)">회수 기준을 세워 두지 않으면 자원은 한 방향으로만 늘어납니다.</text>
+  </svg>

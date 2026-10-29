@@ -126,7 +126,7 @@ GPU가 부족한지 판단하기 전에, 지금 가진 GPU가 어떻게 구축�
 
 Zone의 용도에 맞춰 소프트웨어 환경을 자동으로 구성합니다. 별도 구축 작업 없이 학습·추론·전용 Zone을 만들고, 운영 중에 다시 구성하고, 필요한 만큼 확장합니다.
 
-![GenWorks Zone Provisioning 화면. Management·Training·Inference·Dedicated Zone별 프로비저닝 현황과 노드 단위 Worker 확장 목록](../assets/img/products/GenWorks/genworks-rp-zone-provisioning.png)
+![GenWorks Zone Provisioning 화면. Management·Training·Inference·Dedicated Zone별 프로비저닝 현황과 노드 단위 Worker 확장 목록](../assets/img/products/genworks/genworks-rp-zone-provisioning.png)
 *Zone Provisioning — Zone별 프로비저닝 현황과 노드 단위 Worker 확장을 한 화면에서 관리합니다.*
 
 | 번호 | 항목 | 내용 |
@@ -206,16 +206,54 @@ AI 개발 환경 · AI 모델 학습 · AI 모델 서빙 · AI 워크로드 최�
 | **04. 교육·이행** | 운영자·부서 관리자·연구자 역할별 교육, 운영 인수인계 | 운영 매뉴얼, 사용자 가이드 |
 | **05. 기술지원** | 업데이트, 장애 대응, 정기 점검 | 기술지원 SLA |
 
-## 11 Related Products
+## 11 FAQ
+
+**자주 묻는 질문**
+
+도입을 검토하실 때 가장 많이 받는 질문을 모았습니다. 여기 없는 내용은 [문의하기](../company/contact.html)로 남겨 주십시오.
+
+**Q01. 부서별로 GPU 노드를 나눠 주지 않으면, 각 부서의 몫은 어떻게 보장됩니까?**
+
+노드를 고정 분할하는 대신 쿼터·우선순위·선점으로 통제합니다. 각 부서의 몫은 선점으로 확보되고, 그 몫이 비어 있는 동안에는 다른 부서가 초과 사용합니다. 물리적 전용이 계약 요건이라면 노드 단위로 단독 할당하는 Dedicated Zone을 씁니다.
+
+**Q02. 학습용 자원을 추론용으로 바꿀 때 서비스를 멈춰야 합니까?**
+
+멈추지 않습니다. 운영 중에 Zone 구성을 바꾸며, 실행 중인 워크로드를 내리지 않고 자원을 옮깁니다.
+
+**Q03. 서버를 증설하면 다시 구축 작업을 해야 합니까?**
+
+새 노드를 연결하면 BMC 스캔으로 인벤토리에 잡히고, 해당 Zone에 맞춰 OS 배포부터 Slurm·Kubernetes 구성까지 자동으로 편입됩니다. 반복 구축 작업이 필요 없습니다.
+
+**Q04. GPU 한 장을 여러 작업이 나눠 쓸 수 있습니까?**
+
+MIG 프로파일을 구성하거나 템플릿으로 적용해 GPU를 분할합니다. 할당되지 않은 슬라이스는 경고로 알리고 회수합니다.
+
+**Q05. 별도의 계정 체계를 만들어야 합니까?**
+
+필요 없습니다. 조직의 OS 계정과 LDAP(AD) 도메인으로 로그인하며, 인증 소스에서 삭제된 계정은 자동으로 탐지·차단됩니다. 역할은 운영자·부서 관리자·연구자로 나뉩니다.
+
+**Q06. 인터넷이 차단된 폐쇄망에서도 운영할 수 있습니까?**
+
+외부 연결 없이 사내 인프라에서 완결되도록 설계했습니다. 매뉴얼이 제품 안에 들어 있고, 리포트와 감사 로그는 CSV/PDF로 내보냅니다.
+
+**Q07. 감사 대응에 필요한 기록이 남습니까?**
+
+워크로드 강제 종료, 계약 등록·변경, 정책 변경까지 모든 운영 개입에 실행자·대상·시각·사유가 기록되고, 변경 전후 내용은 불변 저장됩니다. 조직별 사용 통계와 계약 이행 리포트도 기간별로 제공합니다.
+
+**Q08. 도입 전에 우리 환경에서 검증해 볼 수 있습니까?**
+
+PoC로 대표 Zone을 구성해 배분 정책과 자동 조치를 실제로 검증하고, 결과를 PoC 결과서로 정리합니다. PoC 신청은 [문의하기](../company/contact.html)로 남겨 주십시오.
+
+## 12 Related Products
 
 **함께 쓰는 제품**
 
 | 제품 | 분류 | 설명 | 링크 |
 |---|---|---|---|
-| **AgentOn Security** | Ontology Agent Platform | 보안 데이터를 온톨로지로 연결해 조치 우선순위를 제시하는 AI 에이전트입니다. 온프레미스 LLM을 GenWorks가 구성한 GPU 자원 위에서 운영합니다. | `genworks-oap.html` |
+| **OAP Security** | Ontology Agent Platform | 보안 데이터를 온톨로지로 연결해 조치 우선순위를 제시하는 AI 에이전트입니다. 온프레미스 LLM을 GenWorks가 구성한 GPU 자원 위에서 운영합니다. | `genworks-oap.html` |
 | **AI Infrastructure** | GPU · Kubernetes · Slurm | GPU 인프라 설계·구축·운영 사업. 제품 도입과 함께 인프라까지 맡습니다. | `../company/business.html#ai-infrastructure` |
 
-## 12 CTA
+## 13 CTA
 
 **흩어진 GPU, 하나의 플랫폼으로 묶으십시오**
 
@@ -229,4 +267,4 @@ AI 개발 환경 · AI 모델 학습 · AI 모델 서빙 · AI 워크로드 최�
 
 > 원본: `GenWorks 제품소개서 v1.0` (PDF, 6쪽). 본문은 소개서 문장을 그대로 옮기거나 다듬었고,
 > 소개서에 없는 블록(Field Issues · Adoption & Support · FAQ · Related · CTA)은 소개서 내용만으로 작성했습니다.
-> 화면 이미지: `assets/img/products/GenWorks/genworks-rp-zone-provisioning.png` (소개서 2쪽 Zone Provisioning 화면)
+> 화면 이미지: `assets/img/products/genworks/genworks-rp-zone-provisioning.png` (소개서 2쪽 Zone Provisioning 화면)

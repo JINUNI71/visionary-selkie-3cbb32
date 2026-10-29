@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="912" height="362" viewBox="-6 -6 912 362" role="img" aria-label="외부 모델이 내부 저장소를 거쳐 서비스로 올라가는 경로">
+    <defs><style>
+      .l{font:600 10.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;letter-spacing:1.4px;fill:#80868b}
+      .t{font:600 13px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202124}
+      .s{font:400 11.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#5f6368}
+      .m{font:600 11px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#6a3dea}
+      .k{fill:#fff;stroke:#dadce0;stroke-width:1}
+      .w{font:600 13px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#fff}
+    </style></defs><rect x="-6" y="-6" width="912" height="362" fill="#ffffff"/>
+    <text x="0" y="14" class="l">외부</text>
+    <text x="276" y="14" class="l" fill="#6a3dea">기관 내부 — 데이터가 나가지 않는 구간</text>
+    <g class="k"><rect x="0" y="24" width="200" height="74" rx="0"/></g>
+    <text x="16" y="50" class="t">공개 · 벤더 모델</text>
+    <text x="16" y="70" class="s">공개 저장소와 벤더가</text><text x="16" y="86" class="s">배포하는 모델</text>
+    <g stroke="#6a3dea" stroke-width="1.5" fill="none"><path d="M200 61h46"/><path d="M240 55l8 6-8 6"/></g>
+    <text x="223" y="46" class="m" text-anchor="middle">반입</text>
+    <rect x="258" y="24" width="642" height="150" fill="#6a3dea" opacity=".05"/>
+    <rect x="258" y="24" width="642" height="150" fill="none" stroke="#6a3dea" stroke-width="1"/>
+    <g class="k"><rect x="276" y="40" width="180" height="66" rx="0"/><rect x="486" y="40" width="180" height="66" rx="0"/><rect x="696" y="40" width="186" height="66" rx="0"/></g>
+    <g class="t"><text x="292" y="64">모델 저장소</text><text x="502" y="64">모델 런타임</text><text x="712" y="64">카탈로그</text></g>
+    <g class="s">
+      <text x="292" y="84">반입 검토를 거친</text><text x="292" y="98">모델만 등록합니다</text>
+      <text x="502" y="84">생성 모델과 임베딩</text><text x="502" y="98">모델을 서비스로 띄웁니다</text>
+      <text x="712" y="84">사용자가 필요한 모델을</text><text x="712" y="98">직접 고릅니다</text></g>
+    <g stroke="#6a3dea" stroke-width="1.5" fill="none"><path d="M456 73h24M480 67l8 6-8 6"/><path d="M666 73h24M690 67l8 6-8 6"/></g>
+    <g class="k"><rect x="276" y="120" width="606" height="38" rx="0"/></g>
+    <text x="292" y="144" class="s">업무 서비스 — 사내 챗 · 문서 검색 · 업무 에이전트가 이 런타임을 함께 사용합니다</text>
+    <rect x="0" y="206" width="900" height="80" fill="#0e2244"/>
+    <text x="18" y="234" class="w">모델 선정보다 교체 절차를 먼저 정합니다</text>
+    <text x="18" y="256" class="s" fill="rgba(255,255,255,.72)">무엇을 반입할지, 어떤 절차로 검토할지, 런타임에 자원을 얼마나 줄지, 모델을 언제 어떻게 교체할지.</text>
+    <text x="18" y="274" class="s" fill="rgba(255,255,255,.72)">모델은 바뀌지만 이 절차는 그대로 남기 때문입니다.</text>
+    <text x="0" y="320" class="l">모델이 바뀌어도 저장소 · 런타임 · 카탈로그 구조는 그대로 유지됩니다</text>
+  </svg>

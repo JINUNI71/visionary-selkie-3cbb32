@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="310" viewBox="0 0 900 310" role="img" aria-label="보안 정책 제어 항목">
+    <defs><style>.l{font:600 10.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;letter-spacing:1.4px;fill:#80868b}.t{font:600 13px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202124}.s{font:400 11.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#5f6368}.k{fill:#fff;stroke:#dadce0;stroke-width:1}</style></defs><rect width="100%" height="100%" fill="#ffffff"/>
+    <text x="0" y="14" class="l">관리자 허용 · 차단 항목</text>
+    <g class="k"><rect x="0" y="26" width="290" height="56" rx="0"/><rect x="305" y="26" width="290" height="56" rx="0"/><rect x="610" y="26" width="290" height="56" rx="0"/>
+      <rect x="0" y="96" width="290" height="56" rx="0"/><rect x="305" y="96" width="290" height="56" rx="0"/><rect x="610" y="96" width="290" height="56" rx="0"/></g>
+    <g class="t"><text x="18" y="50">클립보드</text><text x="323" y="50">파일 전송</text><text x="628" y="50">USB 슬롯</text>
+      <text x="18" y="120">로컬 프린터</text><text x="323" y="120">URL 전달</text><text x="628" y="120">화면 캡처 · 워터마크</text></g>
+    <g class="s" font-size="10.5"><text x="18" y="70">방향별 허용 · 차단</text><text x="323" y="70">반출입 승인 연계</text><text x="628" y="70">슬롯 단위 지정</text>
+      <text x="18" y="140">인쇄 허용 범위</text><text x="323" y="140">인터넷 링크 분리</text><text x="628" y="140">캡처 시 화면 가림 · ID 표시</text></g>
+    <g fill="#b06000" opacity=".7"><rect x="252" y="42" width="26" height="14" rx="7"/><rect x="557" y="42" width="26" height="14" rx="7"/><rect x="862" y="42" width="26" height="14" rx="7"/><rect x="252" y="112" width="26" height="14" rx="7"/><rect x="557" y="112" width="26" height="14" rx="7"/><rect x="862" y="112" width="26" height="14" rx="7"/></g>
+    <g fill="#fff"><rect x="268" y="45" width="8" height="8" rx="4"/><rect x="573" y="45" width="8" height="8" rx="4"/><rect x="878" y="45" width="8" height="8" rx="4"/><rect x="268" y="115" width="8" height="8" rx="4"/><rect x="573" y="115" width="8" height="8" rx="4"/><rect x="878" y="115" width="8" height="8" rx="4"/></g>
+    <rect x="0" y="172" width="900" height="56" fill="#f8f9fa" stroke="#dadce0" stroke-width="1"/>
+    <text x="18" y="196" class="t">구간 암호화는 기본입니다</text>
+    <text x="18" y="216" class="s" font-size="12.5">인증 정보와 화면 전송을 각각 암호화하고, 캡처 시도 시 가상 PC 영역만 가려집니다.</text>
+    <rect x="0" y="244" width="900" height="62" fill="#b06000" opacity=".06"/>
+    <text x="18" y="268" class="s" font-size="12.5" fill="#b06000">소프트웍스 수행 범위: 규정 조항과 통제 항목을 매핑해 그룹별 적용 항목을 결정합니다.</text>
+    <text x="18" y="290" class="s" font-size="12.5">파일 반출입은 승인 절차를 거치도록 포털과 연계하고, 감사 대응 증빙까지 산출물에 포함합니다.</text>
+  </svg>

@@ -23,6 +23,7 @@ KR 기준 정보 구조입니다. 대메뉴 앞의 번호와 그룹 레이블 �
 *2026.10.19 개정 — '문의하기'를 회사소개에서 고객지원 하위(기술지원 아래)로 이동*
 *2026.10.19 개정 — 회사소개 하위 뉴스&인사이트 아래에 '사업장(Location)' 추가, 회사개요의 '오시는 길' 섹션을 사업장 페이지로 이동*
 *2026.10.21 개정 — 제품을 6개 카테고리(AI Service Platform · AI Infra Platform · Cloud Platform · Desktop Virtualization · Backup & Recovery · Security Platform)로 재편, 01 AI · 02 Infrastructure 그룹 폐지, 전 제품 부제 변경, OAP Security → AgentOn Security, AgentOn · VVF · VCF · VKS · SecuWorks 추가(페이지 없음)*
+*2026.10.29 개정 — VVF · VCF · VKS 상세 페이지 추가(products/vmware-vvf · vmware-vcf · vmware-vks), 메뉴 링크 연결*
 *2026.10.21 개정 — 제품 카테고리 순서 변경: AI Infra Platform(GenWorks · Broadcom Private AI)을 AI Service Platform 앞으로*
 
 ---
@@ -51,11 +52,11 @@ KR 기준 정보 구조입니다. 대메뉴 앞의 번호와 그룹 레이블 �
 
 *CLOUD PLATFORM*
 
-- **VMware vSphere Foundation (VVF)** *(페이지 없음)*
+- **VMware vSphere Foundation (VVF)**
     - Enterprise Virtualization & Infrastructure Platform
-- **VMware Cloud Foundation (VCF)** *(페이지 없음)*
+- **VMware Cloud Foundation (VCF)**
     - Full-stack Private Cloud Infrastructure & Management Platform
-- **VMware vSphere Kubernetes Service (VKS)** *(페이지 없음)*
+- **VMware vSphere Kubernetes Service (VKS)**
     - VMware Kubernetes Deployment & Management Platform
 - **CloudV**
     - Integrated Virtualization Management & Self-Service Portal

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="912" height="432" viewBox="-6 -6 912 432" role="img" aria-label="VMware Cloud Foundation 위의 Private AI Services 구성">
+    <defs><style>
+      .l{font:600 10.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;letter-spacing:1.4px;fill:#80868b}
+      .t{font:600 14px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202124}
+      .s{font:400 11.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#5f6368}
+      .m{font:600 11px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#6a3dea}
+      .k{fill:#fff;stroke:#dadce0;stroke-width:1}
+      .w{font:600 13px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#fff}
+      .w2{font:400 11.5px 'DM Sans','Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif,'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:rgba(255,255,255,.72)}
+    </style></defs><rect x="-6" y="-6" width="912" height="432" fill="#ffffff"/>
+    <text x="0" y="14" class="l">AI SERVICE</text>
+    <g class="k"><rect x="0" y="26" width="286" height="44" rx="0"/><rect x="306" y="26" width="288" height="44" rx="0"/><rect x="614" y="26" width="286" height="44" rx="0"/></g>
+    <g class="t" text-anchor="middle"><text x="143" y="54">업무 Agent</text><text x="450" y="54">사내 지식 검색</text><text x="757" y="54">문서 분석 · 요약</text></g>
+    <g stroke="#6a3dea" stroke-width="1" opacity=".4"><path d="M143 70v18M450 70v18M757 70v18"/></g>
+    <rect x="0" y="88" width="900" height="96" fill="#6a3dea" opacity=".05"/>
+    <rect x="0" y="88" width="900" height="96" fill="none" stroke="#6a3dea" stroke-width="1" opacity=".5"/>
+    <text x="18" y="110" class="l" fill="#6a3dea">PRIVATE AI SERVICES</text>
+    <g class="k"><rect x="18" y="120" width="166" height="22" rx="0"/><rect x="196" y="120" width="166" height="22" rx="0"/><rect x="374" y="120" width="166" height="22" rx="0"/><rect x="552" y="120" width="166" height="22" rx="0"/><rect x="730" y="120" width="152" height="22" rx="0"/><rect x="18" y="150" width="864" height="22" rx="0"/></g>
+    <g class="s" text-anchor="middle">
+      <text x="101" y="135">Model Store</text><text x="279" y="135">Model Runtime</text><text x="457" y="135">Vector Database</text><text x="635" y="135">Data Indexing</text><text x="806" y="135">Agent Builder</text></g>
+    <text x="450" y="165" class="s" text-anchor="middle">배포된 모델과 에이전트는 VCF Automation 카탈로그를 통해 소비됩니다</text>
+    <g stroke="#6a3dea" stroke-width="1" opacity=".4"><path d="M150 184v18M450 184v18M750 184v18"/></g>
+    <rect x="0" y="202" width="900" height="64" fill="#0e2244"/>
+    <text x="18" y="225" class="l" fill="#7ce9f5">NVIDIA AI ENTERPRISE</text>
+    <g class="w"><text x="18" y="249">NIM 추론 마이크로서비스</text><text x="320" y="249">AI 라이브러리 · GPU 드라이버</text></g>
+    <text x="882" y="225" class="l" fill="#b8c8e8" text-anchor="end">데이터는 기관 밖으로 나가지 않습니다</text>
+    <g stroke="#6a3dea" stroke-width="1" opacity=".4"><path d="M150 266v10M450 266v10M750 266v10"/></g>
+    <text x="0" y="284" class="l">VMWARE CLOUD FOUNDATION</text>
+    <g class="k"><rect x="0" y="292" width="286" height="54" rx="0"/><rect x="306" y="292" width="288" height="54" rx="0"/><rect x="614" y="292" width="286" height="54" rx="0"/></g>
+    <g class="t" text-anchor="middle"><text x="143" y="316">Compute</text><text x="450" y="316">Storage</text><text x="757" y="316">Networking</text></g>
+    <g class="m" text-anchor="middle"><text x="143" y="336">vSphere</text><text x="450" y="336">vSAN</text><text x="757" y="336">NSX</text></g>
+    <text x="0" y="374" class="l">GPU 노드 — 용도에 따라 분할 단위를 다르게 정합니다</text>
+    <g class="k"><rect x="0" y="384" width="214" height="32" rx="0"/><rect x="229" y="384" width="214" height="32" rx="0"/><rect x="458" y="384" width="214" height="32" rx="0"/><rect x="686" y="384" width="214" height="32" rx="0"/></g>
+    <g class="s" text-anchor="middle"><text x="107" y="404">학습 · 분할 없음</text><text x="336" y="404">추론 · 모델 단위</text><text x="565" y="404">개발 · 소단위 분할</text><text x="793" y="404">사용률 모니터링</text></g>
+  </svg>
