@@ -12,3 +12,4 @@ _backup_*/
 __pycache__/
 *.pyc
 tools/i18n/_todo.json
+softworks-homepage-*.zip

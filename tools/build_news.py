@@ -36,6 +36,12 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC_DIR = os.path.join(ROOT, "md", "news")
+# 폴더 이름이 md/News 처럼 대소문자만 다른 경우도 찾습니다 (GitHub 서버는 대소문자를 구분합니다).
+if not os.path.isdir(SRC_DIR) and os.path.isdir(os.path.join(ROOT, "md")):
+    for _d in os.listdir(os.path.join(ROOT, "md")):
+        if _d.lower() == "news" and os.path.isdir(os.path.join(ROOT, "md", _d)):
+            SRC_DIR = os.path.join(ROOT, "md", _d)
+            break
 OUT_BASE = "company/news"
 OUT_DIR = os.path.join(ROOT, OUT_BASE)
 SHELL_REL = "company/index.html"

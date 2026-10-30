@@ -12,6 +12,7 @@
 #   1. dist/ 를 비우고 HTML과 assets 만 새로 복사합니다 (md/ 등 내부 문서는 제외)
 #   1-1. 국문 페이지에 번역 사전을 적용해 영문 페이지(dist/en/)를 만듭니다 (tools/build_en.py)
 #   2. 검토용이면 각 페이지에 noindex 를 넣고 robots.txt 로 수집을 막습니다
+#      정식 공개용이면 대표 주소(canonical)·언어 대응(hreflang)·공유 미리보기(og)·sitemap.xml 을 넣습니다
 #   3. CSS·JS 주소 뒤에 내용 기반 꼬리표(?v=…)를 붙여, 고친 파일을 브라우저가 바로 새로 받게 합니다
 #      링크가 실제 파일을 가리키는지 확인합니다
 #   4. softworks-homepage.zip 으로 묶습니다
@@ -22,6 +23,9 @@ cd "$(dirname "$0")"
 SRC="$(pwd)"
 OUT="$SRC/dist"
 ZIP="$SRC/softworks-homepage.zip"
+
+# 정식 도메인 — 정식 공개(--public) 때 대표 주소·sitemap·공유 미리보기에 쓰입니다
+SITE_URL="https://www.softworks.co.kr"
 
 PUBLIC=0
 SERVE=0
@@ -61,6 +65,59 @@ if [ "$PUBLIC" -eq 1 ]; then
 User-agent: *
 Allow: /
 ROBOTS
+  echo "▸ 검색엔진·공유 정보를 넣습니다 (대표 주소 · 언어 대응 · 공유 미리보기 · sitemap.xml) — $SITE_URL"
+  echo "Sitemap: $SITE_URL/sitemap.xml" >> "$OUT/robots.txt"
+  python3 - "$OUT" "$SITE_URL" <<'PY'
+import io, os, re, sys, glob, html, datetime
+out, site = sys.argv[1], sys.argv[2].rstrip("/")
+og_image = site + "/assets/img/og-image.jpg"
+def url(rel):
+    rel = rel.replace(os.sep, "/")
+    return site + "/" if rel == "index.html" else site + "/" + rel
+pages = sorted(os.path.relpath(p, out).replace(os.sep, "/")
+               for p in glob.glob(os.path.join(out, "**", "*.html"), recursive=True))
+pages = [p for p in pages if p != "404.html"]
+have = set(pages)
+for rel in pages:
+    p = os.path.join(out, rel)
+    s = io.open(p, encoding="utf-8").read()
+    if 'rel="canonical"' in s:
+        continue
+    is_en = rel.startswith("en/")
+    ko = rel[3:] if is_en else rel
+    en = "en/" + ko
+    t = re.search(r"<title>(.*?)</title>", s, re.S)
+    d = re.search(r'<meta name="description" content="([^"]*)"', s)
+    title = t.group(1).strip() if t else "SOFTWORKS"
+    desc = d.group(1) if d else ""
+    tags = ['<link rel="canonical" href="%s">' % url(rel)]
+    if ko in have and en in have:
+        # 영문 생성 단계에서 넣은 상대 주소 hreflang 은 지우고 절대 주소로 다시 넣습니다
+        s = re.sub(r'<link rel="alternate" hreflang="[^"]*" href="[^"]*">\n?', "", s)
+        tags += ['<link rel="alternate" hreflang="ko" href="%s">' % url(ko),
+                 '<link rel="alternate" hreflang="en" href="%s">' % url(en),
+                 '<link rel="alternate" hreflang="x-default" href="%s">' % url(ko)]
+    tags += ['<meta property="og:type" content="website">',
+             '<meta property="og:site_name" content="SOFTWORKS">',
+             '<meta property="og:locale" content="%s">' % ("en_US" if is_en else "ko_KR"),
+             '<meta property="og:title" content="%s">' % title,
+             '<meta property="og:description" content="%s">' % desc,
+             '<meta property="og:url" content="%s">' % url(rel),
+             '<meta property="og:image" content="%s">' % og_image,
+             '<meta property="og:image:width" content="1200">',
+             '<meta property="og:image:height" content="630">',
+             '<meta name="twitter:card" content="summary_large_image">']
+    s = s.replace("</head>", "\n".join(tags) + "\n</head>", 1)
+    io.open(p, "w", encoding="utf-8").write(s)
+today = datetime.date.today().isoformat()
+lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+for rel in pages:
+    lines.append("  <url><loc>%s</loc><lastmod>%s</lastmod></url>" % (html.escape(url(rel)), today))
+lines.append("</urlset>")
+io.open(os.path.join(out, "sitemap.xml"), "w", encoding="utf-8").write("\n".join(lines) + "\n")
+print("  %d쪽에 넣고 sitemap.xml 을 만들었습니다" % len(pages))
+PY
 else
   echo "▸ 검토용 — 검색엔진 수집을 막습니다 (정식 공개는 --public)"
   cat > "$OUT/robots.txt" <<'ROBOTS'
