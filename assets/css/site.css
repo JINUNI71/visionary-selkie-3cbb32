@@ -1927,7 +1927,12 @@ button.sw-navlink{border:0;background:none;font-family:var(--font-sans);cursor:p
 .sw-hero__title--wide{text-wrap:balance}
 
 /* 문의 폼 — 개인정보 동의 옆 "자세히 보기"(개인정보처리방침, 새 창) */
-.sw-consent__more{display:inline-block;margin-left:var(--space-16);color:var(--ink-muted);text-decoration:underline;text-underline-offset:3px}
+.sw-consent__row{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:var(--space-16);row-gap:var(--space-8);margin-top:var(--space-16)}
+.sw-consent__row .sw-check{margin-top:0;align-items:baseline}
+.sw-consent__row .sw-check input{align-self:center}
+.sw-consent__more{color:var(--ink-muted);text-decoration:underline;text-underline-offset:3px}
 .sw-consent__more:hover{color:var(--primary)}
+/* 좁은 화면에서 다음 줄로 내려가면 체크박스 오른쪽 글자 시작선(18px + 10px)에 맞춥니다. */
+@media (max-width:479px){.sw-consent__more{margin-left:28px}}
 .sw-consent__more:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
 .sw-visually-hidden-text{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
