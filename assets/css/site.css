@@ -1089,10 +1089,10 @@ h3.sw-row__name{margin:0}
 .sw-product--static,.sw-product--static:hover{background:none;cursor:default}
 .sw-product--static .sw-product__text{max-width:none}
 .sw-nowrap{white-space:nowrap}
-/* What We Do(링크 없는 행) — 설명 첫 줄(약 700px)이 한 줄에 들어가도록, 설명 칸이 좁아지는 1180px 미만에서는 이름 아래로 설명을 내립니다. */
+/* What We Do(링크 없는 행) — 설명 첫 줄(약 760px)이 한 줄에 들어가도록, 설명 칸이 좁아지는 1260px 미만에서는 이름 아래로 설명을 내립니다. */
 .sw-br-fit{display:none}
-@media (min-width:900px){.sw-br-fit{display:inline}}
-@media (max-width:1179px){.sw-product--static{grid-template-columns:1fr;row-gap:12px}}
+@media (min-width:920px){.sw-br-fit{display:inline}}
+@media (max-width:1259px){.sw-product--static{grid-template-columns:1fr;row-gap:12px}}
 
 /* 사업분야 아이콘 (company/business.html) — 시스템에 아이콘 체계가 없어 새로 그렸습니다.
    선 1.5px 단색(ink), 채움·그림자·색 없음. 행 왼쪽 칸에서 번호 위에 둡니다. */
@@ -1918,3 +1918,5 @@ button.sw-navlink{border:0;background:none;font-family:var(--font-sans);cursor:p
    줄바꿈을 허용해 글자가 칸 밖으로 넘치지 않게 합니다. */
 .sw-card__name{font-size:15px;white-space:normal}
 @media (min-width:1280px){.sw-card__name{white-space:nowrap}}
+/* What We Do — 설명 첫 줄("…핵심 기반을 설계하고", 약 795px)이 한 줄에 들어가도록 이름·설명 간격을 좁힙니다. */
+@media (min-width:1260px){.sw-product--static{column-gap:24px}}
