@@ -9,3 +9,4 @@ _backup_*/
 .DS_Store
 __pycache__/
 *.pyc
+tools/i18n/_todo.json

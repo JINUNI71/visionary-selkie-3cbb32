@@ -8,6 +8,7 @@
 (function () {
   var form = document.getElementById('contact-form');
   if (!form) return;
+  var EN = document.documentElement.lang === 'en';
   var done = document.getElementById('contact-done');
   var note = form.querySelector('.sw-form__note');
   var route = form.querySelector('[data-route]');
@@ -15,11 +16,12 @@
   var radios = Array.prototype.slice.call(form.querySelectorAll('input[name="category"]'));
 
   var LABELS = [
-    ['category', '문의 유형'],
-    ['company', '회사명'], ['department', '부서·직책'], ['name', '이름'],
-    ['phone', '연락처'], ['email', '이메일'],
-    ['products', '관심 제품'], ['timing', '검토 시기'], ['partnership', '제휴 유형'],
-    ['message', '문의 내용']
+    /* 영문 페이지(lang="en")에서는 영어 문구를 씁니다. */
+  ['category', EN ? 'Inquiry type' : '문의 유형'],
+    ['company', EN ? 'Company' : '회사명'], ['department', EN ? 'Department / Title' : '부서·직책'], ['name', EN ? 'Name' : '이름'],
+    ['phone', EN ? 'Phone' : '연락처'], ['email', EN ? 'Email' : '이메일'],
+    ['products', EN ? 'Products of interest' : '관심 제품'], ['timing', EN ? 'Timeline' : '검토 시기'], ['partnership', EN ? 'Partnership type' : '제휴 유형'],
+    ['message', EN ? 'Message' : '문의 내용']
   ];
 
   function current() {
@@ -31,7 +33,7 @@
     var r = current();
     var key = r.getAttribute('data-key');
     form.setAttribute('action', 'mailto:' + r.getAttribute('data-mail'));
-    if (route) route.textContent = '받는 곳 · ' + r.getAttribute('data-owner') + ' · ' + r.getAttribute('data-mail');
+    if (route) route.textContent = (EN ? 'Sent to · ' : '받는 곳 · ') + r.getAttribute('data-owner') + ' · ' + r.getAttribute('data-mail');
     Array.prototype.forEach.call(form.querySelectorAll('[data-show-for]'), function (box) {
       var on = box.getAttribute('data-show-for') === key;
       box.hidden = !on;
@@ -82,18 +84,18 @@
     var lines = LABELS.filter(function (p) { return p[0] in d && p[0] !== 'message'; }).map(function (p) {
       return p[1] + ': ' + (d[p[0]] || '-');
     });
-    lines.push('', '[문의 내용]', d.message || '-', '', '개인정보 수집·이용: ' + (d.privacy || '-'), '— 소프트웍스 홈페이지 문의하기에서 작성');
+    lines.push('', EN ? '[Message]' : '[문의 내용]', d.message || '-', '', (EN ? 'Consent to collection and use of personal information: ' : '개인정보 수집·이용: ') + (d.privacy || '-'), EN ? '— Sent from the SOFTWORKS website contact form (EN)' : '— 소프트웍스 홈페이지 문의하기에서 작성');
     return lines.join('\n');
   }
 
   function subjectText(d) {
-    var parts = [d.company || '회사명 없음'];
+    var parts = [d.company || (EN ? 'No company' : '회사명 없음')];
     if (d.products) {
       var list = d.products.split(', ');
-      parts.push(list.slice(0, 2).join('·') + (list.length > 2 ? ' 외' : ''));
+      parts.push(list.slice(0, 2).join('·') + (list.length > 2 ? (EN ? ' and more' : ' 외') : ''));
     }
     if (d.partnership) parts.push(d.partnership);
-    return '[' + (d.category || '문의') + '] ' + parts.join(' · ');
+    return '[' + (d.category || (EN ? 'Inquiry' : '문의')) + '] ' + parts.join(' · ');
   }
 
   function mailtoHref(d) {
@@ -146,7 +148,7 @@
     var mail = r.getAttribute('data-mail');
     form.hidden = true;
     var cat = done.querySelector('[data-done-category]');
-    if (cat) cat.textContent = d.category || '문의';
+    if (cat) cat.textContent = d.category || (EN ? 'Inquiry' : '문의');
     var owner = done.querySelector('[data-done-owner]');
     if (owner) owner.textContent = r.getAttribute('data-owner');
     var link = done.querySelector('[data-done-mail]');
@@ -164,7 +166,7 @@
         dl.appendChild(dt); dl.appendChild(dd);
       });
     }
-    lastText = '받는 곳: ' + mail + '\n제목: ' + subjectText(d) + '\n\n' + bodyText(d);
+    lastText = (EN ? 'To: ' : '받는 곳: ') + mail + (EN ? '\nSubject: ' : '\n제목: ') + subjectText(d) + '\n\n' + bodyText(d);
     done.hidden = false;
     done.focus();
   }
@@ -172,12 +174,12 @@
   var copyBtn = done && done.querySelector('[data-done-copy]');
   var doneNote = done && done.querySelector('[data-done-note]');
   if (copyBtn) copyBtn.addEventListener('click', function () {
-    var ok = function () { doneNote.textContent = '내용을 복사했습니다. 메일 본문에 붙여 넣어 보내 주십시오.'; };
+    var ok = function () { doneNote.textContent = EN ? 'Copied. Paste it into an email and send it to us.' : '내용을 복사했습니다. 메일 본문에 붙여 넣어 보내 주십시오.'; };
     var fallback = function () {
       var t = document.createElement('textarea');
       t.value = lastText; t.setAttribute('readonly', ''); t.style.position = 'absolute'; t.style.left = '-9999px';
       document.body.appendChild(t); t.select();
-      try { document.execCommand('copy'); ok(); } catch (e) { doneNote.textContent = '복사하지 못했습니다. 위 내용을 직접 옮겨 주십시오.'; }
+      try { document.execCommand('copy'); ok(); } catch (e) { doneNote.textContent = EN ? 'Could not copy. Please copy the text above manually.' : '복사하지 못했습니다. 위 내용을 직접 옮겨 주십시오.'; }
       document.body.removeChild(t);
     };
     if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(lastText).then(ok, fallback);
@@ -197,7 +199,7 @@
     var firstBad = null;
     boxes.forEach(function (box) { if (!checkBox(box) && !firstBad) firstBad = box; });
     if (firstBad) {
-      note.textContent = '빠진 항목이 있습니다. 표시된 칸을 확인해 주십시오.';
+      note.textContent = EN ? 'Some required fields are missing. Please check the highlighted fields.' : '빠진 항목이 있습니다. 표시된 칸을 확인해 주십시오.';
       var f = firstBad.querySelector('input:not([type="hidden"]),textarea');
       firstBad.scrollIntoView({ block: 'center', behavior: 'smooth' });
       if (f) f.focus({ preventScroll: true });

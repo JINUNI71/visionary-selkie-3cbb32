@@ -95,7 +95,7 @@
     header.classList.toggle('is-open', open);
     if (toggle) {
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      toggle.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
+      toggle.setAttribute('aria-label', (document.documentElement.lang === 'en') ? (open ? 'Close menu' : 'Open menu') : (open ? '메뉴 닫기' : '메뉴 열기'));
     }
   }
 
@@ -287,13 +287,14 @@
 
   var nav = el('div', 'sw-history-nav');
   var prev = el('button', 'sw-history-nav__btn sw-history-nav__btn--prev');
-  prev.type = 'button'; prev.setAttribute('aria-label', '이전 연도(더 최근)');
+  prev.type = 'button'; prev.setAttribute('aria-label', (document.documentElement.lang === 'en') ? 'Previous year (more recent)' : '이전 연도(더 최근)');
   prev.innerHTML = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg>';
   var next = el('button', 'sw-history-nav__btn sw-history-nav__btn--next');
-  next.type = 'button'; next.setAttribute('aria-label', '다음 연도(더 이전)');
+  next.type = 'button'; next.setAttribute('aria-label', (document.documentElement.lang === 'en') ? 'Next year (earlier)' : '다음 연도(더 이전)');
   next.innerHTML = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3 5 5-5 5"/></svg>';
   var count = el('span', 'sw-history-nav__count overline');
-  var all = el('button', 'sw-history-nav__all', '전체 연혁 보기');
+  var HEN = (document.documentElement.lang === 'en');
+  var all = el('button', 'sw-history-nav__all', HEN ? 'View full history' : '전체 연혁 보기');
   all.type = 'button'; all.setAttribute('aria-expanded', 'false');
   nav.appendChild(prev); nav.appendChild(next); nav.appendChild(count); nav.appendChild(el('span', 'sw-history-nav__break')); nav.appendChild(all);
   box.classList.add('has-nav');
@@ -324,7 +325,7 @@
     expanded = !expanded;
     list.classList.toggle('is-rolling', !expanded);
     box.classList.toggle('is-expanded', expanded);
-    all.textContent = expanded ? '한 해씩 보기' : '전체 연혁 보기';
+    all.textContent = HEN ? (expanded ? 'View one year at a time' : 'View full history') : (expanded ? '한 해씩 보기' : '전체 연혁 보기');
     all.setAttribute('aria-expanded', expanded ? 'true' : 'false');
     if (expanded) auto = false;
     render(); restart();

@@ -10,6 +10,7 @@
 #   0. md/news/*.md 로 뉴스&인사이트 펼침형 목록(company/news/*.html)을 만듭니다
 #      md/Product/ 의 CARD 01~05 문서로 솔루션 상세 페이지(products/*.html)를 만듭니다
 #   1. dist/ 를 비우고 HTML과 assets 만 새로 복사합니다 (md/ 등 내부 문서는 제외)
+#   1-1. 국문 페이지에 번역 사전을 적용해 영문 페이지(dist/en/)를 만듭니다 (tools/build_en.py)
 #   2. 검토용이면 각 페이지에 noindex 를 넣고 robots.txt 로 수집을 막습니다
 #   3. CSS·JS 주소 뒤에 내용 기반 꼬리표(?v=…)를 붙여, 고친 파일을 브라우저가 바로 새로 받게 합니다
 #      링크가 실제 파일을 가리키는지 확인합니다
@@ -50,6 +51,9 @@ cp "$SRC"/company/*.html "$OUT/company"/
 cp "$SRC"/company/news/*.html "$OUT/company/news"/
 cp -R "$SRC/assets" "$OUT/assets"
 find "$OUT" \( -name '.DS_Store' -o -name '.gitkeep' \) -delete
+
+echo "▸ 영문 페이지(dist/en/)를 번역 사전(tools/i18n/en.json)으로 만듭니다"
+python3 "$SRC/tools/build_en.py" "$OUT"
 
 if [ "$PUBLIC" -eq 1 ]; then
   echo "▸ 정식 공개용 — 검색엔진 수집을 허용합니다"
