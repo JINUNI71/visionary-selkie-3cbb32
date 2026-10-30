@@ -1920,3 +1920,6 @@ button.sw-navlink{border:0;background:none;font-family:var(--font-sans);cursor:p
 @media (min-width:1280px){.sw-card__name{white-space:nowrap}}
 /* What We Do — 설명 첫 줄("…핵심 기반을 설계하고", 약 795px)이 한 줄에 들어가도록 이름·설명 간격을 좁힙니다. */
 @media (min-width:1260px){.sw-product--static{column-gap:24px}}
+
+/* 푸터 개인정보처리방침 링크 — 다른 바로가기보다 눈에 띄게 굵게 */
+.sw-footer__privacy{font-weight:700}
