@@ -413,7 +413,7 @@ def page(shell, filename, title, desc, main, extra_meta=""):
     h = re.sub(r'<meta name="description" content="[^"]*">',
                '<meta name="description" content="%s">%s' % (esc(desc), extra_meta), h, count=1)
     h = h.replace('href="%s" aria-current="true">KR' % SHELL_REL, 'href="%s" aria-current="true">KR' % filename)
-    h = h.replace('href="%s" hreflang="en"' % SHELL_REL, 'href="%s" hreflang="en"' % filename)
+    h = h.replace('href="en/%s" hreflang="en"' % SHELL_REL, 'href="en/%s" hreflang="en"' % filename)  # 영문 페이지(en/)로 연결
     h = h.replace("<!DOCTYPE html>", "<!DOCTYPE html>\n" + MARK, 1)
     return relativize(h + main + tail, filename)
 

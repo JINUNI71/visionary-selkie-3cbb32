@@ -55,6 +55,12 @@
     a.addEventListener('click', function (e) {
       e.preventDefault();
       pick(a.getAttribute('data-pick'));
+      /* 메일 준비 화면이 떠 있으면 닫고 양식을 다시 보입니다. 입력한 내용은 그대로 남습니다. */
+      if (done && !done.hidden) {
+        done.hidden = true;
+        if (doneNote) doneNote.textContent = '';
+        form.hidden = false;
+      }
       var target = document.getElementById('inquiry');
       if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       if (history.replaceState) history.replaceState(null, '', '?type=' + a.getAttribute('data-pick') + '#inquiry');

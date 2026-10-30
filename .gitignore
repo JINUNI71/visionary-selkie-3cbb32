@@ -2,6 +2,8 @@
 dist/
 softworks-homepage.zip
 softworks-homepage/
+# build.sh 가 로컬 미리보기용으로 복사하는 영문 페이지
+/en/
 
 # 작업용 백업·임시 파일
 _backup_*/

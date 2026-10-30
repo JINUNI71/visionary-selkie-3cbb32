@@ -136,6 +136,10 @@ if bad:
 print("  링크 이상 없음")
 PY
 
+echo "▸ 로컬 미리보기용으로 영문 페이지를 원본 폴더 en/ 에도 복사합니다 (git 에는 올리지 않음)"
+rm -rf "$SRC/en"
+cp -R "$OUT/en" "$SRC/en"
+
 echo "▸ 압축합니다"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT

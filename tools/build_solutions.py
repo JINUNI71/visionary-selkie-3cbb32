@@ -854,7 +854,7 @@ def build(path):
     SHELL_NAME = os.path.basename(SHELL_PAGE)
     me = cfg["slug"] + ".html"
     head = head.replace('<a href="%s" aria-current="true">KR' % SHELL_NAME, '<a href="%s" aria-current="true">KR' % me)
-    head = head.replace('<a href="%s" hreflang="en">' % SHELL_NAME, '<a href="%s" hreflang="en">' % me)
+    head = head.replace('<a href="../en/products/%s" hreflang="en">' % SHELL_NAME, '<a href="../en/products/%s" hreflang="en">' % me)  # 영문 페이지(en/)로 연결
     page = head + '<main id="main">\n' + "".join(main) + "\n</main>" + tail
     page = re.sub(r"\n\s*\n\s*\n+", "\n\n", page)
     out = os.path.join(os.environ.get("SW_PREVIEW_DIR", OUT_DIR), cfg["slug"] + ".html")
