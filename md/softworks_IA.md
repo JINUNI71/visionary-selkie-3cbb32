@@ -25,6 +25,7 @@ KR 기준 정보 구조입니다. 대메뉴 앞의 번호와 그룹 레이블 �
 *2026.10.21 개정 — 제품을 6개 카테고리(AI Service Platform · AI Infra Platform · Cloud Platform · Desktop Virtualization · Backup & Recovery · Security Platform)로 재편, 01 AI · 02 Infrastructure 그룹 폐지, 전 제품 부제 변경, OAP Security → AgentOn Security, AgentOn · VVF · VCF · VKS · SecuWorks 추가(페이지 없음)*
 *2026.10.29 개정 — VVF · VCF · VKS 상세 페이지 추가(products/vmware-vvf · vmware-vcf · vmware-vks), 메뉴 링크 연결*
 *2026.10.21 개정 — 제품 카테고리 순서 변경: AI Infra Platform(GenWorks · Broadcom Private AI)을 AI Service Platform 앞으로*
+*2026.10.30 개정 — AgentOn · SecuWorks(페이지 없음)를 제품 메뉴·홈 제품 목록에서 일시 제외, 비게 된 AI Service Platform 카테고리도 함께 숨김*
 
 ---
 
@@ -36,7 +37,11 @@ KR 기준 정보 구조입니다. 대메뉴 앞의 번호와 그룹 레이블 �
 
 ## 2. 제품
 
-카테고리 6개 *(카테고리 레이블 · 링크 없음)*. `(페이지 없음)` 표시 제품은 메뉴에 이름만 두고 링크를 걸지 않습니다.
+카테고리 5개 *(카테고리 레이블 · 링크 없음)*.
+
+> 보류 (2026.10.30) — 아래 두 제품은 페이지가 준비될 때까지 메뉴와 제품 목록에서 뺐습니다. 다시 넣을 때는 원래 자리로 돌립니다.
+> - AI SERVICE PLATFORM › **AgentOn** · Ontology Agent Platform (카테고리째 보류)
+> - SECURITY PLATFORM › **SecuWorks** · Security Process Management Platform (AgentOn Security 아래)
 
 *AI INFRA PLATFORM*
 
@@ -44,11 +49,6 @@ KR 기준 정보 구조입니다. 대메뉴 앞의 번호와 그룹 레이블 �
     - GPU Cluster Management & AIOps Platform
 - **Broadcom Private AI**
     - Private AI Infrastructure Platform
-
-*AI SERVICE PLATFORM*
-
-- **AgentOn** *(페이지 없음)*
-    - Ontology Agent Platform
 
 *CLOUD PLATFORM*
 
@@ -79,8 +79,6 @@ KR 기준 정보 구조입니다. 대메뉴 앞의 번호와 그룹 레이블 �
 
 - **AgentOn Security**
     - AI Security Domain Service
-- **SecuWorks** *(페이지 없음)*
-    - Security Process Management Platform
 
 ---
 
