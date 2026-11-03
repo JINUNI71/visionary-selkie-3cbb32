@@ -930,8 +930,8 @@ h3.sw-row__name{margin:0}
 .sw-mission--art::before{background:url("../img/mission-grid.svg") center/cover no-repeat}
 .sw-mission--art::after{background:radial-gradient(ellipse 52% 68% at 50% 50%,
   var(--navy-900) 0%,
-  color-mix(in srgb, var(--navy-900) 80%, transparent) 42%,
-  color-mix(in srgb, var(--navy-900) 0%, transparent) 78%)}
+  rgba(14,34,68,.8) 42%,
+  rgba(14,34,68,0) 78%)}
 /* 문장이 한 줄씩 떨어지도록 읽는 폭만 넓힙니다. */
 .sw-mission--art .sw-mission__text{max-width:1060px}
 .sw-mission--art>.sw-container{position:relative;z-index:1}
@@ -983,7 +983,7 @@ h3.sw-row__name{margin:0}
 
 /* 오시는 길 — 지도(hairline 테두리) + 지도 앱 링크 + 행 목록(주소·연락처·지하철·버스) */
 .sw-map{position:relative;margin-top:var(--space-24);aspect-ratio:16/7;border:1px solid var(--line);background:var(--surface-subtle);overflow:hidden}
-.sw-map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.sw-map iframe{position:absolute;top:0;left:0;inset:0;width:100%;height:100%;border:0}
 .sw-map__links{margin-top:var(--space-24)}
 .sw-loc-list{margin:0;padding:0;list-style:none;color:var(--ink-muted)}
 .sw-loc-list li{padding:3px 0;word-break:keep-all}
@@ -1135,7 +1135,7 @@ h3.sw-row__name{margin:0}
 .sw-bizcard[data-art] .sw-row__label{color:var(--on-dark-muted)}
 .sw-bizcard[data-art] .sw-row__name{color:var(--on-dark)}
 @media (max-width:760px){
-  .sw-bizcard[data-art] .sw-bizcard__head::before{background:linear-gradient(to right,var(--navy-900) 30%,color-mix(in srgb,var(--navy-900) 0%,transparent) 80%),var(--art) right center/auto 100% no-repeat,var(--art-grad)}
+  .sw-bizcard[data-art] .sw-bizcard__head::before{background:linear-gradient(to right,var(--navy-900) 30%,rgba(14,34,68,0) 80%),var(--art) right center/auto 100% no-repeat,var(--art-grad)}
   .sw-bizcard[data-art] .sw-bizcard__head{margin:calc(-1 * var(--space-28)) calc(-1 * var(--space-20)) var(--space-20);padding:var(--space-28) var(--space-20) var(--space-24)}
 }
 
@@ -1168,14 +1168,14 @@ h3.sw-row__name{margin:0}
   .sw-bizcards{gap:var(--space-16)}
   .sw-bizcard[data-art] .sw-bizcard__head{margin-bottom:var(--space-40)}
   .sw-bizcard[data-art]::before{height:310px;
-    background:linear-gradient(to right,var(--navy-900) 30%,color-mix(in srgb,var(--navy-900) 0%,transparent) 80%),var(--art) right top/auto 240px no-repeat,var(--art-grad);
+    background:linear-gradient(to right,var(--navy-900) 30%,rgba(14,34,68,0) 80%),var(--art) right top/auto 240px no-repeat,var(--art-grad);
     -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 185px,transparent 100%);
             mask-image:linear-gradient(to bottom,#000 0,#000 185px,transparent 100%)}
 }
 /* 번짐 보정 — 그래픽이 번짐 끝까지 이어지게 하고(가로 단면 없음), 목록은 색이 거의 빠진 뒤에 시작합니다. */
 .sw-bizcard[data-art] .sw-bizcard__head{margin-bottom:88px}
 .sw-bizcard[data-art]::before{height:350px;
-  background:linear-gradient(to right,var(--navy-900) 18%,color-mix(in srgb,var(--navy-900) 0%,transparent) 52%),var(--art) right top/auto 350px no-repeat,var(--art-grad);
+  background:linear-gradient(to right,var(--navy-900) 18%,rgba(14,34,68,0) 52%),var(--art) right top/auto 350px no-repeat,var(--art-grad);
   -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 210px,rgba(0,0,0,.55) 270px,transparent 345px);
           mask-image:linear-gradient(to bottom,#000 0,#000 210px,rgba(0,0,0,.55) 270px,transparent 345px)}
 @media (max-width:760px){
@@ -1214,11 +1214,11 @@ h3.sw-row__name{margin:0}
 .sw-bizcard[data-art]::before{content:none}
 .sw-bizcard[data-art] .sw-bizcard__head{overflow:hidden;margin-bottom:var(--space-28)}
 .sw-bizcard[data-art] .sw-bizcard__head::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
-  background:linear-gradient(to right,var(--navy-900) 18%,color-mix(in srgb,var(--navy-900) 0%,transparent) 52%),var(--art) right center/auto 100% no-repeat,var(--art-grad)}
+  background:linear-gradient(to right,var(--navy-900) 18%,rgba(14,34,68,0) 52%),var(--art) right center/auto 100% no-repeat,var(--art-grad)}
 @media (max-width:760px){
   .sw-bizcard[data-art] .sw-bizcard__head{margin-bottom:var(--space-20)}
   .sw-bizcard[data-art] .sw-bizcard__head::before{
-    background:linear-gradient(to right,var(--navy-900) 30%,color-mix(in srgb,var(--navy-900) 0%,transparent) 80%),var(--art) right center/auto 100% no-repeat,var(--art-grad)}
+    background:linear-gradient(to right,var(--navy-900) 30%,rgba(14,34,68,0) 80%),var(--art) right center/auto 100% no-repeat,var(--art-grad)}
 }
 /* 아이콘을 분야명 오른쪽에 둡니다 — 번호(1행) 아래, 이름과 아이콘이 한 줄(2행). */
 .sw-bizcard[data-art] .sw-bizcard__head{display:grid;grid-template-columns:auto auto;justify-content:start;align-items:center;column-gap:14px;row-gap:2px}
@@ -1830,9 +1830,13 @@ button.sw-navlink{border:0;background:none;font-family:var(--font-sans);cursor:p
 .sw-areabox::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--area-bar,var(--line))}
 .sw-areabox:nth-child(1){--area-bar:var(--stat-grad-4);--area-on-bar:var(--ink)}
 .sw-areabox:nth-child(2){--area-bar:var(--stat-grad-3);--area-on-bar:var(--on-dark)}
-.sw-areabox:nth-child(3){--area-bar:color-mix(in srgb,var(--stat-grad-3) 55%,var(--stat-grad-2));--area-on-bar:var(--on-dark)}
+/* 03·05 의 띠 색은 stat-grad 사이값입니다. color-mix 를 모르는 브라우저(Edge/Chrome 110 이하)에서는
+   띠가 투명해지고 롤오버 때 흰 글자만 남아 칸이 비어 보이므로, 계산해 둔 고정값을 바로 씁니다.
+   03 = stat-grad-3 55% + stat-grad-2 45% · 05 = stat-grad-2 45% + stat-grad-1 55%.
+   토큰 색을 바꾸면 이 두 값도 함께 고쳐 주십시오. */
+.sw-areabox:nth-child(3){--area-bar:#0c4985;--area-on-bar:var(--on-dark)}
 .sw-areabox:nth-child(4){--area-bar:var(--stat-grad-2);--area-on-bar:var(--on-dark)}
-.sw-areabox:nth-child(5){--area-bar:color-mix(in srgb,var(--stat-grad-2) 45%,var(--stat-grad-1));--area-on-bar:var(--on-dark)}
+.sw-areabox:nth-child(5){--area-bar:#06193a;--area-on-bar:var(--on-dark)}
 .sw-areabox:nth-child(6){--area-bar:var(--stat-grad-1);--area-on-bar:var(--on-dark)}
 .sw-areabox__label{color:var(--area-bar)}
 .sw-areabox__name{margin:var(--space-16) 0 0;color:var(--ink)}
@@ -1936,3 +1940,36 @@ button.sw-navlink{border:0;background:none;font-family:var(--font-sans);cursor:p
 @media (max-width:479px){.sw-consent__more{margin-left:28px}}
 .sw-consent__more:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
 .sw-visually-hidden-text{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* ══ 브라우저 호환 (2026-11-03) ═══════════════════════════════════════
+   1) color-mix 를 모르는 브라우저(Safari 16.1 이하·Chrome 110 이하 등)용 고정 색.
+      아래 값은 위 color-mix 결과를 미리 계산한 것입니다. 토큰 색을 바꾸면 함께 고쳐 주십시오.
+      (히어로·사업영역 카드·미션 배경의 그라데이션은 rgba 로 바꿔 모든 브라우저에서 같게 나옵니다.) */
+@supports not (color:color-mix(in srgb,red,blue)){
+  .sw-card:nth-child(1) .sw-iso{--iso-top:#9eddf1;--iso-right:#0f7392}
+  .sw-card:nth-child(2) .sw-iso{--iso-top:#9abcd7;--iso-right:#093f6a}
+  .sw-card:nth-child(3){--iso-base:#0e49a9}
+  .sw-card:nth-child(3) .sw-iso{--iso-top:#9ab3db;--iso-right:#093070}
+  .sw-card:nth-child(4){--iso-base:#1147a5}
+  .sw-card:nth-child(4) .sw-iso{--iso-top:#9bb2d9;--iso-right:#0b2f6d}
+  .sw-card:hover .sw-iso{--iso-top:#fff;--iso-left:rgba(255,255,255,.72);--iso-right:rgba(255,255,255,.46)}
+  .sw-card:nth-child(1):hover .sw-iso{--iso-top:#202124;--iso-left:rgba(32,33,36,.72);--iso-right:rgba(32,33,36,.46)}
+}
+/* 2) 태블릿 폭(761~1000px): 메뉴·버튼 사이 간격을 줄여 헤더가 화면 밖으로 밀리지 않게 합니다. */
+@media (min-width:761px) and (max-width:1000px){
+  .sw-header__bar{gap:var(--space-16)}
+  .sw-header__nav{padding-left:0;gap:0}
+  .sw-header__nav .sw-navlink{padding-left:10px;padding-right:10px}
+  .sw-header__actions{gap:12px}
+  .sw-header__actions .sw-btn{padding:8px 14px}
+}
+
+/* 사업분야 카드 머리 — 바탕색 안전장치 (Edge 109 등 구형 브라우저).
+   그래픽·그라디언트 배경(::before)이 어떤 이유로 그려지지 않아도 흰 제목이 남색 위에 놓이게 합니다. */
+.sw-bizcard[data-art] .sw-bizcard__head{background-color:var(--navy-900)}
+/* 3) aspect-ratio 를 모르는 브라우저(Safari 14 이하, iOS 14)에서 지도 높이가 0 이 되지 않도록
+      예전 방식(위쪽 여백 비율)으로 같은 비율을 잡습니다. 16:7 = 43.75%, 4:3 = 75% */
+@supports not (aspect-ratio:1/1){
+  .sw-map{height:0;padding-top:43.75%}
+  @media (max-width:760px){.sw-map{padding-top:75%}}
+}
