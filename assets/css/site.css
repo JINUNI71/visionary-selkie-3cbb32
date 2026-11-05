@@ -1312,8 +1312,9 @@ main .sw-section-intro+.sw-map{margin-top:12px}
    원본 소개 페이지의 개념 아키텍처 SVG를 그대로 옮겼습니다(색·도형·화살표 유지).
    글꼴만 사이트 서체로 바꾸고, 좁은 화면에서는 도식이 너무 작아지지 않도록 가로로 스크롤합니다. */
 .sw-arch{margin:var(--space-56) 0 0}
-.sw-arch__scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
-.sw-arch__svg{display:block;width:100%;max-width:1000px;min-width:720px;height:auto;margin:0 auto;overflow:visible}
+/* 2026-11-05: 가로 스크롤 대신 화면 폭에 맞춰 줄어들도록 변경 (다른 제품 페이지 이미지와 같은 방식) */
+.sw-arch__scroll{overflow:hidden}
+.sw-arch__svg{display:block;width:100%;max-width:1000px;height:auto;margin:0 auto}
 .sw-arch__svg text{font-family:var(--font-sans)}
 .sw-arch + .sw-note{margin-top:var(--space-40)}
 
