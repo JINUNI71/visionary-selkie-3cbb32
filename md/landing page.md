@@ -16,7 +16,7 @@
 
 ## Total AI Solution Provider
 
-### 인프라의 깊이가 AI의 격을 만듭니다
+### 인프라의 깊이가 AI의 격을 만듭니다!
 
 IDC 운영 · 가상화 · 재해복구 · 엔터프라이즈 보안의 탄탄한 기반 위에 AI Infrastructure · Ontology · Autonomous Agent 기술을 더해 기업 비즈니스의 진정한 디지털 전환을 실현합니다.
 
